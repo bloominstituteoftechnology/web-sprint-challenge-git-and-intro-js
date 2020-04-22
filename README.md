@@ -1,10 +1,8 @@
-# Sprint Challenge Instructions Template
-
-> Text like this that uses the `>` character (quoted block in Markdown) is commentary and instructions for you (the curriculum developer) to replace. They should not be left in your final result. Conversely, text not in a quote block is either a example for you to modify, or text that will usually be left as-is for most if not all sprint challenges.
+# Advanced CSS and Intro JavaScript Sprint Challenge
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **`<Sprint Subject Here>`**. During this sprint, you studied **`<High-level sprint topics here>`**. In your challenge this week, you will demonstrate your mastery of these skills by creating **`<describe project here>`**.
+This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **advanced CSS and introductory JavaScript concepts**. During this sprint, you studied **preprocessing, JavaScript syntax, conditionals, loops, arrays, and objects**. In your challenge this week, you will demonstrate your mastery of these skills by styling a static web page and manipulating JavaScript data.
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
@@ -15,15 +13,11 @@ _You have **three hours** to complete this challenge. Plan your time accordingly
 
 ## Introduction
 
-> In this section, introduce the challenge,  with a high level explanation of the components of the project.
-> 
-> This section should include examples in the form of screenshots, screen recording GIFs, and/or links to an example.
+In this challenge, you will use a data set of influential artists to build a "influential artists" webpage. This data comes from a set of "50 influential artists" on [kaggle](https://www.kaggle.com/ikarus777/best-artworks-of-all-time). We have reduced the data to just 20 artists to make it slightly easier to work with. You can work with the full dataset as a stretch goal.
 
 In meeting the minimum viable product (MVP) specifications listed below, your project should look like the solution examples below:
 
- [Sample Screenshot](https://tk-assets.lambdaschool.com/39a49225-8ac9-43da-aa90-514fd60ae99a_sprint-challenge-ui-home-example.png)
-
-[Sample mobile example](https://tk-assets.lambdaschool.com/fbe7ebfc-a4c2-4a32-8929-bbd41fbc4f67_ScreenShot2020-03-25at11.03.41AM.png)
+ [Sample Screenshot](design/Desktop.png)
 
 ### Commits
 
@@ -35,61 +29,76 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. Describe semantic HTML 
 
-2. Understand when and how to use CSS reset
+1. How would you describe preprocessing to someone new to CSS?
 
-3. Understand the use of the command line interface (CLI)
+2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-4. Explain git commands and why git is valuable to a team of developers.
+3. How would you explain the concept of a variable to someone new to programming?
 
-5. Define mobile-first design in your own words, and the difference in layout types.
+4. What is the purpose of using functions in code?
+
+5. What is a JSON data?
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
 
-### Task 1: Project Set Up
+Follow these steps to set up your project:
 
-> This section should include instruction for the sprint challenge. These should only cover things that are _not_ being evaluated by the challenge itself, e.g. environment/project setup, link to a starter project, etc. In general, this will be the following Git fork, clone, branch, commit, push, create pull request flow, though may need to be adapted for some specific challenges.
+### Task 1: Project Set up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
+#### Git Set up
+
+- [ ] Create a forked copy of this project.
+- [ ] Add your Team Lead as collaborator on Github.
+- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+
+#### Preprocessor Set up
+
+* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ ] In your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ ] Verify your compiler is working correctly by changing the `background-color` on the `body` selector to `red` in your `index.less` file.
 
 ### Task 2: Project Requirements
 
-> This section should include requirements for the sprint challenge itself. The idea is to be explicit with the student about the things their project solution needs to implement, without telling them **how** to do any of these things. Be sure all learning objectives in your sprint challenge list are covered. 
+Your finished project should include all of the following requirements. 
 
-Your finished project must include all of the following requirements:
+### Task 2a:  Minimum Viable Product - PreProcessing
 
-> (The following is an example):
+#### Import LESS Files
 
-#### Home Page
+* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
-[Review the provided design file for the home page](design/home.png).  Notice the navigation and header images are missing.
+```markdown
+1.variables.less
+2.mixins.less
+3.reset.less
+4.general.less
+5.navigation.less
+6.main.less
+7.cta.less
+```
 
-* [ ] Uses Semantic HTML and CSS to create the missing navigation and header
-* [ ] The `About` navigation item must be linked to the [about.html](about.html) page
-* [ ] Your design must be responsive such that it is accessible on mobile(500px) and tablet(800 px) and matches the [mobile](design/mobile.png) wireframe. This functionality must be implemented using flexbox.
-* [ ] Uses all box model properties so that margins, borders, and padding match the wireframes
-* [ ] You must add responsive breakpoints to your code by using media queries
-* [ ] All 10 boxes on the home page are correctly styled with background colors using the guide below:
+_You will know everything is working properly when you see the styles enabled for the provided content._  
 
+#### Home Page - Desktop HTML & LESS
 
-* [ ] box1: `teal`
-* [ ] box2: `gold`
-* [ ] box3: `cadetblue`
-* [ ] box4: `coral`
-* [ ] box5: `crimson`
-* [ ] box6: `forestgreen`
-* [ ] box7: `darkorchid`
-* [ ] box8: `hotpink`
-* [ ] box9: `indigo`
-* [ ] box10: `dodgerblue`
+* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [ ] Add a viewport meta tag to the head of your index.html page
+* [ ] [Review the provided home desktop design file](design/Desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [ ] Main Content Styles: Use the `main.less` file for styling
+* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `contact us` button styles.
+* [ ] Use at least 2 parameters to create your button
+* [ ] Create a hover state that changes the opacity of images to 80%
+* [ ] Use good coding practices including adding responsive breakpoints to your code with media queries
+
+### Task 2b: Minimum Viable Product - JavaScript
+
+Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
