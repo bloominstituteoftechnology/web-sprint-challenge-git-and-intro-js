@@ -205,8 +205,8 @@ const artists = [
 
 /* Task 1: Practice accessing data above by console.log-ing following items:
 
-(1) Name of the first artist in the array
-(2) Bio of the third artist in the array */
+(1) Name of the first artist (0th index) in the array
+(2) Bio of the third artist (2nd index) in the array */
 
 
 
@@ -219,7 +219,7 @@ const artists = [
  *     (2) a number which is the desired index in the array.
  * getArtistByIndex returns a string in the format `The artist at index {id} is {name}.`
  * 
- * For example, if getArtistByIndex is invoked with the inventory and the number 0,
+ * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
@@ -229,13 +229,24 @@ function getArtistByIndex(id, name) {
   /**
 
 
-/* Task 4: Create a function called `removeArtist` that takes two arguments:
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
+
+function get20s(/* Code here */){
+
+  /* Code here */
+
+}
+
+
+/* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the dat array at the index.
+ * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
  * 
  * For example, if removeArtist is invoked with the data and the number 0,
- * it will remove Amedeo Modigliani from our dataset.
+ * it will remove Amedeo Modigliani from our dataset and log the number 19. 
+ * 
+ * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(/*code here*/) {
     /* code here */
@@ -244,23 +255,19 @@ function removeArtist(/*code here*/) {
   /**
 
 
-/* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
-
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
-  }
 
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
+For example, you could add the following information: 
 id: 21
 name: Your Name Here, 
 years: Your Birth Year - current day,
 genre: Web Design, 
 nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) "*/
+bio: Add 1-2 sentences (or use lorem ipsum) 
+
+At the end, this function should console.log() the new array with information added"*/
 
 function addArtist(/* Code here */){
 
@@ -268,21 +275,26 @@ function addArtist(/* Code here */){
 
   }
 
+/* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
+    (1) artists array 
+
+and returns an array with names of artists who painted more than 100 paintings.
+
+For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
+
+function lotsOfArt(/* Code here */){
+
+  /* Code here */
+
+}
 
 
 
 // 🎨🎨 STRETCH 🎨🎨//
 
-/* STRETCH 1: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
-
-    /* Code here */
-
-  }
-
-/* STRETCH 2: Programtically console.log HTML element structure 
+/* STRETCH 1: Programtically console.log HTML element structure.
 
 In HTML, every artist and associated content uses the following structure: 
 
@@ -309,7 +321,7 @@ function getHTML(/* Code here */){
   }
 
 
-/* STRETCH 3: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
+/* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(/* Code here */){
 
