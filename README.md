@@ -18,11 +18,9 @@ In this challenge, you will use a data set of artists to build an "influential a
 
 Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead.
 
-## Self-Study Questions
+## Interview Questions
 
-Demonstrate your understanding of this week's concepts by answering the following free-form questions.
-
-Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
@@ -30,7 +28,7 @@ Edit this document to include your answers after each question. Make sure to lea
 4. What is the purpose of using functions in code?
 5. What is JSON data?
 
-You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
 
@@ -56,7 +54,11 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 ### Task 3: Stretch Problems
 
-After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals, also listed in `index.js`, where applicable:
+> Include stretch goals in this section. These are additional things the student can do go beyond basic proficiency, and push their scores on the challenge up to a 3. Be clear that these are *not* required. Completing all of the tasks in the required section must be sufficient to  demonstrate proficiency of all sprint objectives, and earn a score of '2. 
+
+> Example stretch goals below:
+
+After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
 * [ ] Use JavaScript to programmatically create HTML elements in the console and copy them to display all 20 artists on the page
 * [ ] Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order.
