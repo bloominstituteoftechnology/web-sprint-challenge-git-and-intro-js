@@ -1,0 +1,19 @@
+﻿1)How would you describe preprocessing to someone new to CSS?
+Answer. Preprocessors JavaScript functions,you can write variables and mix-ins for shortcuts to add styling to your body,such as fonts, and colors. parametric mixin make it easy for us when making breakpoints for mobile devices,we can put in the flex directions and other things all that we need at one time.
+
+
+2)What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Answer:my favorite concept is the parametric mix-ins.,because I can do everything at once.
+
+
+3)How would you explain the concept of a variable to someone new to programming?
+answer:a variable is taking a banana name giving it a value like a color or font for example.
+
+
+4)What is the purpose of using functions in code?
+Answer: it is a block of code that performs a task,that can be use over again, if needed!
+
+
+5) What is JSON-
+JSON stands for JavaScript Object Notation
+JSON rus on the server side.
