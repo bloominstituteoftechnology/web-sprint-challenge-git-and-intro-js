@@ -68,11 +68,15 @@ img:hover {
 header{
     display:flex;
     justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+
 }
     @media (max-width: 500px){
-        nav a{
-        font-size: 1.8rem;
-    }
+        header{
+            width: 100%;
+            margin: 0 auto;
+        }
 }
 nav{
     width:30%;
@@ -82,7 +86,9 @@ nav{
 }
     @media (max-width: 500px){
         nav{
-            width: 40%;
+            width: 100%;
+            font-size: 1.5rem;
+            padding-left: 30px;
     }
 }
 nav a{
@@ -98,7 +104,13 @@ nav span{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    width: 100%;
+    margin: 0 auto;
+}
+@media (max-width: 500px){
+    .title-container{
+        width: 100%;
+    }
 }
 
 .title-container div {	
@@ -110,13 +122,17 @@ nav span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:60vh;
-    margin:5% 0;
+    height:50vh;
+    margin:5% auto;
+    padding: 50px;
     
 }
 @media (max-width: 500px){
     .title-container div{
-        width: 90%;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        align-items: center;
     }	
 @media(max-width: 500px){
     .title-container div h1{
