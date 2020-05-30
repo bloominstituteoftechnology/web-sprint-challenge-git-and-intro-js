@@ -208,9 +208,18 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-console.log(artist[artist.name[0]]);
-console.log(artist[artist.bio[2]]);
+function getName(artists, name){
+  const name = artists[name];
+}
+console.log(getName(artists))
 
+function get3rdArtistBio(artists){
+  const 3rdArtistBio = artist.find((item, index) => {
+    return bio === 2
+  })
+
+console.log(get3rdArtistBio(artist.bio[2]))
+}
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
