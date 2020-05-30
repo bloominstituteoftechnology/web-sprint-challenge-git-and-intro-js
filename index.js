@@ -224,23 +224,31 @@ console.log(artists[8].name);
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
+function getArtistByIndex(artist,id) {
     /* code here */
-    const artistByIndex = name[id];
+    const artistByIndex = artist[id];
+    let name = artist[id].name;
     console.log(`The artist at index ${id} is ${name}.`);
     return (`The artist at index ${id} is ${name}.`);
   }
-  getArtistByIndex(8,artists.name);
+  getArtistByIndex(artists,8);
   /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(/* Code here */){
-
+function get20s(artists){
+	let get20th = [];
+	for(let i = 0; i<artists.length; i++){
+		if (artists[i].years = 1900 - 2000) {
+			get20th.push(artists[i]);
+		}
+		return get20th;
+	}
   /* Code here */
 
 }
+console.log(get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
