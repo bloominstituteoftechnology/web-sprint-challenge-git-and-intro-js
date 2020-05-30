@@ -23,10 +23,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
+--> Preprocessing is a type application use in CSS.  It is a scripting language that helps a regular CSS style by using a compiling application, like LESS or SASS among the popular ones.  It creates cleaner codes that are easily readable on any type of browser, and it makes your codes flexible to every developer team to read and understand.
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+--> My favorite concept about using the CSS preprocessor is its ability to create other features that are usable codes line 'MIXINS' for example.  If eliminates repeatition of codes avoiding to write it over and over again.  
+--> One thing I don't like about the application is activating it on your terminal in order for your project to be watch.  Why can't it just be installed on your code editor like an extension so that you don't have to remember to activate for every project you have to do.
+
 3. How would you explain the concept of a variable to someone new to programming?
+--> They way I would explain it is simple.  Like humans, in order to function, we have to have heart. Variables is the heart of every program like in Javascript.  It is placeholder of a given object storing datas that enables programmers to write flexible programs that can be access later and change to use later in the program.
+
 4. What is the purpose of using functions in code?
+--> Function is one of the building block in programming and it allows you to write a piece of command or source code within the main program to avoid repeatition.
+
 5. What is JSON data?
+--> JSON data are dataset files consisting of a bunch of data that you reference in your program, kinda like a database.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
