@@ -213,9 +213,7 @@ console.log(artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-console.log(artists[8].name);
-
-
+artists[8].name = "vincent van gogh";
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -238,15 +236,18 @@ function getArtistByIndex(artist,id) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 function get20s(artists){
-	let get20th = [];
+		let num = [];
+		let get20th = [];
 	for(let i = 0; i<artists.length; i++){
-		if (artists[i].years = 1900 - 2000) {
-			get20th.push(artists[i]);
+		num = parseInt(artists[i].years);
+		if (num > 1900){
+			get20th.push(artists[i].name);
+			console.log(get20th);
 		}
-		return get20th;
+		
 	}
   /* Code here */
-
+return (get20th);
 }
 console.log(get20s(artists));
 
@@ -261,10 +262,14 @@ console.log(get20s(artists));
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
+function removeArtist(artists,index) {
+    artists.splice(index,1);
     /* code here */
+    console.log(artists);
+    return(artists);
   }
-  
+  removeArtist(artists,0);
+
   /**
 
 
@@ -281,13 +286,24 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should console.log() the new array with information added"*/
+	const newArtist = [
+	{
+      "id": 21,
+      "name": "Daniel Terry",
+      "years": "1994 - immortal",
+      "genre": "Web Design",
+      "nationality": "Merica",
+      "bio": "Is the most awesome of awesomest dudes to walk the Earth",
+	}	
+	]
+function addArtist(artists,newArray){
 
-function addArtist(/* Code here */){
-
+	artists.push(newArray);
+	console.log(artists);
+	return artists;
     /* Code here */
-
   }
-
+addArtist(artists,newArtist);
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -296,14 +312,23 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
+function lotsOfArt(artists){
+		let art = [];
+		let num = [];
+	for(let i = 0; i<artists.length; i++){
+		num = (artists[i].paintings);
+		if (num >= 100){
+			art.push(artists[i].name);
+		}
+		}
+	console.log(art);
+	return (art);
   /* Code here */
 
 }
 
 
-
+lotsOfArt(artists);
 // 🎨🎨 STRETCH 🎨🎨//
 
 
