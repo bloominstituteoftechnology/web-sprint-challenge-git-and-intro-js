@@ -387,3 +387,16 @@ function randomize(/* Code here */) {
 }
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+
+/* 
+1.How would you describe preprocessing to someone new to CSS?
+preprocessing for Css is something that cuts alot of time with css down for styling the webpage. its almost like shorthand for writing.
+
+2.What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+i like the way mixins and nestings work. it cuts down on alot of individual css lines. the most trouble I would say is maybe imports, and even then its not that bad. I would like to move on into sass and Stylus rather than less.
+3.How would you explain the concept of a variable to someone new to programming?
+i would say a variable is a way to title something or store something with a label to be called upon later instead of a function.
+4.What is the purpose of using functions in code?
+functions in a code allow the user to perform specific tasks like finding out the length of an array, or performing basic math.
+5.What is JSON data?
+json data is in my words, a giant container that you can access which holds arrays and such for javascript access*/
