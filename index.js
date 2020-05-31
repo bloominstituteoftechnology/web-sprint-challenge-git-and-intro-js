@@ -214,7 +214,7 @@ function getName(artists, name){
 console.log(getName(artists))
 
 function get3rdArtistBio(artists){
-  const 3rdArtistBio = artist.find((item, index) => {
+  const d3rdArtistBio = artist.find((item, index) => {
     return bio === 2
   })
 
