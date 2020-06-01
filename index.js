@@ -351,13 +351,36 @@ Create a function called `getHTML()` that takes the parameter `data` and uses a 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
+let data , DomNode;
 
-function getHTML(/* Code here */){
+DOMNode = document.querySelector('.artists-container');
+function getHTML(arr){
+	for(let item in arr){
+	if(arr.hasOwnProperty(item)) {
+		let element = arr[item];
+		let listItem = document.createElement('div');
+		listItem.className = '.artist';
+		listItem.innerHTML =` <div class = "name">${element.name}</div>
+		<div class = "bio">${element.bio}</div>`;
+		DOMNode.appendChild(listItem);
+	}
 
+	}
+	
     /* Code here */
 
   }
-
+  getHTML(artists);
+/* "id": 4,
+      "name": "Rene Magritte",
+      "years": "1898 - 1967",
+      "genre": "Surrealism,Impressionism",
+      "nationality": "Belgian",
+      "bio": "René François Ghislain Magritte (French: [ʁəne fʁɑ̃swa ɡilɛ̃ maɡʁit]; 21 November 1898 – 15 August 1967) was a Belgian Surrealist artist. He became well known for creating a number of witty and thought-provoking images. Often depicting ordinary objects in an unusual context, his work is known for challenging observers' preconditioned perceptions of reality. His imagery has influenced Pop art, minimalist and conceptual art.",
+      "wikipedia": "http://en.wikipedia.org/wiki/René_Magritte",
+      "paintings": 194
+      
+      */
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
