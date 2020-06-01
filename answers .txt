@@ -1,0 +1,22 @@
+How would you describe preprocessing to someone new to CSS?
+i would describe preproccessing as scripting languages that extends the default capabilities of CSS
+
+
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+my favorite concept in preproccessing would be being able to categorize different content
+and my least favorite would be mixins so far 
+
+
+How would you explain the concept of a variable to someone new to programming?
+
+i would say its like a box that holds something for you later
+
+
+What is the purpose of using functions in code?
+you could run the same code over without having to type it every time 
+
+
+What is JSON data?
+
+json data is used to transport and store data 
