@@ -208,11 +208,14 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
+console.log(artists[0].name);
+console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+artists[8].name = "Vincent Van Gogh";
+console.log(artists[8].name);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -223,18 +226,21 @@ const artists = [
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
-    /* code here */
-  }
-  
-  /**
+    return "The artist at " + id + " is " + name[id].name
+  };
 
+getArtistByIndex(0,artists);
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(/* Code here */){
-
-  /* Code here */
-
+function get20s(artists,years){
+  const name = artists[year];
+  const year = bornTwenty ;
+  for (let i = 0; i < artists.years ; i++) {
+    if(artists.years < 1900 && artists.year > 2000){
+    return bornTwenty;
+    }
+  }
 }
 
 
@@ -248,12 +254,12 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(artistArray, index) {
+  if ( index => -1) {
+    artistArray.splice(index, 1);
   }
-  
-  /**
-
+  console.log(artistArray.lenght);
+}
 
 
 
@@ -269,11 +275,20 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(twentyfirstArtist){
+  artists.push(twentyfirstArtist);
+  console.log(artists[artists.lenght - 1])
+}
+  addArtist({
+    id: "21",
+    name: "Jonathan Portillo",
+    years: "1993 - current day",
+    genre: "Web Design",
+    nationality: "Dominican/Hunduran",
+    bio: "Born in Brooklyn NYC, Jonathan is determined to make a life for himself as a software engineer and hopes to build a steady financial foundation for himself"
+  });
 
-    /* Code here */
-
-  }
+console.log(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -283,11 +298,11 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(artists){
+ lotsofArtArray = [];
+ for(let i = 0; i < artistsArray.lenght; i++)
 }
+
 
 
 
