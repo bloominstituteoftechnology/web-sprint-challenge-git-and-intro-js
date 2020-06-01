@@ -246,17 +246,23 @@ getArtistByIndex(artists,8);
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(array){
+/* task 4 answers
 
+
+function get20s(array) {
+              
   let newArtists = [];
-  for (i=0, i < array.length, i++); {
-    if (array[i].years == "1900-2000" ) {
-
-    };
+  for (i=0, i < array.length, i++) {
+    if (array[i].years.includes("19") == true ) {
+      newArtists.unshift(array[i]);
+    }
   };
+  console.log(newArtists);
   /* Code here */
 
-};
+//};
+
+
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -269,12 +275,17 @@ function get20s(array){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
-  /**
 
+/*task 5 answers*/
+
+/*
+function removeArtist(array, index) {
+    array.splice(index,1);
+    console.log(array.length);
+}
+removeArtist(artists, 5);  
+
+*/
 
 
 
@@ -290,11 +301,26 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(/* Code here */){
+/*task 6 answers*/
 
-    /* Code here */
+/*
+const pushArtist = {
+  id:21,
+  name: "Avery Aaron Burns", 
+  years:"1995-current",
+  genre: "Web Design", 
+  nationality: "Moorish American",
+  bio: "He is known for Lorems and Ipsums, having the words, the best words, big hands small keyboRD OOPS I HIT caps." ,
+};
 
-  }
+function addArtist(pushArray){
+
+  artists.push(pushArray);
+  console.log(artists);
+
+};
+addArtist(pushArtist);
+*/
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -304,13 +330,23 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+/*task 7 answers*/
 
-  /* Code here */
+/*
+function lotsOfArt(array){
+
+  let x = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i].paintings >= 100) {
+      x.push(array[i].name);
+    }
+  };
+  console.log(x)
 
 }
 
-
+lotsOfArt(artists);
+*/
 
 // 🎨🎨 STRETCH 🎨🎨//
 
