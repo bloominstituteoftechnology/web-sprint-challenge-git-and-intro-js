@@ -129,13 +129,13 @@ button:hover{
 
 .artist{
     width:40%;
-    text-align:center;
+    text-align:center; 
 }
 .artist img{
     width:100%;
 }
 
-@media(max-width:500px;) {
+@media(max-width:500px) {
     .artists-container{
         display:flex;
         flex-direction: column;
@@ -143,7 +143,7 @@ button:hover{
         width: 100%;
     }
     img{
-        
+
     }
 
 }
