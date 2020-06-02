@@ -341,15 +341,17 @@ function getHTML(/* Code here */){
 
 function randomize(artists){
   let i = 0;
-  let j = 0;
+  let k = 0;
   for (i = artists.length - 1; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1));
+    k = Math.floor(Math.random() * (i + 1));
     let temp = artists[i];
-    artists[i] = artists[j];
-    artists[j] = temp;
+    artists[i] = artists[k];
+    artists[k] = temp;
   }
   return(artists)
 }
 console.log(randomize(artists));
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) * /
+
+ 
