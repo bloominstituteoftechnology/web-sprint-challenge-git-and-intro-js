@@ -218,11 +218,11 @@ console.log(artists[2].bio);
 
 /* task 2 answer*/
 
-/*
+
 artists[8].name = "Vincent Van Gogh";
 
 console.log(artists[8].name);
-*/
+
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -235,34 +235,34 @@ console.log(artists[8].name);
 
 /*task 3 answer*/
 
-/*
+
 function getArtistByIndex(array, index) {
     console.log(`The artist at index ${index} is ${array[index].name}.`)
 };
 getArtistByIndex(artists,8);
   
-/*
+
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 /* task 4 answers
-
+*/
 
 function get20s(array) {
               
   let newArtists = [];
-  for (i=0, i < array.length, i++) {
-    if (array[i].years.includes("19") == true ) {
-      newArtists.unshift(array[i]);
+  for (i=0; i < array.length; i++) {
+    if (array[i].years.slice(0, 3).includes("19") == true ) {
+      newArtists.push(array[i]);
     }
   };
   console.log(newArtists);
-  /* Code here */
-
-//};
 
 
+};
+
+get20s(artists);
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -278,14 +278,14 @@ function get20s(array) {
 
 /*task 5 answers*/
 
-/*
+
 function removeArtist(array, index) {
     array.splice(index,1);
     console.log(array.length);
 }
 removeArtist(artists, 5);  
 
-*/
+
 
 
 
@@ -303,7 +303,7 @@ At the end, this function should console.log() the new array with information ad
 
 /*task 6 answers*/
 
-/*
+
 const pushArtist = {
   id:21,
   name: "Avery Aaron Burns", 
@@ -320,7 +320,7 @@ function addArtist(pushArray){
 
 };
 addArtist(pushArtist);
-*/
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -332,7 +332,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 /*task 7 answers*/
 
-/*
+
 function lotsOfArt(array){
 
   let x = [];
@@ -346,7 +346,7 @@ function lotsOfArt(array){
 }
 
 lotsOfArt(artists);
-*/
+
 
 // 🎨🎨 STRETCH 🎨🎨//
 
