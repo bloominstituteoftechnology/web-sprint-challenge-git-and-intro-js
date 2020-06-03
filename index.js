@@ -241,9 +241,17 @@ console.log(getArtistByIndex(artists,3));
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 function get20s(artist){
-  const twentiesBorn = artists.filter(artists => (artists.years == 1900 - 2000));
+
+  let twentiesArtists = [];
+  for (let i = 0; i <artist.length; i++)
+    if ((artist[i].years.slice(0,5)<= 2000) && (artist[i].years.slice(0,5)>= 1900))
+      {
+      twentiesArtists.push(artist[i]);
+      }
+   return twentiesArtists;
 }
-console.log(get20s(artists.years))
+
+console.log(get20s(artists))
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -257,7 +265,7 @@ console.log(get20s(artists.years))
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(index) {
-  artists.splice(index,4);
+  artists.splice(index,1);
 }
   console.log(artists.length);
   
@@ -282,14 +290,15 @@ function addArtist(id, name, years, genre, nationality, bio){
   const newArtist = ({
       id: 20,
       name: "Mitch",
-      years: "1961-2020",
+      years: 1961,
       genre: "Web Design",
       nationality: "Filipino",
       bio: "I am a Web Designer who loves to travel, and learn technology"
   })
     artists.push(newArtist);
 
-  console.log(addArtist)
+}
+  console.log(artists)
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -352,6 +361,4 @@ function randomize(artists){
 }
 console.log(randomize(artists));
 
- /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) * /
-
- 
+ /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
