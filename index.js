@@ -242,13 +242,13 @@ console.log(getArtistByIndex(artists,3));
 
 function get20s(artist){
 
-  let twentiesArtists = [];
-  for (let i = 0; i <artist.length; i++)
-    if ((artist[i].years.slice(0,5)<= 2000) && (artist[i].years.slice(0,5)>= 1900))
+  let twentiesBorn = [];
+  for (let i = 0; i < artist.length; i++)
+    if ((artist[i].years.slice(0,5) <= 2000) && (artist[i].years.slice(0,5) >= 1900))
       {
-      twentiesArtists.push(artist[i]);
+      twentiesBorn.push(artist[i]);
       }
-   return twentiesArtists;
+   return twentiesBorn;
 }
 
 console.log(get20s(artists))
