@@ -142,8 +142,26 @@ button:hover{
         align-items: center;
         width: 100%;
     }
-    img{
-
+    div.artist{
+width: 400px;
+    }
+    .stylehom{
+        font-weight: 800;
+        color:#160101;
+    }
+    nav span{
+        border-left: 1px solid #626262;
+    
+    }
+    .atag{
+        padding-right: 10px;
+        padding-left: 10;
+    }
+    .bordered{
+        padding-left: 5px;
+    }
+    a.atag{
+        padding-left: 10px;
     }
 
 }
