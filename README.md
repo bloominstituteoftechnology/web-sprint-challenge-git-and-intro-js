@@ -54,10 +54,6 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 ### Task 3: Stretch Problems
 
-> Include stretch goals in this section. These are additional things the student can do go beyond basic proficiency, and push their scores on the challenge up to a 3. Be clear that these are *not* required. Completing all of the tasks in the required section must be sufficient to  demonstrate proficiency of all sprint objectives, and earn a score of '2. 
-
-> Example stretch goals below:
-
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
 * [ ] Use JavaScript to programmatically create HTML elements in the console and copy them to display all 20 artists on the page
