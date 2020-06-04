@@ -356,12 +356,12 @@ function getHTML(/* Code here */){
 
 function randomize(artists){
   let i = 0;
-  let k = 0;
+  let r = 0;
   for (i = artists.length - 1; i > 0; i--) {
-    k = Math.floor(Math.random() * (i + 1));
+    r = Math.floor(Math.random() * (i + 1));
     let temp = artists[i];
-    artists[i] = artists[k];
-    artists[k] = temp;
+    artists[i] = artists[r];
+    artists[r] = temp;
   }
   return(artists)
 }
