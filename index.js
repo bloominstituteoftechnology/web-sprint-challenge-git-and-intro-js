@@ -240,13 +240,13 @@ console.log(getArtistByIndex(artists,3));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
-function get20s(artist){
+function get20s(artists){
 
   let twentiesBorn = [];
-  for (let i = 0; i < artist.length; i++)
-    if ((artist[i].years.slice(0,5) <= 2000) && (artist[i].years.slice(0,5) >= 1900))
+  for (let i = 0; i < artists.length; i++)
+    if ((artists[i].years.slice(0,5) <= 2000) && (artists[i].years.slice(0,5) >= 1900))
       {
-      twentiesBorn.push(artist[i]);
+      twentiesBorn.push(artists[i]);
       }
    return twentiesBorn;
 }
