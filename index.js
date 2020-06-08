@@ -208,8 +208,8 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
       
-     // console.log(artists[0].name)  Amedo Modigliana
-     //console.log(artists[2].name)  Diego Rivera
+     console.log(artists[0].name)  Amedo Modigliana
+      console.log(artists[2].name)  Diego Rivera
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 //console.log(artists[8].name ="Vincent_van_Gogh")
@@ -269,7 +269,7 @@ function removeArtist(arrayName, i ) {
 
 
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom informationfafafafafsgssggsgussfsfs!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 21
