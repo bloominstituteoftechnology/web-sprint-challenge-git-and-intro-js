@@ -205,19 +205,63 @@ button:hover {
   width: 100%;
 }
 @media (max-width: 500px) {
+  /* a {
+    width: auto;
+    margin-left: 25px;
+    padding-left: 88px;
+    font-size: 17px;
+  } */
+
+  a {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header nav {
+    width: 50%;
+    justify-content: space-around;
+    line-height: 20px;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
+  .title-container hr {
+    width: 100%;
+  }
+
+  .title-container div {
+    width: 100%;
+  }
+
+  .title-container div h1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
   .artists-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    padding-bottom: 100px;
   }
 
-  .artist {
+  .artists-container .artist {
     width: 100%;
   }
-  .artists img {
-    width: 200px;
-    max-height: 160px;
+
+  .artists-container .artist img {
+    width: 250px;
+    max-height: 200px;
     object-fit: fill;
   }
+}
+
+.artists-container .artist .bio {
+  width: 350px;
+  height: auto;
+  font-size: 14px;
+  padding-left: 60px;
 }
