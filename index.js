@@ -199,7 +199,7 @@ const artists = [
       "wikipedia": "http://en.wikipedia.org/wiki/Albrecht_Dürer",
       "paintings": 328
     }
-]
+];
 
 // 🖌🖼 M V P 🖼🖌 //
 
@@ -208,8 +208,8 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
       
-     console.log(artists[0].name)  Amedo Modigliana
-      console.log(artists[2].name)  Diego Rivera
+    // console.log(artists[0].name)  Amedo Modigliana
+      //console.log(artists[2].name)  Diego Rivera
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 //console.log(artists[8].name ="Vincent_van_Gogh")
@@ -236,38 +236,35 @@ console.log(getArtistByIndex(artists, 1))
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 //let arrnew = New Array[];
 
-function get20s(/* Code here */) {
+function get20s(data) {
+  const newarray = []
+  for (let i =0; i < data.length; i++) {
+      if (data[i].years.includes("19") || data[i].years.includes("20")){
+        newarray.push(data[i]);
+      }
 
+  }
+    return newarray
 }
-  
+  console.log(get20s(artists))
 
   
   
   
 
-
-
-/* Task 5: Create a function called `removeArtist` that takes two arguments:
- *     (1) artists array
- *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
- * 
- * For example, if removeArtist is invoked with the data and the number 0,
+ /* For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(arrayName, i ) {
-  delete artists[i].name;
-  console.log(arrayName.length);
-  }
-  removeArtist(artists, 2)
-
   
-  /**
+  delete arrayName[i]
 
-
-
+  console.log(artists.length -1);
+  }
+  removeArtist(artists,0)
+	console.log(artists )
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom informationfafafafafsgssggsgussfsfs!👩‍🎨👨‍🎨
 
@@ -283,7 +280,7 @@ At the end, this function should console.log() the new array with information ad
 
 function addArtist(){
 
-  let newdata = {"id": 21, "name":"Aaron", "years":"1966", "genre":"web Design", "bio": "I love attened Lambda school!"}
+  let newdata = {"id": 21, "name":"Aaron", "years":"1966", "genre":"web Design", "bio": "I love attending Lambda school!"}
   artists.push(newdata);
 
   
