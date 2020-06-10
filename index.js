@@ -239,7 +239,7 @@ console.log(getArtistByIndex(artists, 1))
 function get20s(data) {
   const newarray = []
   for (let i =0; i < data.length; i++) {
-      if (data[i].years.includes("19") || data[i].years.includes("20")){
+      if (data[i].years.startsWith("19") || data[i].years.startsWith("20")){
         newarray.push(data[i]);
       }
 
@@ -249,18 +249,13 @@ function get20s(data) {
   console.log(get20s(artists))
 
   
-  
-  
-
- /* For example, if removeArtist is invoked with the data and the number 0,
- * it will remove Amedeo Modigliani from our dataset and log the number 19. 
+// * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
-*/
+ //* Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+*//
 function removeArtist(arrayName, i ) {
   
   delete arrayName[i]
-
   console.log(artists.length -1);
   }
   removeArtist(artists,0)
