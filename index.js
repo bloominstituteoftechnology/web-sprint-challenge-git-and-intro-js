@@ -248,7 +248,7 @@ with names of artists who were born the 20th century (1900-2000) */
     }
   }
 
-console.log(get20s(1900));
+console.log(get20s(1900));*/
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -304,11 +304,29 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
+  let newArray=[];
+  for (i=0; i<array.length; i++){
+  if (array[i].paintings>100){
+  newArray.push(array[i].name);
+  }
+  };
+  return newArray;
+};
+console.log(lotsOfArt(artists));
 
 
-  /* Code here */
+/*function lotsOfArt(array){
+  let manyPaintings=array.filter((paintings)=>{
+    if (paintings.paintings>100){
+  return array.name;
+    }
+  });
+return manyPaintings;
+  };
 
-}
+  console.log(lotsOfArt(artists));
+
+
 
 
 
