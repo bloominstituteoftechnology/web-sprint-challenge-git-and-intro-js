@@ -222,7 +222,7 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
+function getArtistByIndex(array, index) {
     /* code here */
   }
   
