@@ -145,15 +145,16 @@ button:hover{
     
     }
     .title-container div {
-        display:flex;
+       
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
        	
      
-     height: 70vh;
+     /*height: 70vh;*/
     width: 100%;
+    }
 
-    
-
+    .title-container hr{
+        width:100%;
     }
     .artists-container{
         display:flex;
