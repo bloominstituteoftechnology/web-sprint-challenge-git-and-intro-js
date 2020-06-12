@@ -159,6 +159,15 @@ button:hover{
         height:80vh;
     }
 
+    .title-container hr{
+        width: 100%;
+    }
+
+    .artist{
+        width:60%;
+        text-align:center;
+    }
+
     .artists-container{
         display:flex;
         flex-direction: column;
@@ -167,6 +176,7 @@ button:hover{
     }
 
     .artist img{
+        width: 80%;
         height: 50%;
     }
     
