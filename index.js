@@ -357,7 +357,7 @@ function getHTML(array){
     return 
     `<div id="artist">
 <div class="image">
-    <img src= assets/${name}.jpg/>
+    <img src= assets/${array[i].name}.jpg/>
 </div>
 <div class = "name">
    <"${array[i].wikipedia}"> ${array[i].name}</a>
@@ -375,7 +375,6 @@ function getHTML(array){
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(array){
-  let clone = array.slice();
   let newArr = [];
   while(newArr.length < array.length){
     let item = array[Math.floor(Math.random()*array.length)]
