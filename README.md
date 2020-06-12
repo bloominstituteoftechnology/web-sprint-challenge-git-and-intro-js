@@ -75,7 +75,7 @@ After finishing your required elements, you can push your work further. These go
 * [x] Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order.
 * [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example)
 * [ ] Add responsive breakpoints to your code by using media queries
-* [ ] Add CSS animations
+* [x] Add CSS animations
 
 ## Resources
 
