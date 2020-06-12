@@ -229,19 +229,36 @@ function getArtistByIndex(array, index) {
     /* code here */
   }
 
-  console.log(getArtistByIndex(artists, 0))
+  getArtistByIndex(artists, 0)
   
   /**
 
 
-/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who 
+lived in the 20th century (1900-2000) */
 
-function get20s(/* Code here */){
-
-  /* Code here */
-
+function get20s(array, num){
+  let names = [];
+  let century = String(Number(num)-1)
+  for (let i = 0; i < array.length; i++){
+  if (array[i].years.includes(num) ||array[i].years.includes(century)){
+  }
+  let begin = Number(String(Number(num)-1) +'00')
+  let end = Number(num + '00')
+  let years = array[i].years.split(' ')
+  let newArr = years.splice(1,2)
+    if (newArr[0] > begin || newArr[1] > begin && newArr[1] < end){
+      names.push(array[i].name)
+      
+  }
 }
 
+  /* Code here */
+return names;
+}
+console.log(get20s(artists, 20))
+
+//will work for any century
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -309,7 +326,7 @@ function lotsOfArt(array)
 
 }
 
-console.log(lotsOfArt(artists))
+lotsOfArt(artists)
 
 
 // 🎨🎨 STRETCH 🎨🎨//

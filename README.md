@@ -47,8 +47,8 @@ Follow these steps to set up your project:
 * [x] Add a viewport meta tag to the head of your index.html page.
 * [x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
-[ ] Fix the paragraph height/width
-[ ] Fix the hr to 100% width
+[x] Fix the paragraph height/width
+[x] Fix the hr to 100% width
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
