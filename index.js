@@ -241,13 +241,12 @@ function get20s(array, num){
   let names = [];
   let century = String(Number(num)-1)
   for (let i = 0; i < array.length; i++){
-  if (array[i].years.includes(num) ||array[i].years.includes(century)){
+  if (array[i].years.includes(num) || array[i].years.includes(century)){
   }
   let begin = Number(String(Number(num)-1) +'00')
   let end = Number(num + '00')
   let years = array[i].years.split(' ')
-  let newArr = years.splice(1,2)
-    if (newArr[0] > begin || newArr[1] > begin && newArr[1] < end){
+    if (years[0] > begin || years[2] > begin && years[2] < end){
       names.push(array[i].name)
       
   }
