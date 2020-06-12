@@ -19,6 +19,7 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
@@ -133,4 +134,63 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/* BEGIN MEDIA BREAKPOINT STYLING */ 
+
+/* Start by adjusting nav and stretching the image the width of the screen*/ 
+
+@media(max-width: 500px){
+    h1, p, .name, .bio {	
+        margin: 2%;	
+    }	
+    p, .name, .bio {	
+        font-family: 'Raleway', sans-serif;	
+        text-align: center;	
+        margin: 2%;
+        font-size: 1.4rem;	
+    }
+    h1 {
+        font-size: 4.0rem;
+    }
+    img {	
+        height:20rem;	
+    }	
+    nav {
+        width: 50%;
+        margin: 8% 0;
+    }
+    nav a {
+        font-size: 1.8rem;
+    }
+
+    .title-container div{
+        width: 100%; 
+        margin: 0%;
+    }
+    .title-container hr{
+        width: 100%;
+        margin-top: 5%;
+        background-size: contain;
+    }
+    .artists-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    .artist {
+        width: 80%;
+        margin-top: 5%;
+    }
+    .artist img{
+        width: 80%;
+    }
+
+    .artist a {
+        font-size: 2.0rem;
+    }
 }
