@@ -79,7 +79,7 @@ nav{
 
 @media(max-width: 500px){
     nav a{
-        width: 300%;
+        width: 40%;
         display:flex;
         justify-content: space-evenly;
         padding: 10px;
