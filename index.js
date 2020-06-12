@@ -256,7 +256,7 @@ function get20s(array, num){
   /* Code here */
 return names;
 }
-console.log(get20s(artists, 20))
+get20s(artists, 20)
 
 //will work for any century
 
@@ -302,7 +302,7 @@ function addArtist(array, id, name, years, genre, nationality, bio){
 
   }
 
-  addArtist(artists, '21', 'Ava', '1989 - Current', 'Opera', 'American', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed sed risus pretium.')
+  addArtist(artists, 21, 'Ava', '1989 - Current', 'Opera', 'American', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas sed sed risus pretium.')
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -352,7 +352,21 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(array){
+  for(let i = 0; i < array.length; i++){
+
+    return 
+    `<div id="artist">
+<div class="image">
+    <img src= assets/${name}.jpg/>
+</div>
+<div class = "name">
+   <"${array[i].wikipedia}"> ${array[i].name}</a>
+</div>
+<div class = "bio">${array[i].bio}</div>
+</div>`
+
+  }
 
     /* Code here */
 
@@ -361,11 +375,23 @@ function getHTML(/* Code here */){
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+function randomize(array){
+  let clone = array.slice();
+  let newArr = [];
+  while(newArr.length < array.length){
+    let item = array[Math.floor(Math.random()*array.length)]
+    if(!newArr.includes(item)){
+      newArr.push(item);
+    }
+    
+}
+
+  return newArr
 
     /* Code here */
 
   }
+  console.log(randomize(artists))
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
