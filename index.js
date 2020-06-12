@@ -236,19 +236,20 @@ function getArtistByIndex(array, id) {
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
-
+            
 function get20s(array){
 
-  const age = [];
-  for(let i = 0; i< artists.length; i++){
-    if (artists[i].years >= 1900 && artists[i].years <= 2000){
-      age.push(artists[i].name);
+  let age = [];
+  for(let i = 0; i< array.length; i++){
+    if (parseInt(array[i].years.slice(0,4)) >= 1900 || parseInt(array[i].years.slice(7,11)) >= 1900 )// && parseInt(artists[i].years.slice(0,3)) <= 2000)
+    {
+      age.push(array[i].name);
     }
   }
 return age;
 
 }
-//console.log(get20s(artists));
+console.log(get20s(artists));
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -261,7 +262,7 @@ return age;
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(artists, index) {
-    /* code here */
+    
     artists.splice(index, 1);
     console.log(artists.length);
     return artists.length;
@@ -285,18 +286,17 @@ At the end, this function should console.log() the new array with information ad
  var newartist = [{
   id: 21,
   name: "Oleg", 
-  years: "1965 - current day",
+  years: "1966 - current day",
   genre: "Web Design", 
   nationality: "ukrainian",
   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} ]
 
   function addArtist(array){
 
-    artists.push(array) 
+    Array.prototype.push.apply(artists, array); 
     console.log(artists);
   }
   addArtist(newartist)
-
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -305,13 +305,19 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
 
-  /* Code here */
+  const hundred = [];
 
+  for(let i = 0; i< array.length; i++){
+    if (array[i].paintings > 100){
+      hundred.push(array[i].name);
+    }
+  }
+return hundred;
 }
 
-
+console.log(lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
