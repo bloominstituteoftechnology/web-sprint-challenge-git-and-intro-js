@@ -14,9 +14,9 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-/* border: 0;   */
+border: 0;  
 font-size: 100%;  
-/* font: inherit;   */
+font: inherit;  
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
@@ -134,76 +134,38 @@ button:hover{
 .artist img{
     width:100%;
 }
-@media (max-width: 800px) {
-    header{
-        width: 100%;
-        height: 40vh;
-        padding: 2% 2% 2% 2%;
-        align-items: center;
-        flex-direction:column;
-        justify-content: center;
+@media (max-width: 500px){
+    h1{
+        font-size: 5rem;
+        margin: 2%;
+        line-height: 1.2;
         /* border: 1px solid red; */
     }
-     nav {
-        display:flex;
-        flex-direction:column;
-        width: 50%;
-        align-items: center;
-        justify-content: space-around;
-        height: 40vh;
-        /* border: 1px solid red; */
-    
+    nav{
+        width: 55%;
     }
-    nav a {
+    nav a:first-child{
+        font-weight: bold;
+    }
+    .title-container div {
         width: 100%;
-        text-align: center;
+        height: 50vh;
     }
-   h1{
-       font-size: 2.5rem;
-       width: 80%;
-       text-align: center;
-   }
-   h2{
-    font-size: 2.8rem;
-     text-align: center;
-     padding: 4%;
-     
+    .artists-container{
+        flex-direction: column;
+        width:80%;
+    }
+    .artist{
+        /* border: 1px solid red; */
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    .artist img{
+        height: 30vh;
+        width: 70%;
+    }
+    .artist a{
+        font-size: 2.0rem;
+    }
 }
-  }
-  @media (max-width: 500) {header{
-    width: 100%;
-    height: 40vh;
-    padding: 2% 2% 2% 2%;
-    align-items: center;
-    flex-direction:column;
-    justify-content: center;
-    /* border: 1px solid red; */
-}
- nav {
-    display:flex;
-    flex-direction:column;
-    width: 50%;
-    align-items: center;
-    justify-content: space-around;
-    height: 40vh;
-    /* border: 1px solid red; */
-
-}
-nav a {
-    width: 100%;
-    text-align: center;
-}
-h1{
-   font-size: 2.5rem;
-   width: 80%;
-   text-align: center;
-}
-h2{
-font-size: 2.8rem;
- text-align: center;
- padding: 4%;
- 
-}
-   
-  }
-  
