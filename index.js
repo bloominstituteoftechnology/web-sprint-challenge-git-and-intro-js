@@ -237,16 +237,16 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
 
-function get20s(arr, index){
+function get20s(arr){
   let newArr = [];
   for(let i = 0; i < arr.length; i++){
-    if(arr[index].years === 1900 && 2000){
+    if(arr[i].years.includes('19')){
       newArr.push(artists[i].name);
     }
   }
   return newArr;
 }
-console.log(get20s(artists));
+console.log("message",get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -258,17 +258,13 @@ console.log(get20s(artists));
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
-// */
-function removeArtist(arr, num) {
-    for(let i = 0; i < arr.length; i++){
-      if(arr[i] === num){
-        arr[i].splice(1,0);
-      }
-    }
-    return arr.length;
+*/
+function removeArtist(arr, index) {
+    arr.pop(index);
+    console.log(arr.length);
   }
-  console.log(removeArtist(artists, 5));
-  console.log(removeArtist(artists, 8));
+  removeArtist(artists, 5);
+ 
   
   /**
 
@@ -287,11 +283,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-// function addArtist(arr, id, name, years, genre, nationality, bio){
-//       arr.push({id, name, years, genre, nationality, bio});
-//       return arr; 
-//   }
-// console.log(addArtist(artists, 21, 'Marty McMartinson', '2000 - 2089', 'Erotic Impressionism', 'Bulgarian', 'Marty creates interesting, if controversial works of art that feature the male anatomy in striking ways.')); 
+function addArtist(arr, id, name, years, genre, nationality, bio){
+      arr.push({id, name, years, genre, nationality, bio});
+      return arr; 
+  }
+console.log(addArtist(artists, 21, 'Marty McMartinson', '2000 - 2089', 'Erotic Impressionism', 'Bulgarian', 'Marty creates interesting, if controversial works of art that feature the male anatomy in striking ways.')); 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -301,16 +297,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-// function lotsOfArt(arr){
-//   let bigArt = [];
-//   for(let i = 0; i < arr.length; i++){
-//     if(arr[i].paintings > 100){
-//       bigArt.push(arr[i].name);
-//     }
-//   }
-//   return bigArt;
-// }
-// console.log(lotsOfArt(artists));
+function lotsOfArt(arr){
+  let bigArt = [];
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].paintings > 100){
+      bigArt.push(arr[i].name);
+    }
+  }
+  return bigArt;
+}
+console.log(lotsOfArt(artists));
 
 
 
