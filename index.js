@@ -357,10 +357,10 @@ function getHTML(array){
 
   let code = `<div id="artist">
   <div class="image">
-      <img src=assets/${name}.jpg/>
+      <img src="assets/${name}.jpg"/>
   </div>
   <div class = "name">
-     <"${array[i].wikipedia}"> ${array[i].name}</a>
+     <a href ="${array[i].wikipedia}"> ${array[i].name}</a>
   </div>
   <div class = "bio">${array[i].bio}</div>
   </div>`
@@ -397,4 +397,4 @@ function randomize(array){
 randomize(artists)
 
 
- /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+ /* STRETCH 3: Use advanced array methods (.map, .reduce, .filter) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
