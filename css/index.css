@@ -60,7 +60,8 @@ img {
     border-radius: 2%;	
 }	
 img:hover {	
-    opacity: 80%;	
+    opacity: 80%;
+    box-shadow: 10px 5px 5px black;	
 }	
 
 /*HEADER STYLES */
