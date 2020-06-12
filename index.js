@@ -238,7 +238,7 @@ console.log(getArtistByIndex(artists, 0));
 const modernArtists = []
 function get20s(array){
   for(let i = 0; i < array.length; i++){
-    if(array[i].years === '1900 - 2000'){
+    if(array[i].years = '1900 - 2000'){
       modernArtists.push(array[i].years);
     }
   }return modernArtists
