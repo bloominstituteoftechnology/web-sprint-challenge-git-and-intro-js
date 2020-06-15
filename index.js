@@ -258,7 +258,7 @@ function removeArtist(/*code here*/) {
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
-id: 21
+id: 20,
 name: Your Name Here, 
 years: Your Birth Year - current day,
 genre: Web Design, 
