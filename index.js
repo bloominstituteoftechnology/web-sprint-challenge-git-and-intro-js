@@ -265,7 +265,7 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
-At the end, this function should console.log() the new array with information added"*/
+At the end, this function should return the new array with information added"*/
 
 function addArtist(/* Code here */){
 
