@@ -28,6 +28,34 @@ body{
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
 }
+@media(max-width: 500px){
+    header nav{
+        width: 50%;
+        display:flex;
+        align-items:center;
+      }
+      .title-container{
+        width:100%;  
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .artists-container{
+        width: 80%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    .artist{
+        width:80%;
+        text-align:center;
+    }
+    .artist img{
+        width:100%;
+
+    }
+} 
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
     text-align: center;	
