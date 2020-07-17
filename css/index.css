@@ -19,6 +19,7 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
@@ -135,6 +136,7 @@ button:hover{
     width:100%;
 }
 
+
 @media (max-width: 500px) {
 
     .artists-container {
@@ -142,17 +144,26 @@ button:hover{
 
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+
+
     }
 
     .artist img {
         display: flex;
         object-fit: contain;
+        margin-bottom: -12rem;
+
     }
 
     .title-container {
         display: flex;
         object-fit:contain;
+        margin-top: -13rem;
+
+    }
+
+    hr {
+        padding: 0%;
     }
 
     a {
@@ -172,5 +183,43 @@ button:hover{
 
    .bio {
        font-size: 0.5rem;
+       margin-left: -5rem;
+       margin-right: -5rem;
    }
+
+   a.hover {	
+    font-weight: bold;	
+    color: red;
+}
+   nav span {
+    border-left:1px solid #626262;
+    margin-left: 2rem;
+    margin-right: 2rem;
+   }
+
+    div {
+    margin-top: -13rem;
+    margin-bottom: -0.5rem;
+   }
+   
+   .artist {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+
+   }
+
+   #vanGogh {
+       margin-top: -24rem;
+   }
+
+   hr{
+    margin-top: -12rem;  
+    height: 0px;  
+  }
+
+  #turner {
+      margin-bottom: 5rem;
+  }
+
 }
