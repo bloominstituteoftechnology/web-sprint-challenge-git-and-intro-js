@@ -158,7 +158,9 @@ button:hover{
     .title-container {
         display: flex;
         object-fit:contain;
-        margin-top: -13rem;
+        
+        margin-top: 0rem;
+
 
     }
 
@@ -172,8 +174,11 @@ button:hover{
 
    .title-container div {
     display: flex;
-    background-size: contain;
+    width: 400px;
+    height: 300px;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 
    }
 
@@ -189,7 +194,11 @@ button:hover{
 
    a.hover {	
     font-weight: bold;	
-    color: red;
+
+}
+
+nav {
+
 }
    nav span {
     border-left:1px solid #626262;
@@ -208,15 +217,6 @@ button:hover{
        flex-wrap: nowrap;
 
    }
-
-   #vanGogh {
-       margin-top: -24rem;
-   }
-
-   hr{
-    margin-top: -12rem;  
-    height: 0px;  
-  }
 
   #turner {
       margin-bottom: 5rem;
