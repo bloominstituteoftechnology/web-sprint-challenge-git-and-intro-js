@@ -297,7 +297,7 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-newobj = {
+newObj = {
   id: 20,
   name: "Matthew Mulford",
   years: "1992 - 2020",
@@ -307,14 +307,14 @@ newobj = {
 }
 
 
-function addArtist(paramObj, array2) {
+function addArtist(paramObj) {
 
-  const newArrayy = array2.push(paramObj);
-  return newArrayy;
+  artists.push(paramObj);
+  return artists;
 
 }
 
-addArtist(newobj, artists)
+console.log(addArtist(newObj))
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
