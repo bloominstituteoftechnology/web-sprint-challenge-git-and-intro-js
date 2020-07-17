@@ -247,12 +247,14 @@ function get20s(data) {
   dataArray = [];
 
   for (let i = 0; i < data.length; i++) {
-    if (data[i].years.includes("1900")) {
 
+    if (parseInt(data[i].years) > 1900) {
+      dataArray.push(data[i].name)
     }
+
   }
 
-  // return dataArray;
+  return dataArray;
 
 }
 
@@ -271,11 +273,13 @@ console.log(get20s(artists))
 */
 function removeArtist(array1, index1) {
 
-  return array1.splice(index1, 8)
+  let newArr = [...array1];
+  newArr += delete newArr[index1];
+  return newArr;
 
 }
 
-console.log(removeArtist(artists, 0));
+console.log("ARTISTS REMOVED " + removeArtist(artists, 0));
 
 
 
