@@ -214,8 +214,13 @@ console.log(artists[2].bio)
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-/*< script > let artists = ["0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19"]
+artists = ["0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19"]
 artists[8] = "vincent Van Gogh";
+
+
+
+
+
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
