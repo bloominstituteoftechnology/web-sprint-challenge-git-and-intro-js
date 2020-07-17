@@ -271,12 +271,7 @@ console.log(get20s(artists))
 */
 function removeArtist(array1, index1) {
 
-  const finalArray = [];
-
-
-
-  return finalArray
-
+  return array1.splice(index1, 8)
 
 }
 
