@@ -243,7 +243,6 @@ console.log(getArtistByIndex(artists, 0))
 
 function get20s(/* Code here */) {
 
-  /* Code here */
 
 }
 
