@@ -125,12 +125,10 @@ button:hover{
 .artists-container{
     display:flex;
     justify-content: space-around;
-    width:80%;
     margin:0 auto;
 }
 
 .artist{
-    width:40%;
     text-align:center;
 }
 .artist img{
@@ -138,43 +136,12 @@ button:hover{
 }
 
 
-@media screen and (max-width:959px){
-    #artists-container {
-      width:100%;
-    }
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  
+        @media (max-width: 600px) {
+            .artists-container{
+                display:block;
+            }
+            .artist {
+                width: 100%;
+            }
+        }

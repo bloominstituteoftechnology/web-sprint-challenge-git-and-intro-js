@@ -247,7 +247,7 @@ function get20s(data, arr){
   }
 
  var output = get20s(artists);
- console.log (output);
+ console.log (output)
 
 
 
