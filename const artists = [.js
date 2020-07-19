@@ -198,7 +198,17 @@ const artists = [
       "bio": "Albrecht Dürer (; German: [ˈʔalbʁɛçt ˈdyːʁɐ]; 21 May 1471 – 6 April 1528) sometimes spelt in English as Durer or Duerer, without umlaut, was a painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe when he was still in his twenties due to his high-quality woodcut prints.",
       "wikipedia": "http://en.wikipedia.org/wiki/Albrecht_Dürer",
       "paintings": 328
-    }
+    },
+    {
+        "id": 20,
+"name": "Michelangelo di Lodovico Buonarroti Simoni", 
+"years": "1475-1564",
+"genre": "High Renaissance", 
+"nationality": "Italian",
+"bio": "Sculptor, painter, architect and poet who influenced Western Art. Considered the greatest artist of all time. Painted the ceiling of the Sistine Chapel."
+"wikipedia": "https://en.wikipedia.org/wiki/Michelangelo",
+"paintings": 182
+}
 ]
 
 // 🖌🖼 M V P 🖼🖌 //
@@ -207,24 +217,17 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-var artistName = ["Modigliani","Kandinskiy","Rivera","Monet","Magritte","Dali",
-"Manet","Rublev","van Dough","Klimt","Bosch","Malevich","Vrubel"."Picasso",
-"Rubens","Renoir","Goya","Khalo","Greco","Durer"];
-artistName[0]="Modigliani";
+var artistName = [0]
 console.log ("Modigliani")
 
-var getBio = [Born: "1886", Occupation: "Painter", Origin: "Mexico", Death: "1957"];
-getBio[2]="Rivera"
-console.log (Born: "1886", Occupation: "Painter", Origin: "Mexico", Death: "1957")
+var getBio = [2]
+console.log ("Rivera")
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-var artistTypo = ["Modigliani","Kandinskiy","Rivera","Monet","Magritte","Dali",
-"Manet","Rublev","van Dough","Klimt","Bosch","Malevich","Vrubel"."Picasso",
-"Rubens","Renoir","Goya","Khalo","Greco","Durer"];
-artistTypo[8] = "van Dough"
-console.log("van Gogh")
+var artistTypo = [8]
+console.log("Van Dough")
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -234,18 +237,16 @@ console.log("van Gogh")
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex("Modigliani","Kandinskiy","Rivera","Monet","Magritte","Dali",
-"Manet","Rublev","van Dough","Klimt","Bosch","Malevich","Vrubel"."Picasso",
-"Rubens","Renoir","Goya","Khalo","Greco","Durer", 0) {
-    return "Modigliani"
-  }
-  console.log(getArtistByIndex)
+function getArtistByIndex() {
+    return "Modigliani";
+  console.log(getArtistByIndex);
+}
   /**
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s("Born in and died in 1900-2000"){
-return [8]
- get20s();
+function get20s(){
+return [8];
+ console.log ("get20s");
 
 }
 
@@ -260,11 +261,9 @@ return [8]
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist("Modigliani","Kandinskiy","Rivera","Monet","Magritte","Dali",
-"Manet","Rublev","van Dough","Klimt","Bosch","Malevich","Vrubel"."Picasso",
-"Rubens","Renoir","Goya","Khalo","Greco","Durer") {
-   return "van Dough";
-   removeArtist();
+function removeArtist() {
+   return [9];
+ console.log ("Van Dough");
   }
   
  
@@ -280,10 +279,8 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(add "Michaelangelo"){
-
-   return[20] = "Michaelangelo"
-addArtist();
+function addArtist(20){
+console.log (addArtist);
   }
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -291,13 +288,11 @@ addArtist();
 and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt("Modigliani","Kandinskiy","Rivera","Monet","Magritte","Dali",
-"Manet","Rublev","van Dough","Klimt","Bosch","Malevich","Vrubel"."Picasso",
-"Rubens","Renoir","Goya","Khalo","Greco","Durer"){
+function lotsOfArt(){
 
-return = ["Modigliani","Magritte","Dali","van Dough","KLimt","Bosch",
-"Malevich","Vrubel","Picasso","Rubens","Renoir","Goya","Kahlo","Durer"]
+return = ["Amedeo Modigliani","Rene Magritte","Salvador Dali"," Vincent van Dough",
+"Gustav Klimt","Hieronymus Bosch", "Kazimir Malevich","Vrubel","Picasso","Rubens",
+"Renoir","Goya","Kahlo","Durer"]
 
-lotsOfArt();
 }
 
