@@ -273,13 +273,23 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(array, myInfo) {
 
-    /* Code here */
+  let newArtist = array
+  newArtist.push(myInfo);
 
-  }
+  return newArtist;
+}
 
-/* Task 7: Create a function called lotsOfArt() that takes one argument: 
+addArtist(artists,
+  {id:20, 
+  name: "Cameron Young", 
+  year: "1994 - present day",
+  genre: "Cartoon Artist", 
+  nationality: "Irish",
+  bio: "I grew up in florida was born in warren ohio i have 2 kids named cian and theo and now im enrolled in lambda school and im loving it"});
+
+  /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
 
@@ -287,11 +297,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
-}
+function lotsOfArt(array) {
+  let newArray = []
+  for (i = 0; i < array.length; i++) {
+      if (array[i].paintings > 100) {
+        newArray.push(array[i]);
+      }
+  }
+  return newArray
+  }
+  console.log(lotsOfArt(artists));
 
 
 
