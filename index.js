@@ -222,8 +222,8 @@ artists[8].name = "Vincent Van Gogh";
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(array, index) {
-  if (index === 0)
+function getArtistByIndex(array, artistindex) {
+  if (artistindex === 0)
   return `The artist at index ${artists[0].id}, ${artists[0].name},`
 }
   console.log(getArtistByIndex(artists, 0));
@@ -234,7 +234,7 @@ function getArtistByIndex(array, index) {
 
 function get20s(/* Code here */){
 
-  /* Code here */
+  
 
 }
 
@@ -298,13 +298,13 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-  let newArray = []
+  let newArray = [];
   for (i = 0; i < array.length; i++) {
       if (array[i].paintings > 100) {
         newArray.push(array[i]);
       }
   }
-  return newArray
+  return newArray;
   }
   console.log(lotsOfArt(artists));
 
