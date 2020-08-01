@@ -210,8 +210,8 @@ console.log(artists[0].name)
 console.log(artists[2].bio)
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-artists[9].name = "Vincent Van Gogh"
-console.log(artists[9])
+artists[8].name = "Vincent Van Gogh"
+console.log(artists[8])
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -250,8 +250,8 @@ function get20s( /* Code here */ ) {
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
  */
 function removeArtist(array, i) {
-    (array.splice(array.indexOf(i), 1))
-    return array
+    array.splice(i, 1)
+    return array.length
 }
 console.log(removeArtist(artists, 0))
 
@@ -270,11 +270,14 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist( /* Code here */ ) {
+function addArtist(id, name, years, genre, nationality, bio) {
 
-    /* Code here */
-
+    let newartist = { id: id, name: name, years: years, genre: genre, nationality: nationality, bio: bio }
+    return newartist
 }
+
+const ana = addArtist(20, "ana", 1993, "web Design", "Dominican", "loremLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+artists.push(ana)
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
