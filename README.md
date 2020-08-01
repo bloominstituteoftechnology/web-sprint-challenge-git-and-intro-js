@@ -23,9 +23,18 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+features to assist those with some sort of dissability use the website.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+ add alternative descriptions to images
+ keyboard input features.
+title tags
+
 3. How would you explain the concept of a variable to someone new to programming?
+a variable after being declared, has to be assing to a value, this value can be anything. basically a variable will hold a value, to be used later on, even thoug this value can be change at any point based on the way used to be declared. 
+
 4. What is the purpose of using functions in code?
+DRY. basically is a block of code that can be reuse, keeping the code dry without repeating yourself.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -44,8 +53,8 @@ Follow these steps to set up your project:
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [ -] Add a viewport meta tag to the head of your index.html page.
+* [ -] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
