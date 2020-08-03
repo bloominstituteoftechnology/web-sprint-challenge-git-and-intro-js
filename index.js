@@ -325,14 +325,33 @@ for(let i = 0; i < get2000s.length; i++){
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19. 
  * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+ * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there 
+ * are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(ar,indx) {
+  let arr = [{id:0,name:'',years:'',genre:'',nationality:'',bio:'',wikipedia:'',paintings:''}];
+  for(let i= 0; i < ar.length; i++){
+    arr.push({id:ar[i].id,name:ar[i].name,years:ar[i].years,genre:ar[i].genre,
+      nationality:ar[i].nationality,bio:ar[i].bio,
+      wikipedia:ar[i].wikipedia,paintings:ar[i].paintings},);
   }
-  
- 
 
+  if(indx < arr.length && indx >= 0){
+    let ln = arr[indx].length;
+    console.log('logged length'+ln);
+     arr.splice(indx,1);
+    // TODO adjust id number after deletion
+    return arr;
+    } 
+   else{
+    console.log( 'Sorry your id number is off. You better check it sir');
+    return arr;
+    
+  }
+
+  }
+let removedArtists = removeArtist(artists,1);
+console.log('was it removed '+removedArtists[1].name);
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
@@ -360,11 +379,32 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(ar){
+  let topArtists = [];
+  ar.forEach(e => 
+    {
+      if(e.paintings > 100){
+        //console.log(e.paintings);
+        topArtists.push(e);
+      }
+   
+    }
+  
+  );
+ // console.log('we are the guys with the top paintings over 100 '+topArtists[0].name);
 
-  /* Code here */
+    
+    if(topArtists.length >= 1){
+    return topArtists;
+  } else{
+    /// There are no top artists here is your original lame array back with no top artists
+    return ar;
+  }
 
-}
+
+  }
+
+let topAs = lotsOfArt(artists);
 
 
 
