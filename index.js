@@ -210,8 +210,8 @@ const artists = [
 
 /* answer task 1*/
 
-console.log(artists[0]);
-console.log(artists[2].bio);
+// console.log(artists[0]);
+// console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
@@ -221,7 +221,7 @@ console.log(artists[2].bio);
 
 artists[8].name = "Vincent Van Gogh";
 
-console.log(artists[8].name);
+// console.log(artists[8].name);
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -236,10 +236,10 @@ console.log(artists[8].name);
 /*task 3 answer*/
 
 
-function getArtistByIndex(array, index) {
-    console.log(`The artist at index ${index} is ${array[index].name}.`)
-};
-getArtistByIndex(artists,8);
+// function getArtistByIndex(array, index) {
+//     console.log(`The artist at index ${index} is ${array[index].name}.`)
+// };
+// getArtistByIndex(artists,8);
   
 
 
@@ -249,20 +249,20 @@ getArtistByIndex(artists,8);
 /* task 4 answers
 */
 
-function get20s(array) {
+// function get20s(array) {
               
-  let newArtists = [];
-  for (i=0; i < array.length; i++) {
-    if (array[i].years.slice(0, 3).includes("19")) {
-      newArtists.push(array[i]);
-    }
-  };
-  console.log(newArtists);
+//   let newArtists = [];
+//   for (i=0; i < array.length; i++) {
+//     if (array[i].years.slice(0, 3).includes("19")) {
+//       newArtists.push(array[i]);
+//     }
+//   };
+//   console.log(newArtists);
 
 
-};
+// };
 
-get20s(artists);
+// get20s(artists);
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -279,11 +279,11 @@ get20s(artists);
 /*task 5 answers*/
 
 
-function removeArtist(array, index) {
-    array.splice(index,1);
-    console.log(array.length);
-}
-removeArtist(artists, 5);  
+// function removeArtist(array, index) {
+//     array.splice(index,1);
+//     console.log(array.length);
+// }
+// removeArtist(artists, 5);  
 
 
 
@@ -304,7 +304,7 @@ At the end, this function should console.log() the new array with information ad
 /*task 6 answers*/
 
 
-const pushArtist = {
+const newArtist = {
   id:21,
   name: "Avery Aaron Burns", 
   years:"1995-current",
@@ -319,7 +319,7 @@ function addArtist(pushArray){
   console.log(artists);
 
 };
-addArtist(pushArtist);
+// addArtist(newArtist);
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
@@ -370,12 +370,45 @@ Create a function called `getHTML()` that takes the parameter `data` and uses a 
 The function should console.log 50 chunks of HTML code that match the structure above. 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
+// Task 1 answer
+// function getHTML(array){
 
-function getHTML(/* Code here */){
+//   for (i in array) {
+//     console.log(`<div id="artist">
+//     <div class="image">
+//         <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+//     </div>
+//     <div class = "name">
+//   <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> ${array[i].name}</a>
+//     </div>
+//     <div class = "bio"> ${array[i].bio}</div>
+//     </div>`)
+//   }
 
-    /* Code here */
+// }
 
+function getHTML(array){
+
+  for (i in array) {
+    document.getElementById("artists-container2").innerHTML = `<div id="artist">
+    <div class="image">
+        <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+    </div>
+    <div class = "name">
+  <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> ${array[i].name}</a>
+    </div>
+    <div class = "bio"> ${array[i].bio}</div>
+    </div>`;
+
+    
   }
+
+}
+
+
+getHTML(artists);
+// document.getElementsByClassName("artists-container2").innerHTML = getHTML(artists);
+
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
