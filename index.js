@@ -208,6 +208,17 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
+function tsk(){
+  //console.log('hi Welcome to task 1s function!');
+  let name = artists[0].name;
+  let bio3rdArtist = artists[2].bio;
+  console.log('First artist in the array is '+name);
+  console.log('Bio of the Third Artist in the array ');
+  console.log(bio3rdArtist);
+
+}
+
+
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
