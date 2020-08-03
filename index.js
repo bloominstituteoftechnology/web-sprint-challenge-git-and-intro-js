@@ -208,7 +208,7 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-function tsk(){
+function tsk1(){
   //console.log('hi Welcome to task 1s function!');
   let name = artists[0].name;
   let bio3rdArtist = artists[2].bio;
@@ -217,14 +217,27 @@ function tsk(){
   console.log(bio3rdArtist);
 
 }
+tsk1();
 
 
 
+/* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. 
+Use an array method to fix this issue and console.log() to check your work. */
+function fixArrayMisspelling(ar) {
+  /* fix vincent van dough issue */
 
-/* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+for(let i = 0; i < ar.length ; i++){
+  let n = ar[i].name;
+  if( n == 'Vincent van Dough'){
+    ar[i].name = 'Vincent Van Gough';
+  } 
+}
 
-
+}
+console.log('before task2 '+artists[8].name);
+fixArrayMisspelling(artists);
+console.log('after task2 '+artists[8].name);
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -234,21 +247,76 @@ function tsk(){
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+    
+let name = array[index].name;
+let n = 'The artist at index '+index+' is '+name;
+return n;
+
+
   }
-  
+  console.log(getArtistByIndex(artists,2));
+
+
+
+
   /**
 
 
-/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists
+ who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 -
+  included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+function get20s(born,died){
+  // If it is in range
+  if(born >= 1900 && born <= 2000 &&  died >= 1900 && died <= 2000){
+objReturn = [{
+    name:'',born:0,dead:0
+}];
+let inn = 0;
+           
+      // Cycle through artists array to find in range elements of artists
 
-  /* Code here */
+
+      artists.forEach(element => {
+        let str = element.years;
+        let ar = str.split(/(\d+)/);
+        // ar has numbers at arrays 1 and 3
+        let b = ar[1] ;
+        let d  = ar[3];
+          if(b >= 1900 && b <= 2000 &&  d >= 1900 && d <= 2000){
+
+         // console.log('dead aloive'+ b + ' '+ d + ' ' + element.name);
+          objReturn.push({name:element.name,born:b,dead:d});
+          }
+          index = inn + 1;
+      });
+          
+
+      // return array with the  names of folks within that range
+
+return objReturn;
+
+  }else{
+    console.log('Error must be between 1900 and 2000');
+    return [];
+  }
+
 
 }
-
-
+function  test(){
+   let str = artists[0].years;
+   let ar = str.split(/(\d+)/);
+   // ar has numbers at arrays 1 and 3
+   let b = ar[1] ;
+   let d  = ar[3];
+    
+    console.log('dead aloive'+ b + ' '+ d);
+}
+let get2000s = get20s(1901,1959);
+for(let i = 0; i < get2000s.length; i++){
+  console.log('task4 '+get2000s[i].name + ' ' + get2000s[i].born + ' '+ get2000s[i].dead);
+}
+//test();
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.

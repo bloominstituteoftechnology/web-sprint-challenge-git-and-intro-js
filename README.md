@@ -8,7 +8,7 @@ This is an individual assessment. All work must be your own. Your challenge scor
 
 You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your TL if you need direction. Your work reflects your proficiency in Preprocessing, and JavaScript Basics.
 
-> You have **three hours** to complete this challenge. Plan your time accordingly.
+ You have **three hours** to complete this challenge. Plan your time accordingly.
 
 ## Introduction
 
@@ -23,9 +23,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+Acessibility to a programmer is when every device can access the same content regardless of device size difference, end-user acessibility 
+settings such as zoom or other handicap guides that make limitations still possibly the same accross all platforms. 
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    1. Use responsive design so all breakpoints can be adjusted to its screen size settings
+    2. Ensure accessibility options are enabled. Think about if the the browser settings are set without something such as images, how would you still allow that user to experience the image. Think of handicaps verious people have and how would you give a similar experience regardless of what browser settings exists.  
+    3. Use flex display and make sure the containers naturally expand by specifying the full height so the width always adjust to its natural settings. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+A variable is like naming a value and having the ability to store it some place at an exact location in memory. You can manipulate its value or copy it as needed. 
+
 4. What is the purpose of using functions in code?
+They enable the program to execute tasks. They function to serve a purpose in the code to make the program do something. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
