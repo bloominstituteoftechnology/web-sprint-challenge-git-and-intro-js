@@ -282,11 +282,14 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
+function addArtist(id,name,years,genre,nationality,bio){
+  let newArtist = {"id":id,"name":name,"years":years,"genre":genre,"nationality":nationality,"bio":bio,};
+    return artists.push(newArtist);
 
   }
+
+  console.log(addArtist(20,"Austin",1995,"Web Design","American","Lorem Ipsum"));
+  console.log(artists);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -296,9 +299,8 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
 
-  /* Code here */
 
 }
 
