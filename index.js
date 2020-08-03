@@ -353,7 +353,8 @@ function removeArtist(ar,indx) {
 let removedArtists = removeArtist(artists,1);
 console.log('was it removed '+removedArtists[1].name);
 /**
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. 
+Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 20,
@@ -365,11 +366,22 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(){
+  let r = Object.assign(artists);
+let newArtist = {id:20,
+  name: 'Flipper Williams', 
+  years: '1754',
+  genre: 'Web Design', 
+  nationality: 'Fredrickson',
+  bio: 'I marched at the battle of gettysburg with General Insaine Brazilwigs who had the last sights eye at the battl of Eerickson and sons at the fresh woke'
+  };
 
-    /* Code here */
+r.push(newArtist);
+return r;
 
-  }
+}
+let newArtistsAddon = addArtist();
+console.log('add artist ' +newArtistsAddon[20].name+ ' born: '+ newArtistsAddon[20].years+ ' genre: '+ newArtistsAddon[20].genre+ ' Nationality: '+ newArtistsAddon[20].nationality + ' bio: '+ newArtistsAddon[20].bio);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -405,7 +417,8 @@ function lotsOfArt(ar){
   }
 
 let topAs = lotsOfArt(artists);
-
+console.log('more than 100 paintings');
+topAs.map(e => console.log(e));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
