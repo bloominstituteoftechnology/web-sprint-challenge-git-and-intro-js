@@ -22,11 +22,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. How would you describe preprocessing to someone new to CSS?
-2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+1. How would you describe acessibility on the web to someone new to programming?
+    Web accessibility pertains to the features coded onto a website that allow its disabled users to access the site's information.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+    1. text alernatives for images for the blind 
+    2. color schemes for the color-blind
+    3. captions for multi-media and/or video content
+
 3. How would you explain the concept of a variable to someone new to programming?
+    A variable is an object in JavaScript used for storing data for later use. Variables can be static or dynamic depending on the syntax of their declaration. They may hold any primitive data types, as well as arrays, objects, and functions.
+
 4. What is the purpose of using functions in code?
-5. What is JSON data?
+    Fuctions are used in code in order to programmatically perform a task, usually one that effects the content displayed or the user experience. Functions can also be used to effect the data stored for use by developers and unseen by users.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

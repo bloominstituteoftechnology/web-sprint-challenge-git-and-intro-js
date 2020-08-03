@@ -209,10 +209,10 @@ const artists = [
 (2) Bio of the third artist (2nd index) in the array */
 
 /* answer task 1*/
-/*
+
 console.log(artists[0]);
 console.log(artists[2].bio);
-*/
+
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
@@ -253,7 +253,7 @@ function get20s(array) {
               
   let newArtists = [];
   for (i=0; i < array.length; i++) {
-    if (array[i].years.slice(0, 3).includes("19") == true ) {
+    if (array[i].years.slice(0, 3).includes("19")) {
       newArtists.push(array[i]);
     }
   };
