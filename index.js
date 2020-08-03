@@ -256,10 +256,11 @@ console.log("20th century artists:  ", get20s(artists));
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(array, index) {
+    array.splice(index, 1);
+    console.log("The new array length is:  ", array.length);
   }
-  
+  removeArtist(artists, 0);
  
 
 /**
