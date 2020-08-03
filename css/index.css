@@ -142,6 +142,16 @@ button:hover{
         font-size:2.5rem;
         padding: 5%;	
     }
+
+    nav span{
+        border-left:2px solid #626262;
+        height: 50%;
+        margin-top: 15px;
+
+
+        
+    
+    }
     .title-container div {	
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
         background-position: center;	
