@@ -19,6 +19,12 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+
+
+
+
+
+
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
@@ -63,6 +69,13 @@ img:hover {
     opacity: 80%;	
 }	
 
+
+
+
+
+
+
+
 /*HEADER STYLES */
 header{
     display:flex;
@@ -81,6 +94,14 @@ nav span{
     border-left:3px solid #626262;
 
 }
+
+
+
+
+
+
+
+
 /*Title Section Styles*/
 .title-container{
     display:flex;
@@ -119,6 +140,14 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
+
+
+
+
+
+
+
+
 /*Artists Section Styles */
 .artists-container{
     display:flex;
@@ -133,4 +162,12 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+@media 800px {
+    
+}
+
+@media 500px {
+    
 }
