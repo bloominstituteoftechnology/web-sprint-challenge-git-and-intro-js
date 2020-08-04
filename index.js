@@ -239,24 +239,35 @@ function getArtistByIndex(array, index) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 
-/*
-function get20s(key, object, key2){
 
-  for (let key in object)
-  {
-    a = parseInt(key);
+function get20s (arr1)
+{
+ arr3 = [];
+    for(let a = 0; a <arr1.length; a++) //First for loop spits all the values 
+      {   
+         
+          arr3.push(arr1[a].years.split(" - "));
+      }
 
-    if ()
-    {
-      return object.key2;
-    }
-  }
 
+    let withinR = [];
+
+        for(let c =0; c<arr3.length; c++) 
+        {
+             if((arr3[c][0]) >= 1900 && (arr3[c][1]) <= 2000)
+                 {
+                      withinR.push(arr1[c].name)
+                 }
+        }
+
+return withinR;
 
 }
-console.log(lotsOfArt("years",artists,"name"))
+console.log(get20s(artists))
 
 
+//string function split method
+//parsInt
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
@@ -268,6 +279,13 @@ console.log(lotsOfArt("years",artists,"name"))
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
+
+
+
+
+
+
+
 function removeArtist(index) {
 
     artists.splice(index,1)
@@ -289,6 +307,9 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
+
+
+
 function addArtist(id, name, years, genre, nationality, bio){
   const NewArtist = {"id": id, "Name":name, "genre":genre, "nationality":nationality, "bio":bio }
  artists.push(NewArtist);
@@ -306,11 +327,23 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 
-function lotsOfArt(key, object, key2, index){
-  arr = []
-for(
+function lotsOfArt(arr)
+{
+ let arr2 = [];
+for(let i=0; i <arr.length; i++)
+
+{
+  if( arr[i].paintings > 99)
+  {
+   arr2.push(arr[i].name + arr[i].paintings);
+  }
+
+ 
 }
-console.log(lotsOfArt("paintings",artists,"name", "id"))
+ return arr2;
+
+}
+console.log(lotsOfArt(artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
