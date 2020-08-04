@@ -24,30 +24,37 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. How would you describe acessibility on the web to someone new to programming?
 
-  ##    To a new developer I would say: using the most organized way (especially with semantic HTML) 
-  ##    while coding. This allows other developers to navigate your code with ease. 
-  ##    Make sure everything is easy to find, using relative id and class names helps too!
+## To a new developer I would say: using the most organized way (especially with semantic HTML)
 
-  ##    If we're talking about other types of acessibility (for users of our product)
-  ##    you should always consider people with hearing, speech, or voice diabilities.
-  ##    This means making your product compatible with cross-browser acessability tools such as screen readers.
+## while coding. This allows other developers to navigate your code with ease.
+
+## Make sure everything is easy to find, using relative id and class names helps too!
+
+## If we're talking about other types of acessibility (for users of our product)
+
+## you should always consider people with hearing, speech, or voice diabilities.
+
+## This means making your product compatible with cross-browser acessability tools such as screen readers.
 
 2. Talk about 3 different things you can do to ensure your website is accessible.
 
-  ##    NOTES, SEMANTIC HTML, AND CSS ORGANIZATION, MOBILE, TABLET AND PC COMPATABILITY.
+## NOTES, SEMANTIC HTML, AND CSS ORGANIZATION, MOBILE, TABLET AND PC COMPATABILITY.
 
 3. How would you explain the concept of a variable to someone new to programming?
 
-##    When describing concepts of a variable to a new developer, I would say variables are used to store information 
-##    to be eventually referenced by css to make it easier to manipulate styling. 
+## When describing concepts of a variable to a new developer, I would say variables are used to store information
+
+## to be eventually referenced by css to make it easier to manipulate styling.
 
 4. What is the purpose of using functions in code?
 
-##  The purpose of using functions in code is to create a interative interface. 
-##  Functions allow the page to have components that perform different tasks such as:
-##  hovering over a link to preview 
+## The purpose of using functions in code is to create a interative interface.
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+## Functions allow the page to have components that perform different tasks such as:
+
+## hovering over a link to preview
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -60,12 +67,12 @@ Follow these steps to set up your project:
 - [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
-### Task 2a:  Minimum Viable Product - Responsive Design
+### Task 2a: Minimum Viable Product - Responsive Design
 
-*Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
+_Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css)._
 
-* [x] Add a viewport meta tag to the head of your index.html page.
-* [x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+- [x] Add a viewport meta tag to the head of your index.html page.
+- [x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
@@ -75,10 +82,9 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)  
-* [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
-
+- [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)
+- [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
+- [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
 
 ## Resources
 
@@ -92,6 +98,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete by merging the branch back into master
