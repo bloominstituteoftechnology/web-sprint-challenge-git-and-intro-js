@@ -209,12 +209,12 @@ const artists = [
 (2) Bio of the third artist (2nd index) in the array */
 
 function tsk1(){
-  //console.log('hi Welcome to task 1s function!');
-  let name = artists[0].name;
-  let bio3rdArtist = artists[2].bio;
-  console.log('First artist in the array is '+name);
-  console.log('Bio of the Third Artist in the array ');
-  console.log(bio3rdArtist);
+    //console.log('hi Welcome to task 1s function!');
+    let name = artists[0].name;
+    let bio3rdArtist = artists[2].bio;
+    console.log('First artist in the array is '+name);
+    console.log('Bio of the Third Artist in the array ');
+    console.log(bio3rdArtist);
 
 }
 tsk1();
@@ -266,7 +266,7 @@ return n;
  who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 -
   included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(born,died){
+function get20s1(born,died){
   // If it is in range
   if(born >= 1900 && born <= 2000 &&  died >= 1900 && died <= 2000){
 objReturn = [{
@@ -303,6 +303,29 @@ return objReturn;
 
 
 }
+
+// Cleaner way
+
+function get20s(array) {
+  const newArr = array.map((item) => {
+      return {
+          ...item,
+          years: item.years.split(' - '),
+      };
+  });
+  let found = [];
+  newArr.forEach((item) => {
+      if (
+          item.years[0] >= 1900 &&
+          item.years[1] <= 2000
+      ) {
+          found.push(item.name);
+      }
+  });
+  return found;
+}
+
+
 function  test(){
    let str = artists[0].years;
    let ar = str.split(/(\d+)/);
@@ -330,6 +353,7 @@ for(let i = 0; i < get2000s.length; i++){
 */
 function removeArtist(ar,indx) {
   let arr = [{id:0,name:'',years:'',genre:'',nationality:'',bio:'',wikipedia:'',paintings:''}];
+  // Make a copie of ar
   for(let i= 0; i < ar.length; i++){
     arr.push({id:ar[i].id,name:ar[i].name,years:ar[i].years,genre:ar[i].genre,
       nationality:ar[i].nationality,bio:ar[i].bio,
@@ -350,6 +374,21 @@ function removeArtist(ar,indx) {
   }
 
   }
+
+
+  function removeArtist(array, index) {
+    let removed = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].id === index) {
+            removed.push(array[i].name);
+            array.splice(index, 1);
+        }
+    }
+    return `The name removed was ${removed} and the array length is now ${array.length}.`;
+}
+console.log(removeArtist(artists, 0));
+
+
 let removedArtists = removeArtist(artists,1);
 console.log('was it removed '+removedArtists[1].name);
 /**
@@ -503,4 +542,21 @@ newA.sort(function () {
 console.log('Randomized Elements');
 let randomArray = randomize(newArtistsAddon);
 randomArray.map(e => console.log(e));
- /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+ /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code
+  (create an array of all artists born in the 1900s with .filter, for example) */
+
+  function get20sWithFilter(born,died){
+    // If it is in range
+   let newA = artists.filter(function(g){
+      if( g.years  >= 1900 && g.years  <= 2000 &&  born  >= 1900 && born  <= 2000 &&  died  >= 1900 && died  <= 2000 ){
+                return g.years;
+      }
+   });
+  
+  return newA;
+  }
+console.log('filter function');
+
+  let newFilter20s = get20sWithFilter(1901,1999);
+  console.log(newFilter20s[0]);
+
