@@ -275,7 +275,14 @@ function get20s(data) {
 
 
 function removeArtist(array, index) {
-    delete array[index];
+    let removed = [];
+    for ( i = 0; i < array.length; i++) {
+      if (array[i].id === index) {
+      removed.push(array[i].name)
+      array.splice(index, 1)
+      } 
+  } 
+    return `${removed} will be taken from array: ${array.length}`
   }
   
  console.log(removeArtist(artists, 19));
@@ -288,7 +295,8 @@ function removeArtist(array, index) {
 
 
 
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. 
+Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 20,
@@ -301,16 +309,21 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(name, years, genre, nationality, bio) {
-  newArray = [
-    'name',
-    'years',
-    'genre',
-    'nationality',
-    'bio'
-  ]
+  let newId = artists.length + 1;
+  let newArtist = {
+    id: newId,
+    name,
+    years,
+    genre,
+    nationality,
+    bio
+  }
+  artists.push(newArtist);
+  return newArtist;
   
 }
-
+console.log(addArtist('Michael Angelo', 1564- 1475, 'Sculptur', 'Italian', '141' ))
+console.log(addArtist('Kevin', 2020 - 1996, 'Producer', 'Mexican', '8'))
 
 
 
