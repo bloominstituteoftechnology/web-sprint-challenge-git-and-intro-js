@@ -102,12 +102,24 @@ p,
 .bio {
   font-family: "Raleway", sans-serif;
   text-align: center;
+  font-size: 17.5px;
   margin: 4%;
 }
+
+.bioOne {
+  font-size: 1.8rem;
+  padding: 1em;
+}
+
 h1 {
   font-size: 6rem;
   margin: 0;
 }
+
+.homeButton {
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -143,14 +155,16 @@ nav {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 nav a {
   color: #626262;
+  margin: 2%;
 }
 nav span {
   border-left: 3px solid #626262;
 }
+
 /*Title Section Styles*/
 .title-container {
   display: flex;
@@ -205,5 +219,58 @@ button:hover {
   width: 100%;
 }
 
+body {
+}
+
 @media only screen and (max-width: 500px) {
+  nav {
+    /* width: 10%; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+  }
+  nav a {
+    padding: 3%;
+    font-size: 25px;
+    padding-right: 10%;
+  }
+  nav span {
+    border-left: 2px solid #626262;
+    padding: 3%;
+    height: 50%;
+    margin: auto;
+  }
+
+  .artists-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .artist {
+    width: auto;
+    text-align: center;
+  }
+
+  .artist img {
+    width: 250px;
+    height: 250px;
+    padding: auto;
+  }
+  .artist a {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12.2px;
+    margin-bottom: 5em;
+    text-align: center;
+  }
+  .title-container div {
+    width: 100%;
+    height: 30rem;
+  }
+  h1 {
+    font-size: 40px;
+  }
 }
