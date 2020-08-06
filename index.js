@@ -254,10 +254,14 @@ console.log(getArtistByIndex(artists, 19));
 example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(data) {
-
-  
-
+  let yearsActive = [];
+  for (i = 0; i < data.length; i++)
+  if (data.years >= 1900 || data.years <= 2000) {
+    yearsActive.push(data.years)
+  } return yearsActive
 }
+
+console.log(get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
