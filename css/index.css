@@ -213,25 +213,17 @@ button:hover{
 
 @media (max-width:500px){
 .artist-container{
-    flex-direction: column;
-    flex-wrap:wrap;
-    justify-content: center;
-    justify-content:space-around;
-    align-items: center;
-    height:70vh;
-    margin:20% 20%;
+      justify-content:center;
+      flex-direction:column;
+      flex-wrap:wrap;
+      width:100%;
   }
 
 @media (max-width:500px){
-
 .artist{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    height:15vh;
-    width:50%;
-    margin:20% 20%;
-    padding:10% 10%;
+    text-align:center;
+    width:100%;
+    margin:1% 1%;
+    padding:1% 1%;
 }
     }
