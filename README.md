@@ -59,7 +59,7 @@ Follow these steps to set up your project:
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
 * [x] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
