@@ -213,17 +213,19 @@ button:hover{
 
 @media (max-width:500px){
 .artist-container{
-      justify-content:center;
-      flex-direction:column;
-      flex-wrap:wrap;
-      width:100%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:20%;
   }
 
 @media (max-width:500px){
 .artist{
     text-align:center;
+    height:2vh;
     width:100%;
     margin:1% 1%;
     padding:1% 1%;
 }
+    }
     }
