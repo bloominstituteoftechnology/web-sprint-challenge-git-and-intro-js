@@ -120,3 +120,64 @@ button:hover{
     box-shadow: 2px 2px 1px white;
 }
 /*Artists Section Styles */
+.artists-container{
+    display:flex;
+    justify-content: space-around;
+    width:80%;
+    margin:0 auto;
+}
+
+.artist{
+    width:40%;
+    text-align:center;
+}
+.artist img{
+    width:100%;
+}
+/* Media Queries */
+@media (max-width: 500px ){
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        margin: 0 1em;
+        font-size: 1.7rem;
+    }
+    
+    .title-container div{
+        height: 30rem;
+        width: 100%;
+    }
+
+    .title-container hr {
+        width: 100%;
+        margin: 0
+    }
+
+    section.artists-container {
+        margin: 2rem auto;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .artist img {
+        height: 20rem;
+        margin-left: 5rem;
+    }
+
+    div.artist {
+        width: 30rem;
+    }
+
+    div.bio {
+        font-size: 1.3rem;
+        width: 40rem;
+    }
+
+    .artist a{
+        width: 80%;
+        height: 25%;
+        font-size: 1.8rem;
+        margin: 10%;
+    }
+
+}
