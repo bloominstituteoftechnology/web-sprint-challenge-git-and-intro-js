@@ -239,13 +239,14 @@ example born in 1901 and died in 1959 - included / born in 1889 and died in 1925
 
 function get20s(arr){
   const artistArr = [];
-  for( i = 0; i < arr.length; i++){
-if (arr[i].years >1899 && arr[i].years <2001){
+  for(let i = 0; i < arr.length; i++){
+if (arr[i].years >= ['1900-2000']){
  artistArr.push(arr[i].name);
 }
 }
 return(artistArr);
 }
+
 console.log(get20s(artists));
 
   
