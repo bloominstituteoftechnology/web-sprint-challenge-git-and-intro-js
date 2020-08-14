@@ -1,0 +1,8 @@
+1. How would you describe acessibility on the web to someone new to programming?
+This is the practice of making your semantic html code more accessible for the vision impaired by making it more descriptive and logical. An example is always labeling your div containers with meaningful names and adding alt texts to your images that fully describe what they are.
+2. Talk about 3 different things you can do to ensure your website is accessible. 
+    In addition to the two examples above you can also add hidden text in the header of your html file that a screen reader will read out loud that can direct the person to a link which will take them to another part of the website faster, as I've included in my html today.
+3. How would you explain the concept of a variable to someone new to programming?
+    A variable in programming functions the same as a variable in math, meaning that it is an entirely manipulatable container for information. What distinguishes it in programming is that it can be both re-assigned and changed.
+4. What is the purpose of using functions in code?
+    A function allows us developers to repeat sections of code using only one line for much more efficiency in building software. This also allows us to build in mathematical principles for greater control.
