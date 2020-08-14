@@ -292,7 +292,7 @@ function lotsOfArt(/* Code here */){
 // 🎨🎨 STRETCH 🎨🎨//
 
 
-/* STRETCH 1: Programtically console.log HTML element structure.
+/* STRETCH 1: Programmatically console.log HTML element structure.
 
 In HTML, every artist and associated content uses the following structure: 
 
