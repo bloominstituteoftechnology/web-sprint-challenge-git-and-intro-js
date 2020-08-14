@@ -28,6 +28,11 @@ body{
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
 }
+@media (max-width:500px){
+    h1{
+      font-size:1rem;
+    }
+  }
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
     text-align: center;	
@@ -37,6 +42,12 @@ h1{
     font-size:6rem;
     margin:0;
 }
+@media (max-width:500px){
+    h1{
+      font-size:3rem;
+    }
+  }
+
 a {	
     text-decoration: none;	
     color: black;
@@ -61,7 +72,14 @@ img {
 }	
 img:hover {	
     opacity: 80%;	
-}	
+}
+
+@media (max-width:500px){
+    img{
+      width:70%;
+      height:19rem;
+      display:flex;
+    }
 
 /*HEADER STYLES */
 header{
@@ -81,6 +99,13 @@ nav span{
     border-left:3px solid #626262;
 
 }
+
+@media (max-width:500px){
+    nav {
+      width:10%;
+      display:flex;
+    }
+
 /*Title Section Styles*/
 .title-container{
     display:flex;
@@ -119,6 +144,14 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
+
+@media (max-width:500px){
+    .title-container{
+      justify-content:center;
+      flex-direction:column;
+      flex-wrap:nowrap;
+      width:100%;
+    }
 /*Artists Section Styles */
 .artists-container{
     display:flex;
@@ -134,3 +167,12 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media (max-width:500px){
+    .artists-container{
+      justify-content:center;
+      flex-direction:column;
+      flex-wrap:nowrap;
+      width:50%;
+    }
+  }
