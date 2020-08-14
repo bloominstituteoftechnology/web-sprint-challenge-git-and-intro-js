@@ -337,17 +337,30 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(artist, number) {
-  /* Code here */
-}
+//function getHTML(artist, number) {
+//for(5 in artist){
+//return += artist[5] + "HTML"  !!!I tried this but it's too advanced!!!
+//}
+//}
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/*array*/) {
-  /* Code here */
+function randomize(artists) {
+  array.randomize(() => Math.random() - 0.75);
 }
+let array = [1, 2, 3, 4, 5];
+randomize(array);
+alert(array);
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 //const artists = [...];
 //const results = years.filter(years >= 1900 && <= 2000);
 //console.log(results);
+
+var century = [19 || 20];
+
+function checkYear(century) {
+  return century >= 19 && century <= 20;
+}
+console.log(checkYear);
+//I tried...I don't quite understand how the syntax is supposed to work//
