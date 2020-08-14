@@ -227,9 +227,9 @@ const artists = [
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
-console.log(artists.name[0]);
+console.log(artists[0].name);
 
-console.log(artists.bio[2]);
+console.log(artists[2].bio);
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 function changeName(array, index, name) {
@@ -247,7 +247,8 @@ console.log(changeName(artists, 9, "Vincent Van Gogh"));
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
 function getArtistByIndex(array, index) {
-  return `The artist at index ${artists[3].index} is ${artists[3].name}`;
+  //console.log(array[index]);
+  return `The artist at index ${index} is ${array[index].name}`;
 }
 console.log(getArtistByIndex(artists, 3));
 
@@ -272,10 +273,11 @@ function get20s(birthDeath) {
  *
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
  */
-function removeArtist(array, num1) {
-  let removeArtist = artists.splice(start[(artists, 1)]);
+function removeArtist(array, index) {
+   array.splice(index, 1);
+   return array;
 }
-console.log(removeArtist);
+console.log(removeArtist(artists, 3));
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -290,17 +292,17 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(array, name, year, genre, nationality, bio) {
-  artists.push({
-    name: "Samantha Dutcher",
-    years: 1986 - 2020,
-    genre: "Web Design",
-    nationality: "Italian",
-    bio: "Single mom on the come-up in life!",
-  });
+function addArtist(object) {
+  artists.push(object);
   return artists;
 }
-
+console.log(addArtist){
+      name: "Samantha Dutcher",
+      years: "1986 - 2020",
+      genre: "Web Design",
+      nationality: "Italian",
+      bio: "Single mom on the come-up in life!",
+    };
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
