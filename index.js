@@ -200,6 +200,7 @@ const artists = [
       "paintings": 328
     }
 ]
+console.log(array0)
 
 // 🖌🖼 M V P 🖼🖌 //
 
@@ -223,7 +224,10 @@ const artists = [
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+      for(let i = 0; i < arr.length; i++){
+        console.log( arr[i] );
+       }
+     }
   }
   
   /**
