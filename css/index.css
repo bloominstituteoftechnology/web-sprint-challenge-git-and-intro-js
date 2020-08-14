@@ -149,7 +149,4 @@ button:hover{
  section {
      display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-
-    
-  
+        flex-direction: column;}
