@@ -274,8 +274,8 @@ function get20s(birthDeath) {
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.
  */
 function removeArtist(array, index) {
-   array.splice(index, 1);
-   return array;
+  array.splice(index, 1);
+  return array;
 }
 console.log(removeArtist(artists, 3));
 
@@ -296,13 +296,30 @@ function addArtist(object) {
   artists.push(object);
   return artists;
 }
-console.log(addArtist){
-      name: "Samantha Dutcher",
-      years: "1986 - 2020",
-      genre: "Web Design",
-      nationality: "Italian",
-      bio: "Single mom on the come-up in life!",
-    };
+console.log(
+  addArtist({
+    name: "Samantha Dutcher",
+    years: "1986 - 2020",
+    genre: "Web Design",
+    nationality: "Italian",
+    bio: "Single mom on the come-up in life!",
+  })
+);
+
+// {
+// name: "Samantha Dutcher",
+// years: "1986 - 2020",
+// genre: "Web Design",
+//   nationality: "Italian",
+//   bio: "Single mom on the come-up in life!",
+// };
+
+//Creating function
+function fruit(type) {
+  console.log(`You gave me ${type}`);
+}
+fruit(`Grapes`); //Invoking function
+
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -311,11 +328,28 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(artists, length) {
-  if (length >= 100);
-  return array;
+// function lotsOfArt(artists, length) {
+//   if (length >= 100);
+//   return array;
+// }
+// console.log(lotsOfArt);
+
+//Step 1 - Create a function called lotsOfArt
+//Step 2 - function takes 1 argument - artists array
+//Step 3 - Returns an array
+//Step 4 - Array contains names of artists that painted more than 100 paintings
+
+function lotsOfArt(array) {
+  let newArtist = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100) {
+      newArtist.push(array[i].name);
+    }
+  }
+  //console.log(newArtist);
+  return newArtist;
 }
-console.log(lotsOfArt);
+console.log(lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
@@ -347,12 +381,18 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(artists) {
-  array.randomize(() => Math.random() - 0.75);
+function randomize(array) {
+  array.sort(() => Math.random() - 0.75);
+  return array;
 }
-let array = [1, 2, 3, 4, 5];
-randomize(array);
-alert(array);
+let numbers = [1, 2, 3, 4, 5];
+randomize(numbers);
+//alert(numbers);
+console.log(randomize(numbers));
+
+//function randomize(array) {
+
+//}
 
 /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 //const artists = [...];
