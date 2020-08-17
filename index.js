@@ -225,25 +225,28 @@ console.log(artists[8].name);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    return `The artist at index ${artists.index} is ${array[index].name}`
+    return `The artist at index ${index} is ${array[index].name}`
   }
   
  
-
+console.log(getArtistByIndex(artists, 0));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, birthDate, deathDate){
+function get20s(array, birthDate=1900, deathDate=2000){
   let artistGen20 = [];
-  for(let i=0; i>artists.length; i++){
-    if(artists[i].years.split(' - ')[0]>= birthDate){
-      if(artists[i].years.split(' - ')[1]<=deathDate){
-        return artistGen20.push(artists[i].name);
+  for(let i=0; i<artists.length; i++){
+    if(artists[i].years.split(' - ')[0] >= birthDate){
+      if(artists[i].years.split(' - ')[1] < deathDate){
+        artistGen20.push(artists[i].name);
       }
     }
   }
   return artistGen20;
 }
+
+console.log(get20s(artists));
+
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -261,30 +264,22 @@ function removeArtist(arr, index) {
     console.log(arr.length);
   }
   
- 
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+ removeArtist(artists, 0);
 
-For example, you could add the following information: 
-id: 20,
-name: Your Name Here, 
-years: Your Birth Year - current day,
-genre: Web Design, 
-nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) 
-
-At the end, this function should return the new array with information added"*/
-
-function addArtist(arr, id, name, years, genre, nationality, bio){
+function addArtist(arr, name, years, genre, nationality, bio){
   arr.push({
-    id: id,
-    name: name,
-    years: years,
-    genre: genre,
-    nationality: nationality,
-    bio: bio,
+      id: artists.length,
+      name: name,
+      years: years,
+      genre: genre,
+      nationality: nationality,
+      bio: bio,
   });
   return arr
-  }
+}
+
+console.log(addArtist(artists,'Prince Buduru', '1995 - 2090', 'Web Dev','Indian', 'Lorem Ipsum'));
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
