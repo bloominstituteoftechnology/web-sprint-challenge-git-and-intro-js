@@ -134,3 +134,4 @@ button:hover{
 .artist img{
     width:100%;
 }
+@media andscreen(max-width:500px;){.img padding:5%;}
