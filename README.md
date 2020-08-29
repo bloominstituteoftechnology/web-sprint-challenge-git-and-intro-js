@@ -23,11 +23,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+Accessibility is essential for developers and organizations that want to create high quality websites and web tools, and not exclude people with a diverse range of hearing, movement, sight, and cognitive ability from using their products and services.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+placing alt tags inside img tags for visually impaired.
+making website accessible without a mouse and strictly with a keyboard for those people who have movement impairments.
+providing transcripts for audio for hearing impaired.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Variables are containers for storing data values.
+
 4. What is the purpose of using functions in code?
 
-You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+A function allows you to define a block of code, give it a name and then execute it as many times as you want.
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions
 
@@ -55,7 +68,7 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)  
+* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)
 * [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
 * [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
 

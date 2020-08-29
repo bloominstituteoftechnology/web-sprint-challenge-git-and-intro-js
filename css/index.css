@@ -1,23 +1,23 @@
 /*CSS RESET*/
-html, body, div, span, applet, object, iframe,  
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
-a, abbr, acronym, address, big, cite, code,  
-del, dfn, em, img, ins, kbd, q, s, samp,  
-small, strike, strong, sub, sup, tt, var,  
-b, u, i, center,  
-dl, dt, dd, ol, ul, li,  
-fieldset, form, label, legend,  
-table, caption, tbody, tfoot, thead, tr, th, td,  
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary,  
-time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-border: 0;  
-font-size: 100%;  
-font: inherit;  
-vertical-align: baseline;  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /*GENERAL STYLES*/
 html{
@@ -26,42 +26,42 @@ html{
 body{
     font-size:1.6rem;
     line-height: 1.5;
-    font-family: 'Raleway', sans-serif;	
+    font-family: 'Raleway', sans-serif;
 }
-h1, p, .name, .bio {	
-    font-family: 'Raleway', sans-serif;	
-    text-align: center;	
-    margin: 4%;	
-}	
+h1, p, .name, .bio {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 4%;
+}
 h1{
     font-size:6rem;
     margin:0;
 }
-a {	
-    text-decoration: none;	
+a {
+    text-decoration: none;
     color: black;
-    font-size:2.5rem;	
-}	
-a:hover {	
-    font-weight: bold;	
-}	
-.name{	
-    font-size: 150%;	
-    font-weight: 200;	
-}	
-img {	
-    height:39rem;	
-    object-fit: cover;	
-    display: block;	
-    margin: 2%;	
-    margin-top: 4%;	
-    margin-left: auto;	
-    margin-right: auto;	
-    border-radius: 2%;	
-}	
-img:hover {	
-    opacity: 80%;	
-}	
+    font-size:2.5rem;
+}
+a:hover {
+    font-weight: bold;
+}
+.name{
+    font-size: 150%;
+    font-weight: 200;
+}
+img {
+    height:39rem;
+    object-fit: cover;
+    display: block;
+    margin: 2%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+img:hover {
+    opacity: 80%;
+}
 
 /*HEADER STYLES */
 header{
@@ -87,10 +87,10 @@ nav span{
     flex-wrap: wrap;
     justify-content: center;
 }
-.title-container div {	
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
-    background-position: center;	
-    color: white;	
+.title-container div {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');
+    background-position: center;
+    color: white;
     width:80%;
     display:flex;
     flex-direction: column;
@@ -98,10 +98,10 @@ nav span{
     align-items: center;
     height:60vh;
     margin:5% 0;
-}	
-.title-container div:hover {	
-    opacity: 80%;	
-}	
+}
+.title-container div:hover {
+    opacity: 80%;
+}
 .title-container hr{
     width:80%;
 }
@@ -133,4 +133,44 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+@media(max-width: 500px){
+    a{
+        font-size: 3vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    nav span{
+        border-left: 2px solid #626262;
+    }
+    .artists-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .artist img {
+        width: inherit;
+        height: inherit;
+    }
+    .artist {
+        width: 70%;
+        font-size: 1vw;
+
+    }
+    .title-container div{
+
+        height: 35vh;
+        margin-bottom: .5rem;
+
+    }
+    h1{
+        font-size: 7vw;
+        line-height: 1;
+        margin-top: 3rem;
+    }
+    button{
+        font-size: 4vw;
+        margin-top: .5rem;
+    }
 }
