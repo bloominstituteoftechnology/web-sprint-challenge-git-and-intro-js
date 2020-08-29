@@ -234,7 +234,7 @@ console.log(artists[2].bio);
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[8].name = "Vincent Van Gogh";
-console.log(artists[8]);
+console.log(artists[8].name);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -259,19 +259,32 @@ getArtistByIndex(artists, 0);
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 //come back to this
-function get20s(array) {
-  const newArray = new Array();
-  for (var i = 0, len = array.length; i < len; i++) {
-    if (array[i].years > 1900);
-    {
-      console.log(array[i].years);
-      newArray.push(array[i].name);
-    }
-  }
-  return newArray;
-}
+// function get20s(array) {
+//   let newArray = new Array();
+//   let compareArray = new Array();
+//   for (var i = 0, len = array.length; i < len; i++) {
+//     compareArray.push(array[i].years.substr(0, 4));
+//   }
+//   for (var j = 0; j < compareArray.length; j++) {
+//     if (compareArray[j] > 1990) {
+//       [newArray].push.call(array[j].name);
+//     }
+//   }
+//   return newArray;
+// }
 
+// get20s(artists);
+
+//OR
+
+function get20s(array) {
+  const res = array
+    .filter(({ years }) => +years.slice(0, 4) > 1900)
+    .map(({ name }) => name);
+  console.log(res);
+}
 get20s(artists);
+
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -313,7 +326,7 @@ function addArtist(
   newPaintings
 ) {
   const new1 = new Object();
-  new1.id = array.length + 1;
+  new1.id = array.length;
   new1.name = newName;
   new1.years = newYears;
   new1.genre = newGenre;
@@ -347,6 +360,7 @@ function lotsOfArt(array) {
   for (var i = 0, len = array.length; i < len; i++) {
     if (array[i].paintings > 100) {
       filtered.push(array[i].name);
+      console.log(array[i].paintings);
     }
   }
   return filtered;
