@@ -75,3 +75,16 @@ Follow these steps for completing your project.
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master
+
+
+
+/*1. How would you describe acessibility on the web to someone new to programming?
+Accessibility is essential for developers and organizations that want to create high quality websites and web tools, and not exclude people with a diverse range of hearing, movement, sight, and cognitive ability from using their products and services.
+2. Talk about 3 different things you can do to ensure your website is accessible.
+placing alt tags inside img tags for visually impaired.
+making website accessible without a mouse and strictly with a keyboard for those people who have movement impairments.
+providing transcripts for audio for hearing impaired.
+3. How would you explain the concept of a variable to someone new to programming?
+Variables are containers for storing data values.
+4. What is the purpose of using functions in code?
+A function allows you to define a block of code, give it a name and then execute it as many times as you want.*/
