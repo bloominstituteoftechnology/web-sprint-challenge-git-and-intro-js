@@ -301,12 +301,12 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(array, Id, Name, Years, Genre, Nationality, Bio,){
+array.push({Id, Name, Years, Genre, Nationality, Bio,});
+return array; 
+}
 
-    /* Code here */
-
-  }
-
+console.log(addArtist(artists, '21', 'LeeFormento','November-present', '2000s Hop-hop RNB', 'USA', 'Lee Formento is originally from the Philippines')) ;
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
