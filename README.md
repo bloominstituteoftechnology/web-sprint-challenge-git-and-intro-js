@@ -30,8 +30,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
  
  You can add a media query to ensure it fits on all screen sizes.
  In your styling you can add alternate values for things like pictures or fonts just in case the browser the user is using doesnt support it. 
- 
- You can also 
+  You can also add text readers to aid those who are visually or hearing impaired
 
 
 3. How would you explain the concept of a variable to someone new to programming?
