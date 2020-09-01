@@ -134,3 +134,57 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media (max-width: 500px) {
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: bold;
+      line-height: 1;
+      padding-bottom: 0.5rem;
+    }
+    a {
+      font-size: 1.5rem;
+    }
+  
+    nav span {
+      margin: 0 5%;
+      border: 1px solid #626262;
+    }
+    .title-container div {
+      background-position: center;
+      width: 120%;
+      height: 55vh;
+      margin: 2% 0;
+    }
+  
+    .title-container hr {
+      width: 100%;
+    }
+    button {
+      margin-top: 2%;
+    }
+  
+    .artists-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      margin: 5% 0 10% 0;
+    }
+  
+    .bio {
+      font-family: "Raleway", sans-serif;
+      justify-content: center;
+      margin: 8%;
+      font-size: 1rem;
+    }
+    .artist {
+      width: 45%;
+    }
+    .artist img {
+      height: 50%;
+    }
+  }
+  
