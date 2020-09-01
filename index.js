@@ -271,10 +271,11 @@ console.log(get20s(artists));
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(artists) {
+    artists.splice(artists.length - 1,1)
   }
-  
+  removeArtist(artists);
+  console.log(artists.length);
  
 
 /**
@@ -290,10 +291,23 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(addObj){
+artists.splice(0, 0, addObj)
 
-    /* Code here */
+  return artists;
+}
 
+var o = new object();
+o.id = 20,
+o.name = Laiken Frost
+o.years = 1995-2020,
+o.genre = Web Design,
+o.nationality = White,
+o.bio = Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+
+alist = addArtist(o);
+console.log(alist);
   }
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
