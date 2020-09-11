@@ -207,8 +207,8 @@ const artists = [
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
-console.log(artists[0].name, ":", artists[2].bio); 
-
+console.log(artists[0].name); 
+console.log(artists[2].bio);
 
 
 
@@ -242,8 +242,8 @@ function get20s(array){
     let yearsArr = array[i].years.split(" ");
     if(yearsArr[0] >= 1900 && yearsArr[2] <= 2000){
       the20s.push(array[i].name);
-    }
-  }
+    };
+  };
 return the20s;
 }
 
@@ -264,7 +264,7 @@ function removeArtist(array, index) {
     console.log(array.length);
   }
 
-// removeArtist(artists, 0);
+removeArtist(artists, 0);
 
 
  

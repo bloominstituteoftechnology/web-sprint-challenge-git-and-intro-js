@@ -139,18 +139,23 @@ button:hover{
 @media (max-width: 500px) {
     nav{
         width:45%;
-        margin-bottom: 4%
+        margin-bottom: 4%; 
     }
 
     nav a{
         font-size: 1.6rem;
+    }
+
+    nav span{
+        border-left:2px solid #626262;
+        margin: 1% 0;
     }
     /* Check Side Borders */
 
     .title-container div {	
         background-size: 225%;	
         width:100%;
-        height: 40vh;
+        height: 50vh;
         margin: 2% auto;
     }	
 
@@ -161,7 +166,10 @@ button:hover{
     .title-container hr{
         width:100%;
     }
-    /* Check Button  */
+    
+    button {
+        border-radius: 3px;
+    }
     .artists-container{
         display:flex;
         flex-flow: column nowrap; 
@@ -174,13 +182,13 @@ button:hover{
     }
 
     .artist img {
-        width: 90%;
+        width: 70%;
         height: 50%;
         margin-bottom: 4%;
     }
 
     .artist a {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .bio {
