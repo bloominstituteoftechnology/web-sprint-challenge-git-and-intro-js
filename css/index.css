@@ -36,7 +36,7 @@ h1, p, .name, .bio {
 h1{
     font-size:6rem;
     margin:0;
-    color: red;
+    
 }
 a {	
     text-decoration: none;	
@@ -136,6 +136,13 @@ button:hover{
 .artist img{
     width:100%;
 }
+@media (max-width: 500px) {
+    .title-container{
+        width: 100%;
+        
+    }
+    
+}
 
 
 @media (max-width: 500px ) {
@@ -172,8 +179,14 @@ button:hover{
 }
 @media (max-width: 500px ) {
       .artist img {
-      height: 25vh;
+      height: 20vh;
        width: 35vw;
     }
+}
+@media (min-width: 600px ) {
+    .artist img {
+     height: 30vh;
+     width: 35vw;
+  }
 }
     
