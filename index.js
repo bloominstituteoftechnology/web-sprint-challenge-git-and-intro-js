@@ -384,8 +384,7 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 function getHTML(/* Code here */){
 
-    /* Code here */
-
+   .
   }
 
 
