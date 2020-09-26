@@ -156,7 +156,6 @@ button:hover{
     }
 
     .title-container div {
-        border: 3px solid red;
         background-size: 270% 210%;
         width: 100%;
         height: 30vh;
@@ -175,15 +174,12 @@ button:hover{
     }
 
     .artists-container {
-        border: 1px solid red;
         flex-direction: column;
         align-items: center;
         padding-bottom: 100px
     }
 
     .artist {
-
-        border: 1px solid blue;
         width: 80%;
         margin: 20px;
     }
@@ -193,18 +189,15 @@ button:hover{
     }
 
     img {
-        border: 1px solid green;
         height: 100%;
         margin-bottom: 15px;
     }
 
     a {
-        border: 1px solid yellow;
         font-size: 1.5rem;
     }
 
     .bio {
-        border: 1px solid black;
         font-size: 1rem;
         line-height: normal;
         margin: 0px;
