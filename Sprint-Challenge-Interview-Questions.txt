@@ -1,0 +1,17 @@
+INTERVIEW QUESTIONS SPRINT CHALLENGE
+
+1.  How would you describe acessibility on the web to someone new to programming?
+
+Accessibility is basically allowing people who are using different devices or who have impairments to more easily access your content.
+
+2.  Talk about 3 different things you can do to ensure your website is accessible.
+
+You can create break points to modify the site to better fit different screen sizes. You can also create screen readers for the visually impaired, or even adding alternative text to pictures that won't load due to to a slow internet connection that describes the image.
+
+3.  How would you explain the concept of a variable to someone new to programming?
+
+A variable is just a place holder that holds a value like a number or a word. Think of basic math. In algebra we learn how to solve for "x". x = 2 + 2. So x = 4. Same concept, just expanded a bit.
+
+4.  What is the purpose of using functions in code?
+
+The purpose of functions is to make changes or execute tasks when invoked. You can do things like edit lists, calculate equations, and create objects.
