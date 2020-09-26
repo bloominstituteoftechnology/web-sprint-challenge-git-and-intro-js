@@ -208,11 +208,15 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
+console.log(artists[0]);
+console.log(artists[2]);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+artists[8].name = "Vincent Van Gogh"
 
+console.log(artists[8]);
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -222,9 +226,13 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(array, index) {
-    /* code here */
-  }
+
+function getArtistsByIndex(artists, index[0]);
+
+console.log(getArtistsByIndex(`The artist at index ${id} is ${name}`))
+
+
+  
   
   /**
 
@@ -267,11 +275,18 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+artists.push(
+  {id: 20,
+  name: "Justin Jones",
+  years: "1994 - Present",
+  genre: "Web Design",
+  nationality: "American",
+  bio: "lorem ipsum"}
+  )
 
-    /* Code here */
+console.log(artists[20]);
 
-  }
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
