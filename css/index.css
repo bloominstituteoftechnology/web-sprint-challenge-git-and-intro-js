@@ -128,9 +128,80 @@ button:hover{
 }
 
 .artist{
-    width:40%;
+    width:35%;
     text-align:center;
 }
 .artist img{
     width:100%;
 }
+
+
+
+@media screen and (max-width: 500px) {
+
+    body{
+        font-size:1rem;
+        line-height: 1;
+        font-family: 'Raleway', sans-serif;	
+    }
+
+    nav{
+        width:50%;
+        display:flex;
+        justify-content:space-evenly;
+        margin:5%;
+    }
+
+    a {	
+        text-decoration: none;	
+        color: black;
+        font-size:1.5rem;	
+    }
+
+
+    .title-container div {	
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
+        background-position: absolute;	
+        color: white;	
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:50vh;
+        margin:2% 0;
+        font-size: 40%;
+        
+    }
+      
+
+    .title-container hr{
+        width:100%;
+    }
+
+    .artists-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width:55%;
+        margin:0 auto;
+    }
+
+    .artist{
+        width:95%;
+        text-align:center;
+        margin:4%;
+    }
+
+    .artist img{
+        object-fit: contain;
+        width: 70%;
+        height: 50%;
+    }
+
+   
+
+
+}
+
+   
