@@ -38,7 +38,9 @@ body{
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
     text-align: center;	
-    margin: 4%;	
+    margin: 4%;
+    font-size: 14px;	
+    font-weight: bold;
 }	
 
 
@@ -94,14 +96,18 @@ header{
     justify-content: center;
 }
 nav{
-    width:30%;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;
     margin-top:5%;
 }
+
 nav a{
     color:#626262;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+
 nav span{
     border-left:3px solid #626262;
 
