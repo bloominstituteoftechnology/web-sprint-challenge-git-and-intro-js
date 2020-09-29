@@ -1,0 +1,29 @@
+1. How would you describe acessibility on the web to someone new to programming?
+
+Accesibility on the web refers to easy-access tools to allow people who are impaired in the following 
+navigate your page easily:
+
+1) impaired sight
+2) impaired hearing
+
+(People with hearing or sight impairments are likely to use different devices that further allow them to see or hear content on the page easily)
+
+
+
+2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+1) Screen Readers
+2) Adding alternative ways to read / hear content
+3) Use breakpoints to allow your content to fit different devices so they may be able to see the content easily
+
+
+3. How would you explain the concept of a variable to someone new to programming?
+
+The best way I could explain the concept of a variable to someone new would explain it like a simple algebra or math equation.
+A variable is another way to hold a value of a word or even a number. Also, because it is a variable, it may change due to What
+content you are trying to use.  
+
+
+4. What is the purpose of using functions in code?
+
+The purpose of using functions in code would be to set up a way to execute or start an action, or task.
