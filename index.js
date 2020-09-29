@@ -300,7 +300,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(array, index) {
   const ofArt = [];
-  for(let i = 0; i < array.lenght; itt){
+  for(let i = 0; i < array.lenght; i++){
     if (array[i].paintings >= 100){
       ofArt.push(array[i])
     }
@@ -343,11 +343,22 @@ function getHTML(/* Code here */){
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
-
-    /* Code here */
-
+function randomize(arr){
+  let i = 0;
+  let o = 0;
+  let u = 0;
+  for(i = artists.lenght - 1; i > 0; i--) {
+    o = Math.floor(Math.random() * (i + 1));
+    u = Math.floor(Math.random() * (i + 1));
+    let temp = artists[i];
+    artists[i] = artists[o];
+    artists[o] = temp;
+    artists[i] = artists[u];
+    artists[u] = temp;
+    }
+    return(artists);
   }
+  console.log(randomize(artists));
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
