@@ -19,36 +19,56 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+
+
+
+
+
+
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
 }
+
 body{
-    font-size:1.6rem;
-    line-height: 1.5;
-    font-family: 'Raleway', sans-serif;	
+    font-size: 31%;
+    line-height: 1.5;	
 }
+
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
     text-align: center;	
     margin: 4%;	
 }	
+
+
 h1{
-    font-size:6rem;
+    font-size: 6rem;
     margin:0;
 }
+
+
+
 a {	
     text-decoration: none;	
     color: black;
     font-size:2.5rem;	
 }	
+
+
+
 a:hover {	
-    font-weight: bold;	
+    font-weight: semi-bold;	
 }	
+
+
+
 .name{	
     font-size: 150%;	
     font-weight: 200;	
 }	
+
+
 img {	
     height:39rem;	
     object-fit: cover;	
@@ -59,9 +79,14 @@ img {
     margin-right: auto;	
     border-radius: 2%;	
 }	
+
+
 img:hover {	
     opacity: 80%;	
 }	
+
+
+
 
 /*HEADER STYLES */
 header{
@@ -81,7 +106,11 @@ nav span{
     border-left:3px solid #626262;
 
 }
+
+
+
 /*Title Section Styles*/
+
 .title-container{
     display:flex;
     flex-wrap: wrap;
@@ -99,12 +128,18 @@ nav span{
     height:60vh;
     margin:5% 0;
 }	
+
+
 .title-container div:hover {	
     opacity: 80%;	
 }	
+
+
 .title-container hr{
     width:80%;
 }
+
+
 button{
     padding:1% 3%;
     font-size: 1.6rem;
@@ -113,13 +148,19 @@ button{
     box-shadow: 2px 2px 1px #626262;
     transition: 2s;
 }
+
+
 button:hover{
     background-color:#626262;
     border:2px solid white;
     color:white;
     box-shadow: 2px 2px 1px white;
 }
+
+
+
 /*Artists Section Styles */
+
 .artists-container{
     display:flex;
     justify-content: space-around;
@@ -133,4 +174,107 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+
+/* MEDIA TAGS GO HERE */
+
+
+@media (max-width: 500px){
+   
+   
+    h1{
+        font-size: 5rem;
+        margin: 2%;
+        line-height: 1.2;
+    }
+
+    nav{
+        width: 55%;
+    }
+    
+    
+    nav a:first-child{
+        font-weight: lighter;
+    }
+    
+    
+    .title-container div {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    
+    .artists-container{
+        flex-direction: column;
+        width:80%;
+    }
+    
+    
+    .artist{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    
+    
+    .artist img{
+        height: 20vh;
+        width: 70%;
+    }
+    
+    
+    .artist a{
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+@media (max-width: 800px){
+    h1{
+        font-size: 8em;
+        margin: 2%;
+        line-height: 1.2;
+    }
+
+    nav{
+        width: 72%;
+    }
+    
+    
+    nav a:first-child{
+        font-weight: lighter;
+    }
+    
+    
+    .title-container div {
+        width: 80%;
+        height: 50vh;
+    }
+    
+    
+    .artists-container{
+        flex-direction: column;
+        width:80%;
+    }
+    
+    
+    .artist{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+    
+    
+    .artist img{
+        height: 30vh;
+        width: 70%;
+    }
+    
+    
+    .artist a{
+        font-size: 1.5rem;
+    }
 }
