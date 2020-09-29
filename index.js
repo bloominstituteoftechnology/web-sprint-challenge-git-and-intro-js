@@ -221,8 +221,8 @@ console.log(artists[2].bio);
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. 
 Use an array method to fix this issue and console.log() to check your work. */
 
-artists[9.name] = 'Vincent Van Gogh'
-console.log(artists[9].name);
+artists[8].name = 'Vincent Van Gogh'
+console.log(artists[8].name);
 
 
 /*---------------------------------------TASK 3-----------------------------------------------*/
@@ -237,20 +237,49 @@ console.log(artists[9].name);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    
-  }
+  return 'The artist at index' + index + ' ' + 'is' + ' ' + array[index].name + '.';
+}
+
+console.log(getArtistByIndex(artists, 0));
   
 /*---------------------------------------TASK 4-----------------------------------------------*/
 
 
 
-/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
+/* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists 
+who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born 
+in 1889 and died in 1925 not included - 
+should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
 
-  /* Code here */
+function get20s(data){
 
-}
+  let artistArray = []
+  
+  for (i in data) {
+  
+    artist = data[i]
+  
+    years = artist.years.split(` - `)
+  
+    birth = parseInt(years[0])
+  
+    death = parseInt(years[1])
+  
+    if (birth >= 1900 && death <= 1999) {
+  
+      artistArray.push(artist.name);
+  
+    }
+  
+  }
+  
+  return artistArray;
+  
+  }
+  console.log(get20s(artists));
+
+
 
 
 
@@ -268,15 +297,24 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
+
+function removeArtist(array, index) {
+
+  array.splice(index, 1)
   
+  return array.length
+  
+  }
+  console.log(removeArtist(artists, 1))
+  console.log(artists)
+
+
  
 
 /*---------------------------------------TASK 6-----------------------------------------------*/
 
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to
+ the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
 For example, you could add the following information: 
 id: 20,
@@ -288,11 +326,23 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(array, id, name, years, genre, nationality, bio){
 
-    /* Code here */
-
+  array.push(
+    {
+    id,
+    name,
+    years,
+    genre,
+    nationality,
+    bio
+    }
+  )
+  
   }
+  addArtist(artists,artists.length+1, `Samantha`, `1994 - ??`, `Abstract`, 'American', 'Consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.')
+
+  console.log(artists[20]);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -302,9 +352,8 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
+function lotsOfArt(artistArr){
+  
 
 }
 
