@@ -25,7 +25,8 @@ vertical-align: baseline;
 
 
 
-/*GENERAL STYLES*/
+/* ------------ MAIN GEN. STYLES -----------------*/
+
 html{
     font-size:62.5%;
 }
@@ -89,8 +90,7 @@ img:hover {
 
 
 
-
-/*HEADER STYLES */
+/* ------------HEADER STYLES-----------------*/
 header{
     display:flex;
     justify-content: center;
@@ -114,8 +114,8 @@ nav span{
 }
 
 
+/* ------------ TITLE SECTION  -----------------*/
 
-/*Title Section Styles*/
 
 .title-container{
     display:flex;
@@ -164,8 +164,8 @@ button:hover{
 }
 
 
+/* ------------ ARTIST SELECTION -----------------*/
 
-/*Artists Section Styles */
 
 .artists-container{
     display:flex;
@@ -182,8 +182,8 @@ button:hover{
     width:100%;
 }
 
+/* ------------ MEDIA TAGS (500PX) -----------------*/
 
-/* MEDIA TAGS GO HERE */
 
 
 @media (max-width: 500px){
@@ -235,6 +235,7 @@ button:hover{
     }
 }
 
+/* ------------ MEDIA TAGS (800PX) -----------------*/
 
 
 
