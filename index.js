@@ -294,17 +294,20 @@ function addArtist(array,id,name,years,genre,nationality,bio){
     (1) artists array 
 
 and returns an array with names of artists who painted more than 100 paintings.
-
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  for (let i = 0; i > array.length; i--) {
-    if ((array[i].paintings)> 100){
-      over100 = []
-      over100.push(array[i].name)
-      return console.log (over100);
+  over100 = [];
+  
+  for (let i = 0; i < array.length; i++) {
+    newObj = {name : array[i].name};
+    if (array[i].paintings > 100){
+      over100.push(newObj);
+        
     }
   }
+
+  console.log(over100);
 }
 
 lotsOfArt(artists)
@@ -334,20 +337,27 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+// function getHTML(data){
 
-    /* Code here */
+//     for(let i in data) {
+//     i = i.html();
+//       console.log(i);
+//     }
 
-  }
+//   }
+
+//   getHTML(artists);
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
-
-    /* Code here */
+function randomize(array){
+  result = array.sort(() => Math.random() - 0.5);
+  console.log(result);
 
   }
+
+  randomize(artists);
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
