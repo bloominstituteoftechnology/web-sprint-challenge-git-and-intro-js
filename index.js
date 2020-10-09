@@ -217,7 +217,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 function changeName(array, index, name){
   array[index].name = name;
   return array;
-}
+}//THIS IS WORKING
 console.log(changeName(artists, 8, 'Vincent Van Gogh'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -231,7 +231,7 @@ Create a function called `getArtistByIndex` that takes two arguments:
 */
 function getArtistByIndex(array, index) {
   return `the artist at index ${index} is ${artists[index].name}`;
-}
+}//THIS IS WORKING
 
   
 
@@ -290,9 +290,14 @@ Create a function called lotsOfArt() that takes one argument:
 and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
-
+const newArtists = [];
 function lotsOfArt(array){
-  
+  for (let i = 0; i <= artists.length; i++){
+    if(artists[i] >= 100){
+        newArtists.push(artists[i].name);
+    }
+  }
+  return newArtists;
 }
 
 
