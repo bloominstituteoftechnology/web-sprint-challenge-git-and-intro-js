@@ -210,7 +210,7 @@ Practice accessing data above by console.log-ing following items:
 (2) Bio of the third artist (2nd index) in the array */
 
 console.log(Artists.name[0]);
-console.log(Artists.bio[1]);
+console.log(Artists.bio[2]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -284,7 +284,7 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist (name, years, genre, nationality, bio){
-  obj = {id , name, years, genre, nationality, bio});
+  obj = {id , name, years, genre, nationality, bio};
   return obj;
 }
 console.log(addArtist(Artists, James , 34 , alternative ,US , "learning javascript and having fun in the process"))
