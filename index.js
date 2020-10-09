@@ -230,7 +230,7 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-  
+  return `the artist at index ${index} is ${artists[index].name}`;
 }
 
   
@@ -256,10 +256,10 @@ Create a function called `removeArtist` that takes two arguments:
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(array, numBro) {
-  var index = array.indexOf(numBro);
-  array.splice(index, 1);
+  var art = array.indexOf(numBro);
+  array.splice(art, 1);
   return array.length;
-}
+}// THIS IS WORKING
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -278,7 +278,7 @@ At the end, this function should return the new array with information added"*/
 function addArtist(array, id, name, years, genre, nationality, bio){
   array.push({id, name, years, genre, nationality, bio});
   return array;
-  }
+  }// THIS IS WORKING
 
   
 
@@ -290,14 +290,9 @@ Create a function called lotsOfArt() that takes one argument:
 and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
-const largeArt = [];
+
 function lotsOfArt(array){
-  for (i = 0; i <= array.length-1; i++){
-    if(array[i].paintings >= 100){
-      largeArt.push(artists[i].name);
-    }
-  }
-  return largeArt;
+  
 }
 
 
