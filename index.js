@@ -227,7 +227,7 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(arr, i) {
-  return `The artist at index ${arr[i]} is ${arr.name}.`
+  return `the artist at index ${[i]} is ${arr[i].name}`
 }
 
   
@@ -235,9 +235,19 @@ function getArtistByIndex(arr, i) {
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(arr){
+  let diedIn20th = [];
+  for(let i = 0; i < arr.length; i++){
+    let getNumber = arr[i].years.split(' - ')
+    let byear = getNumber[0];
+    let dyear = getNumber[1];
+    if(byear >= 1900 && dyear <= 2000){
+      let diedin20th = diedIn20th.push(arr[i].name)
+    }
+  }
+  return diedIn20th
 }
+
 
 
 
@@ -252,8 +262,9 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, i) {
+  let removeArtist = arr.splice(arr[0], 1);
+  return arr.length
 }
    
 
@@ -271,9 +282,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
-  }
+function addArtist(id, name, years, genre, nationality, bio){
+
+  let nArray = [];
+  return nArray.push({id, name, years, genre, nationality, bio});
+}
 
   
 
