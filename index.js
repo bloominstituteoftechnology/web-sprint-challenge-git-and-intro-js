@@ -242,8 +242,13 @@ console.log(getArtistByIndex(Artists, 4));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s (years){
-  if (years
+function get20s (Artists){
+  const bornIn = [];
+  for (i=0; i <= paintings.length; i++){
+    if(Artists[i].years >= 1900 || <= 2000)
+   return name
+  }
+  console.log(LotsOfArt(Artists))
 
 
 
@@ -278,10 +283,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
-  }
-
+function addArtist (name, years, genre, nationality, bio){
+  obj = {id , name, years, genre, nationality, bio});
+  return obj;
+}
+console.log(addArtist(Artists, James , 34 , alternative ,US , "learning javascript and having fun in the process"))
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -293,9 +299,15 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+function lotsOfArt(Artists){
+  const Morethan = [];
+  for (i=0; i <= paintings.length; i++){
+    if(Artists[i].paintings >= 100)
+   return name
+  }
+  console.log(LotsOfArt(Artists))
+
+
 
 
 
