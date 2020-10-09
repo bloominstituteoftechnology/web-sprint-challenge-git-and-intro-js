@@ -250,15 +250,30 @@ Create a function called get20s() that takes data as an argument and returns an 
 //push information to new array
 //return new array
 
+// function get20s (array){
+//   const twentys = [];
+//   for (let i = 0; i < array.length; i++){
+//     if(array[i].years.split(' - ')[0]>1899 && array[i].years.split(' - ')[1] < 2001){
+//       (twentys.push(array[i].name)
+//     }
+//   }
+//   return twentys;
+// }
+// console.log(get20s(artists));
+
+
+
 function get20s(artists){
     const thoseWhoLived=[];
     for(let i = 0; i < artists.length; i++)
-      if ((artists[i].years.slice(0.5)<=2000) && (artists[i].years.slice(0,5) >= 1900)){
+      if (artists[i].split(' - ')<=2000 && artists[i].split(' - ') >= 1900){
         thoseWhoLived.push(artists[i]);
       }
       return thoseWhoLived;
     } 
    
+
+    //split, range of numbers, 
 
 // function get20s(artists){
 //   const thoseWhoLived=[];
@@ -287,12 +302,40 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(index) {
-  artists.splice(index,1);
 
- 
+function removeArtist(array, index) {
+  array.splice(index, 1);
+  return array.length;
 }
-console.log(removeArtist);  
+console.log(removeArtist(artists, 0));
+
+
+// function removeArtist(array,index){
+//   let rIndex = array.indexIf(index);
+//   array.splice(rIndex,1);
+//   console.log (index);
+// }
+
+
+
+// function removeArtist(nameArray,index) {
+//   nameArray.splice(index,1)
+//   console.log(nameArray.length)
+//   return removeArtist
+// }
+
+// removeArtist(artists,0)
+
+// console.log(artists)
+
+
+
+// function removeArtist(index) {
+//   artists.splice(index,1);
+//   return removeArtist;
+ 
+// }
+// console.log(removeArtist);  
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -308,19 +351,26 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(id, name, years, genre, nationality, bio){
-  const me =({
-    id:20,
-    name:"Aszalea",
-    years:1993-2020,
-    genre:"web design",
-    nationality: "white",
-    bio: "I am a web developer, looking to continue to grow and explore the internet and the world."
-  })
-    artists.push(me);
-  }
+function addArtist(array, id, name, years, genre, nationality, bio){
+  array.push({id, name, years, genre, nationality, bio});
+  return array;
+}
+console.log (addArtist(artists, -1, "Aszalea Calderon", "1993-2020", "Web Design", "white", "I am a web developer, looking to continue to grow and explore the internet and the world."));
 
-  console.log()
+// function addArtist(id, name, years, genre, nationality, bio){
+//   const me =({
+//     id: id,
+//     name: name,
+//     years:years,
+//     genre: genre,
+//     nationality: nationality,
+//     bio: bio,
+//   })
+//     artists.push(me);
+//     return addArtist;
+//   }
+
+  
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -331,6 +381,19 @@ Create a function called lotsOfArt() that takes one argument:
 and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
+
+function lotsOfArt(arr){
+  let newArr =[];
+  for (let i = 0; i < arr.length; i++){
+    if(arr[i].paintings >= 100){
+      newArr.push(arr[i].name);
+    }
+    // return newArr;
+  }
+  return newArr;
+}
+console.log(lotsOfArt(artists));
+
 
 // function lotsOfArt(artists){
   
@@ -346,10 +409,12 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 //   }
 // }
 
-function lotsOfArt(artists){
-  return artists.filter(artists => artists.paintings.names > 100);
-}
-console.log(lotsOfArt(artists));
+
+
+// function lotsOfArt(artists){
+//   return artists.filter(artists => artists.paintings.names > 100);
+// }
+// console.log(lotsOfArt(artists));
 
 
 
