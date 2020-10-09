@@ -242,7 +242,7 @@ function get20s(arr){
     let byear = getNumber[0];
     let dyear = getNumber[1];
     if(byear >= 1900 && dyear <= 2000){
-      let diedin20th = diedIn20th.push(arr[i].name)
+      let diedin20th = diedIn20th.push(arr[i].name);
     }
   }
   return diedIn20th
@@ -282,13 +282,12 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(id, name, years, genre, nationality, bio){
-
-  let nArray = [];
-  return nArray.push({id, name, years, genre, nationality, bio});
+function addArtist(arr){
+  return arr
 }
 
-  
+addArtist(artists);
+//  console.log(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Create a function called lotsOfArt() that takes one argument: 
@@ -299,9 +298,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(arr){
+  let nArray = [];
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].paintings >= 100){
+      nArray.push(arr[i].name);
+    }
+  }
+  return nArray;
 }
+
+console.log(lotsOfArt(artists));
 
 
 
