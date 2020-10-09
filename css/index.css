@@ -135,22 +135,18 @@ button:hover{
     width:100%;
 }
 
-@media (max-width: 500px){/*header &Title contianer*/
+@media (max-width: 500px){
     
-    *{
+    /* *{
         border:solid tomato 1px;
-        /* width:50%; */
-    }
+       
+    } */
    
-     /* body{ */
-        /* display:flex;
+     body{ 
+        display:flex;
         flex-direction: column;
-        width:50%; */
-    /* } */
-   
-    /* header{  */
-        /* width:60%; */
-    /* } */
+          
+     } 
 
     nav{
         justify-content:space-between;
@@ -159,20 +155,24 @@ button:hover{
     }
 
     .title-container{
-        width:20%;
+        width:100%;
+        margin:0;
     }
 
 .title-container div {				
     color: white;	
-    width:60%;
+    width:100%;
   
-    height:50vh;
-    margin-top: 2vw;
 }	
 
 .artists-container{
    flex-direction: column;
-    /* width:50%; */
+   align-items: center;
+    width:100%;
     
+}
+
+.artist{
+    width:70%;
 }
 }
