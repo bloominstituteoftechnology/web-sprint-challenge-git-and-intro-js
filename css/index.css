@@ -142,7 +142,7 @@ button:hover{
     }
     .title-container div{
         width:100%;
-        height: 35vh;
+        height: 38vh;
         background-position: center;
         background-size: 250%;
         background-repeat: no-repeat;
@@ -150,6 +150,11 @@ button:hover{
     .title-container div h1{
         font-size:40px;
         font-weight: 600;
+    }
+    .title-container hr{
+        width:100%;
+        border-bottom: lightgray 2px solid;
+
     }
     .artists-container{
         display:flex;
