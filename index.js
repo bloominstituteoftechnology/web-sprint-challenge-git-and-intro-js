@@ -238,15 +238,14 @@ function getArtistByIndex(arr, index) {
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(arr, index){
-  const newArr=[];
-  for(let i = 0; i< arr.length - 1; i++){
-    if(arr[index].years === 1900-2000){
-      newArr.push(arr[index].years);
-      return newArr
-    }
+function get20s(arr){
+  const artistIn20=[];
+  for(let i = 0; i < arr.length - 1; i++){
+  if(arr[i].years > 1900 && arr[i].years < 2000){
+    artistIn20.push(arr[i].name);
   }
-  
+}
+return artistIn20
 }
 
 
@@ -299,7 +298,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(arr){
   const lotsOfPaintings = [];
-  for(let i = 0; i < arr.length - 1; i++){
+  for(let i = 0; i < arr.length -1; i++){
     if(arr[i].paintings > 100){
       lotsOfPaintings.push(arr.names);
       return lotsOfPaintings;
