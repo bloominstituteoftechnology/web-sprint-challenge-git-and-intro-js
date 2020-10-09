@@ -34,7 +34,8 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     -a variable is a part of javascript that holds a value that you can use and access in your code to perform a function or porvide data
 
 4. What is the purpose of using functions in code?
-    -to output an answer from the variables provided that is different than the actual variables itself, and to run tests on what is happening throughout the code
+    -to output an answer from the variables provided that is different than the actual variables itself, and to run tests on what is happening throughout the code.
+    to invoke code blocks without needing to retype the entire block of code for each operation.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
