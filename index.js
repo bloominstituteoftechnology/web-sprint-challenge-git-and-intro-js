@@ -241,7 +241,9 @@ Create a function called get20s() that takes data as an argument and returns an 
 function get20s(arr){
   const century=[];
   for(let i = 0; i < arr.length - 1; i++){
-  if(arr[i].years > 1900 && arr[i].years < 2000){
+    const birthYear = arr[i].years.split(" ")[0];
+    const deatYear = arr[i].years.split(" ")[2];
+  if(birthYear > 1900 && deatYear < 2000){
     century.push(arr[i].name);
   }
 }
@@ -299,9 +301,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(arr){
   const lotsOfPaintings = [];
   for(let i = 0; i <= arr.length - 1; i++){
+    
     if(arr[i].paintings > 100){
-      lotsOfPaintings.push(arr[i].names);
-     
+      lotsOfPaintings.push(arr[i].name);
     } 
   } 
  return lotsOfPaintings;
