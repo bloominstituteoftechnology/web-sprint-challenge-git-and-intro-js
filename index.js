@@ -300,7 +300,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(someArray){
   const newArray = [];
-  for (let i =0; i <=someArray.length-1; i++){
+  for (let i = 0; i <=someArray.length-1; i++){
     if (someArray[i].paintings > 100){
       newArray.push(someArray[i].name);
     }
@@ -334,11 +334,19 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+// function getHTML(data){
+//   for (let i = 0; i <=data.length-1; i++){
+//     for (let key in data){
+//       console.log('<div id="artist">');
+//       console.log('<div class="image">');
+//       console.log('<img src=IMAGE SOURCE GOES HERE/>');
+//       console.log('</div>');
+//       console.log('<div class="image">');
+//       console.log('<a href="()');
+//     }
+//   }
+// }
 
-    /* Code here */
-
-  }
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪

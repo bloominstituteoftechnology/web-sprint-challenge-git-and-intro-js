@@ -23,9 +23,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+>>>>> Accessibility on the web is not only important today, it is required! Buildings must be made accessible to those with certain disabilities, such as including wheelchair accessible ramps. The same applies for creating webpages. There's no restriction on who can access any webpage, which means we need to take into account those who have a disability related to reading a webpage. Furthermore, today's digital world provides MANY different ways to view a digital webpage aside from your computer. The best examples are your mobile device and a tablet. Our webpages will not be automatically accessible for those devices and their associated screen widths. We need to design with these viewing possibilities in mind. 
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+>>>>> Three things you can do to ensure your website is accessible are (1) adding 'alt' HTML descriptions of images and other HTML elements that accept an alt description, (2) marking-up all HTML elements semantically, using the correct tag, and adding classes to divs so that a screen reader can easily read the webpage, and (3) adding media queries so the webpage molds itself to whatever pixel width the page is being viewed on. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+>>>>> A variable is something that we can store data in, whether it be a number, a string of text, or a larger dataset. Since data can change as we work our way through a program, we often want to allow the variable to be modifiable. Creating a variable name then assigning it a value also makes for better code as this avoids hard coding values, which can make code hard to update later, and it also allows other coders to read your code more easily and understand what is going on. 
+
 4. What is the purpose of using functions in code?
+>>>>> The purpose of using functions is to be able to make important modifications to data/information WITHOUT hard coding the changes into your program. The same modification can therefore be made to several pieces of the data. It provides flexibility and makes for DRY code, which makes for greater efficiency. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
