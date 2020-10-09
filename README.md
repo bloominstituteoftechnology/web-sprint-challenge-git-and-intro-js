@@ -1,3 +1,24 @@
+#Interview Questions ANSWERS 
+
+1. How would you describe acessibility on the web to someone new to programming?
+
+Accesibility on the web is a way of designing your site so that it can be used not only by people who may have a physical disability (such as being blind). But also to help people who may have temporary disabilities, people who are old, or people with slow internet.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+Make sure you use semantic html for things such as screen readers. Make sure your site colors are accessible for people who may be color blind. Make sure your images aren't too large of a file size in order to help with slow internet/mobile web.
+
+3. How would you explain the concept of a variable to someone new to programming?
+
+A variable is a place holder. Think of it as an gas tank. You need to fill your gas tank with fuel to make your car work. In the same way, you need an argument to plug into your variable to make your function work.
+
+4. What is the purpose of using functions in code?
+
+You use functions in code to create dynamic tasks for the computer to do. They  can help automate complex tasks. They can also contribute to user interactivity.
+
+You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+
+
 # Sprint Challenge: Advanced CSS and Intro to JavaScript - Influential Artists
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
