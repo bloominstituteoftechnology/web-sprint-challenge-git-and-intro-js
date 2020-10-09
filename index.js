@@ -231,22 +231,52 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arr, index) {
+  return `the artist at index ${arr[index].id} is ${arr[index].name}`
 }
 
   
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀** **
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+//what does it need to do?
+//takes data as arguments-x
+//How does it know what object to get? (is that in post? )
+//returns an array (new array) with names -x
+//who lived and died in 1900- loop through the current object and grab years between 1900-2000
+//push information to new array
+//return new array
 
+function get20s(artists){
+    const thoseWhoLived=[];
+    for(let i = 0; i < artists.length; i++)
+      if ((artists[i].years.slice(0.5)<=2000) && (artists[i].years.slice(0,5) >= 1900)){
+        thoseWhoLived.push(artists[i]);
+      }
+      return thoseWhoLived;
+    } 
+   
 
+  
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+// function get20s(artists){
+//   const thoseWhoLived=[];
+//   for(let i = 0; i < artists.length; i++){
+//     if (data >= 1900 && data <= 2000 === arr.years ){
+//       thoseWhoLived.push(arr[i]);
+//     }
+    
+//   }
+//   return thoseWhoLived;
+// }
+//  console.log(get20s(artists,1900,2000))
+
+// if(arr[i].data === 1900 - 2000);// How to have a range of things its looking for. Is this like the removal?
+
+//THIS ONE
+
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 ****
 Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -257,10 +287,12 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(index) {
+  artists.splice(index,1);
+
+ 
 }
-   
+console.log(removeArtist);  
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -276,8 +308,16 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
+function addArtist(id, name, years, genre, nationality, bio){
+  const me =({
+    id:20,
+    name:"Aszalea",
+    years:1993-2020,
+    genre:"web design",
+    nationality: "white",
+    bio: "I am a web developer, looking to continue to grow and explore the internet and the world."
+  })
+    artists.push(me);
   }
 
   
@@ -291,10 +331,10 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(artists){
+  return artists.filter(artists => artists.paintings > 100);
 }
-
+// console.log(lotsOfArt(artists));
 
 
 
