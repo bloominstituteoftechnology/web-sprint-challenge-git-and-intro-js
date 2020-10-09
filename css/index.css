@@ -20,6 +20,7 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+
 html{
     font-size:62.5%;
 }
@@ -120,11 +121,13 @@ button:hover{
     box-shadow: 2px 2px 1px white;
 }
 /*Artists Section Styles */
+
 .artists-container{
-    display:flex;
+ display:flex;
     justify-content: space-around;
     width:80%;
     margin:0 auto;
+    
 }
 
 .artist{
@@ -133,4 +136,13 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+@media(max-width:500px){
+.artists-container{
+flex-wrap: wrap;    
+}
+.artist{
+    width:75%;
+}
+     
 }
