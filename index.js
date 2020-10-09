@@ -1,3 +1,5 @@
+import { SearchSource } from "jest";
+
 export const artists = [
     {
       "id": 0,
@@ -258,8 +260,6 @@ function get20s(artists){
     } 
    
 
-  
-
 // function get20s(artists){
 //   const thoseWhoLived=[];
 //   for(let i = 0; i < artists.length; i++){
@@ -320,6 +320,7 @@ function addArtist(id, name, years, genre, nationality, bio){
     artists.push(me);
   }
 
+  console.log()
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -331,10 +332,24 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
+// function lotsOfArt(artists){
+  
+// var results = [];
+
+// var toSearch = "lo";
+
+// for(let i=0; i< artists.length; i++) {
+//   for(key in artists[i]) {
+//     if(artists[i][key].indexOf(toSearch)!=-1) {
+//       results.push(artists[i]);
+//     }
+//   }
+// }
+
 function lotsOfArt(artists){
-  return artists.filter(artists => artists.paintings > 100);
+  return artists.filter(artists => artists.paintings.names > 100);
 }
-// console.log(lotsOfArt(artists));
+console.log(lotsOfArt(artists));
 
 
 
