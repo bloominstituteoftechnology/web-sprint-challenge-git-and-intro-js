@@ -35,9 +35,13 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+1. Fork the repo
+2. Clone your forked version of the repo
+3. cd into your repo and create a branch with your first and last name
+NOTE: Tests will run for the JavaScript portion of this challenge only
+4. open the terminal in your vs code and type `npm install`
+5. next type `npm run test:watch` in your terminal
+6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
