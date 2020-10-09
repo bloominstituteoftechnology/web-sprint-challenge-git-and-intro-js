@@ -141,3 +141,17 @@ button:hover{
        display: flex;
        flex-direction: column;
    }
+   img {
+       max-height: 150px; 
+   }
+    }
+
+@media (max-width: 800px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        max-height: 150px; 
+        }
+         }
