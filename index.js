@@ -261,9 +261,11 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(someArray, index) {
+  someArray.splice(index, 1);
+  return someArray.length;
 }
+
    
 
 /**
@@ -280,9 +282,10 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
-  }
+function addArtist(someArray, id, name, years, genre, nationality, bio){
+  someArray.push({id, name, years, genre, nationality, bio});
+  return someArray;
+}
 
   
 
