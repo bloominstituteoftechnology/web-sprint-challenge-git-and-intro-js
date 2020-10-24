@@ -447,7 +447,7 @@ function getHTMLartist(artist){  // returns HTML for individual artist
 }
 
 // TEST CODE
-var output = getHTMLartists(artists[0]);
+var output = getHTMLartist(artists[0]);
 console.log(output);  // will return individual artist html
 
 /* ALTERNATE CODE combining the two functions
@@ -490,12 +490,13 @@ function randomize(array){
       array.splice(randomNum, 1);
     } 
   } // end of loop
+  return randomizedArray;
 }
 
   // TEST CODE
   const arrayNum = [5,2,7,3,9,1,8,6,0,4];
-  console.log("orig array: " + array); // should return empty
-  return randomizedArray;
+  console.log("orig array: " + arrayNum); // should return empty
+
 
 // TEST CODE
 var output = randomize(arrayNum);
@@ -504,9 +505,9 @@ console.log(output);
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
  Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 
- function get20s(array) {
-  return array.filter(artist => artist.years[1] === "9" && artist.years[8] === "9").map(artist => artist.name);
-}
+//  function get20s(array) {
+//   return array.filter(artist => artist.years[1] === "9" && artist.years[8] === "9").map(artist => artist.name);
+// }
  
  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
  function foo(){
