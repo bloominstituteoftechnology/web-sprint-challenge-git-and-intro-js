@@ -216,25 +216,31 @@ console.log(artists[2].bio);
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 function editName(array, id, editTo) {
-  // const result = words.filter(word => word.length > 6);
-  
-  
-  let artistToEdit = artists.filter(artist => artist.id === id - 1);
-    console.log(artistToEdit);
-  
-      let artistToObj = artistToEdit[0]; // .filter method returns an array.  Convert to obj.
-  
-      artistToObj.name = editTo; // edits made to name here
-  
-  return artistToObj;
 
+  let artistToEdit = artists.filter(artist => artist.id === id - 1); // .filter to extract the artist element using id
+    // console.log(artistToEdit); // console.log to check that filter extracts correct artist element
   
+  let artistToObj = artistToEdit[0]; // .filter method returns an array.  Convert to obj.
+
+  artistToObj.name = editTo; // edits made to the object name, reassign to editTo
+  
+  return artistToObj; // return the edited artist element
+
   }
   
+/*  ALTERNATE CODE
+function changeAttr(array, object, index, newValue)
+{
+  array[object][index] = newValue;
+}
+changeAttr(artists, 8, 'name', 'Vincent Van Gogh');
+console.log(artists[8]);
+
+*/
+
   // TEST CODE:
   var output = editName(artists, 9, "Vincent Van Gogh");
   console.log(output);
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `getArtistByIndex` that takes two arguments:
@@ -247,10 +253,10 @@ Create a function called `getArtistByIndex` that takes two arguments:
 */
 
 function getArtistByIndex(array, index) {
-  let id = index;
-  let name = array[id].name;
+  let id = index; // assign variable id to argument index
+  let name = array[id].name; // assign variable name to the name at index aka [id]
 
-return `the artist at index ${id} is ${name}`
+  return `the artist at index ${id} is ${name}` // return string template literal statement 
 }
 // TEST CODE:
 var output = getArtistByIndex(artists, 0);
@@ -261,23 +267,24 @@ Create a function called get20s() that takes data as an argument and returns an 
 
 function get20s(array){
 
-  let artistsIn20s = [];
+  let artistsIn20s = [];  // declare artistsIn20s as empty array
 
   for (let i = 0; i < array.length; i++) {
 
-    let artistArrayStr = array[i].years.split(" - "); // split artists.years into 2 strings
+    let artistArrayStr = array[i].years.split(" - "); // split artists.years into 2 strings, should return ["birth", "death"]
     console.log("split string: " + artistArrayStr); // returns into an array
 
-    let artistIntBirth = parseInt(artistArrayStr[0]); // make string 0 an int
-    console.log("birth int: " + artistIntBirth);
+    let artistIntBirth = parseInt(artistArrayStr[0]); // access index 0, birth year, make string 0 an int
+    console.log("birth int: " + artistIntBirth); // returns birth year integer
 
-    let artistIntDeath = parseInt(artistArrayStr[1]); // make string 1 an int
-    console.log("death int: " + artistIntDeath);
+    let artistIntDeath = parseInt(artistArrayStr[1]); // access index 1, death year, make string 1 an int
+    console.log("death int: " + artistIntDeath); // returns death year integer
 
-    if (artistIntBirth >= 1900 && artistIntBirth <= 2000) {
+    if (artistIntBirth >= 1900 && artistIntBirth <= 2000) { // outer conditional, is birth in range?
       
-      if (artistIntDeath >= 1900 && artistIntDeath <= 2000) {
-        artistsIn20s.push(artists[i-1].name);  // artistsIn20s.push(artists[i].name);  This, SHOULD be the code(which passes replit).  But it doesn't pass the test case in the project environment.
+      if (artistIntDeath >= 1900 && artistIntDeath <= 2000) { // inner conditional, is death in range?
+        
+        artistsIn20s.push(array[i].name);  // changed artists to array
         
       } // end of inner conditional
       
@@ -285,10 +292,16 @@ function get20s(array){
 
   } // end of for loop
 
-  return artistsIn20s;
+  return artistsIn20s; 
 }
 
-// returns correctly
+/*  ALTERNATE CODE using advanced methods.  Thank you Vincent.
+
+function get20s(array) {
+    return array.filter(artist => artist.years[1] === "9" && artist.years[8] === "9").map(artist => artist.name);
+}
+
+*/
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `removeArtist` that takes two arguments:
@@ -308,8 +321,7 @@ function removeArtist(array, index) {
 
 // TEST CODE: 
 var output = removeArtist(artists, 0);
-console.log(output); // should return: it will remove Amedeo Modigliani from our dataset and log the number 19. 
-   
+console.log(output); // should return: it will remove Amedeo Modigliani from artists array and log the number 19. 
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -326,35 +338,33 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(artists, newArtist) {
-  // artists.push(newArtist); // the tests don't pass if line 329 is uncommented.  It works fine in replit.
+  artists.push(newArtist); // add newArtist Object to artists array
   console.log(artists.length);  
   return artists;
 }
 
 // TEST CODE
-let newArtist = 
-{
-      "id": 20,
-      "name": "Oh Henry",
-      "years": "1960 - 2020",
-      "genre": "Street Art",
-      "nationality": "American",
-      "bio": "He likes to paint street art and fancy characters.",
-      "wikipedia": "http://en.wikipedia.org/wiki/Oh_Henry",
-      "paintings": 432
-    }
+let newArtist = {
+  "id": 20,
+  "name": "Oh Henry",
+  "years": "1960 - 2020",
+  "genre": "Street Art",
+  "nationality": "American",
+  "bio": "He likes to paint street art and fancy characters.",
+  "wikipedia": "http://en.wikipedia.org/wiki/Oh_Henry",
+  "paintings": 432
+  };
 
-addArtist(newArtist);
+addArtist(artists, newArtist);
 
-let customArtist =
-  {
+let customArtist = {
   "id": 21,
   "name": "Rhiannon", 
   "years": "1979 - current day",
   "genre": "Web Design", 
   "nationality": "Guamanian",
   "bio": "I like to draw tiny things.",
-  }
+  };
 
 addArtist(artists, customArtist);
 
@@ -409,28 +419,94 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(artists){  // returns HMTL for each artist in array artists
 
-    /* Code here */
+  artists.forEach(artist => getHTMLartist(artist));
 
-  }
+}
+
+// TEST CODE
+var output = getHTML(artists);
+console.log(output);
+  
+function getHTMLartist(artist){  // returns HTML for individual artist
+  let wikipedia = artist.wikipedia;
+  let name = artist.name;
+  let bio = artist.bio;
+
+
+  console.log(`<div id="artist">
+  <div class="image">
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+  </div>
+  <div class = "name">
+      <a href=${wikipedia}> ${name}</a>
+  </div>
+  <div class = "bio">${bio}</div>
+  </div>`)
+}
+
+// TEST CODE
+var output = getHTMLartists(artists[0]);
+console.log(output);  // will return individual artist html
+
+/* ALTERNATE CODE combining the two functions
+function getHTML(artists){  // returns HMTL for each artist in array artists
+
+  artists.forEach(artist => {
+  
+  let wikipedia = artist.wikipedia;
+  let name = artist.name;
+  let bio = artist.bio;
+
+  console.log(`<div id="artist">
+  <div class="image">
+    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+  </div>
+  <div class = "name">
+      <a href=${wikipedia}> ${name}</a>
+  </div>
+  <div class = "bio">${bio}</div>
+  </div>`)
+
+  })
+}
+
+*/
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+function randomize(array){
+  let randomizedArray = [];
 
-    /* Code here */
+  for (var i = array.length - 1; i >= 0; i--) { // loop through array
+   let randomNum = Math.random() * array.length;
+    randomNum = Math.floor(randomNum);
+   
+    if (array[randomNum] !== undefined) {
+      randomizedArray.push(array[randomNum])
+      array.splice(randomNum, 1);
+    } 
+  } // end of loop
+}
 
-  }
+  // TEST CODE
+  const arrayNum = [5,2,7,3,9,1,8,6,0,4];
+  console.log("orig array: " + array); // should return empty
+  return randomizedArray;
 
+// TEST CODE
+var output = randomize(arrayNum);
+console.log(output);
 
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
  Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
 
- 
- 
+ function get20s(array) {
+  return array.filter(artist => artist.years[1] === "9" && artist.years[8] === "9").map(artist => artist.name);
+}
  
  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
  function foo(){
