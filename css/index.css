@@ -134,3 +134,37 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media only screen and (max-width: 500px) {
+   div.flexcontainer {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+   nav {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+       align-content: center;
+       margin-top: 2%;
+       
+   }
+
+   a:hover {
+       color:black;
+    }
+
+section.title-container{
+    width: 100%;
+    height: auto;
+}
+
+}
+       
+   
+   
+   
+
+
+
+
