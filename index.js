@@ -244,19 +244,20 @@ console.log(getArtistByIndex(artists, 0));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(artistsArray) {
+function get20s(artistsArray){
   let newArtistsArray = [];
-  for (let i = 0; i < artistsArray.length; i++) {
-    const artist = newArtistsArray[i];
-    const artistBirth = parseInt(artist.years.substring(0, 4));
-    const artistDeath = parseInt(artist.years.substring(7));
-    if (artistBirth > 1900 && artistDeath < 2000) {
+  for (let i = 0; i < artistsArray.length; i++){
+    const artist = artistsArray[i];
+    const artistBirthYear = parseInt(artist.years.substring(0, 4));
+    const artistDeathYear = parseInt(artist.years.substring(7));
+    if (artistBirthYear > 1900 && artistDeathYear < 2000){
       newArtistsArray.push(artistsArray[i].name);
     } 
   } 
   return newArtistsArray;
 }
 console.log(get20s(artists));
+
 
 
 
@@ -271,9 +272,13 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(artistsArray, index) {
+  artistsArray[index].splice;
+  return artistsArray.length-1;
+
 }
+
+console.log(removeArtist(artists, 0));
    
 
 /**
