@@ -1,4 +1,4 @@
-/*export*/ const artists = [
+export const artists = [
     {
       "id": 0,
       "name": "Amedeo Modigliani",
@@ -271,14 +271,6 @@ function removeArtist(array, index) {
 
 removeArtist(artists, 0);
 
-// arr = [
-//   {name: "Ethan", age: 19},
-//   {name: "Kade", age: 20},
-//   {name: "Colby", age: 22}
-// ]
-// let narr = arr.splice(1, 1);
-// console.log(narr);
-
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -293,11 +285,28 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
+function addArtist(array, info){
+  array.push(info);
+  console.log(array);
   }
 
-  
+addArtist(artists, {
+  id: 20,
+  name: "Ethan",
+  years: "2000 - current day",
+  genre: "Web Design",
+  nationality: "Caucasion",
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+});
+
+// let arr = [
+//   {name: "Ethan", age: 19},
+//   {name: "Kade", age: 20}
+// ]
+
+// arr.push({name: "James", age: 25});
+
+// console.log(arr);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Create a function called lotsOfArt() that takes one argument: 
@@ -308,11 +317,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  let narr = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100) {
+      narr.push(array[i].name);
+    }
+  }
+  console.log(narr);
 }
 
-
+lotsOfArt(artists);
 
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -361,16 +376,16 @@ function randomize(/* Code here */){
  
  
  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
-//  function foo(){
-//   console.log('its working');
-//   return 'bar';
-// }
+ function foo(){
+  console.log('its working');
+  return 'bar';
+}
 /*Don't touch the code after this line! */
-// export default{
-//   foo,
-//   getArtistByIndex,
-//   get20s,
-//   removeArtist,
-//   addArtist,
-//   lotsOfArt
-// }
+export default{
+  foo,
+  getArtistByIndex,
+  get20s,
+  removeArtist,
+  addArtist,
+  lotsOfArt
+}
