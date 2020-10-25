@@ -150,8 +150,23 @@ button:hover{
 }
 
 .artist img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    align-items: center;
+}
+
+p {
+    font-size: 12px;
+    width: 160%;
+}
+
+.bio {
+    margin-left: -50px;
+}
+
+.name {
+    font-size: small;
+    font-weight: bold;
 }
 
 nav a {
