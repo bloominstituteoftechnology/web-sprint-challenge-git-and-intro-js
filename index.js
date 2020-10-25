@@ -1,4 +1,4 @@
-const artists = [
+export const artists = [
     {
       "id": 0,
       "name": "Amedeo Modigliani",
@@ -249,6 +249,7 @@ function get20s(artistsArray){
   return names;
 }
 
+get20s(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `removeArtist` that takes two arguments:
@@ -372,11 +373,11 @@ function randomize(/* Code here */){
   return 'bar';
 }
 /*Don't touch the code after this line! */
-// export default{
-//   foo,
-//   getArtistByIndex,
-//   get20s,
-//   removeArtist,
-//   addArtist,
-//   lotsOfArt
-// }
+  export default{
+   foo,
+   getArtistByIndex,
+   get20s,
+   removeArtist,
+   addArtist,
+   lotsOfArt
+ }
