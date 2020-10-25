@@ -257,15 +257,25 @@ Create a function called get20s() that takes data as an argument and returns an 
 
 function get20s(array){
 
+  let artistYears = [];
+
+  for (i = 0; i <= array.length-1; i++) {
+   
+  const artist = array[i];
+
+  const artistBirthYear = parseInt(artist.years.substring(0, 4));
+  const artistDeathYear = parseInt(artist.years.substring(7));
+
+  if (artistBirthYear > 1900 && artistDeathYear < 2000){
+    artistYears.push(array[i].name);
+  }
 
 }
+return artistYears;
+}
 
-  const get20sName = artists.filter((num) => {
-    return num.years >= 1900 <= 2000;
+console.log(get20s(artists));
 
-  });
-
-  //console.log(get20sName);
 
 
 
@@ -280,13 +290,14 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
-
-
+function removeArtist(array, index) {
+    array[index].splice;
+    return array.length-1;
 
 }
    
+console.log(removeArtist(artists, 0));
+console.log(artists)
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -302,13 +313,24 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
-
+function addArtist(array, id, name, years, genre, nationality, bio){
+    let person = {};
+    person.id = id;
+    person.name = name;
+    person.years = years;
+    person.genre = genre;
+    person.nationality = nationality;
+    person.bio = bio;
+  
+    return person;
 
 
   }
 
+
+ var output = addArtist(artists, 20, "Daniel", "1988 - Present Day", "Northern-Rennisance", "Puerto Rican", "Testing out my bio");
+
+ console.log(output); 
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
