@@ -295,9 +295,12 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
-  }
+function addArtist(artistsArray, objectId, objectName, objectYears, objectGenre, objectNationality, objectBio) {
+  artistsArray.push(objectId, objectName, objectYears, objectGenre, objectNationality, objectBio);
+  return artistsArray
+}
+
+console.log(addArtist(artists, "id: 20", "name: Jessica Chu", "years: 1989 - present", "genre: Web Design", "nationality: North American", "bio: Started casually coding in 2004. Figured she could make a living off of it and decided to get formal training."));
 
   
 
@@ -310,9 +313,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(artistsArray){
+  let artistsWithLots = [];
+  for (let i = 0; i < artistsArray.length; i++){
+    if (artistsArray[i].paintings > 100){
+      artistsWithLots.push(artistsArray[i].name);
+    }
+  }
+  return artistsWithLots;
 }
+console.log(lotsOfArt(artists));
 
 
 
