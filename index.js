@@ -414,13 +414,16 @@ function randomize(/* Code here */){
 
  
  
- /*
- /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑
+ 
+ /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
  function foo(){
   console.log('its working');
   return 'bar';
-}*/
-/*Don't touch the code after this line! 
+}
+
+//Don't touch the code after this line! 
+
+
 export default{
   foo,
   getArtistByIndex,
@@ -428,4 +431,4 @@ export default{
   removeArtist,
   addArtist,
   lotsOfArt
-}*/
+}
