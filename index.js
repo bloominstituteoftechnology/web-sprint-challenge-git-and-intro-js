@@ -286,22 +286,31 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 
+
+
+
+
+
 function addArtist(object){
   artists.push(object);
 
   return artists;
+
   }
 
-const me = {
-    "id": 20,
-    "name": "Nicholas Torres",
-    "years": "1996 - 2020",
-    "genre": "Web Design",
-    "nationality": "American",
-    "bio": "Add 1-2 sentences (or use lorem ipsum)"
-  }
+  const object = {
+      "id": 20,
+      "name": "Nicholas Torres",
+      "years": "1996 - 2020",
+      "genre": "Web Design",
+      "nationality": "American",
+      "bio": "Add 1-2 sentences (or use lorem ipsum)"
+    }
 
-addArtist(me);
+addArtist(object);
+
+
+
 
 
 
@@ -314,8 +323,14 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  var  lotsofpainting = []
+  for  (let i = 0; i < array.length; ++i){
+    if (array[i].paintings > 100){
+      lotsofpainting.push(array[i].name);
+    }
+  }
+  return lotsofpainting;
 }
 
 
