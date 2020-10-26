@@ -119,6 +119,15 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
+@media (max-width : 500px)
+{
+    .title-container div 
+    {
+        width : 120%;
+        height : 30hv;
+    }
+}
+
 /*Artists Section Styles */
 .artists-container{
     display:flex;
@@ -133,4 +142,14 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+@media (max-width:500px)
+{
+    .artists-container 
+    {
+        flex-wrap: wrap;
+    }
+    .artist{
+        width: 100%;
+    }
 }
