@@ -285,9 +285,23 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
+
+function addArtist(object){
+  artists.push(object);
+
+  return artists;
   }
+
+const me = {
+    "id": 20,
+    "name": "Nicholas Torres",
+    "years": "1996 - 2020",
+    "genre": "Web Design",
+    "nationality": "American",
+    "bio": "Add 1-2 sentences (or use lorem ipsum)"
+  }
+
+addArtist(me);
 
 
 
