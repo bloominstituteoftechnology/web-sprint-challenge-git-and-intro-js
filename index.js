@@ -227,7 +227,7 @@ Create a function called `getArtistByIndex` that takes two arguments:
 */
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
-}
+}123123
 
   
 
