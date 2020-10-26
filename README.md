@@ -23,9 +23,18 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+Programming with everyone in mind - everyone including those with disabilities such as visual or hearing impaired. People should be able to access the content offered on a website regardless of disabilites. Allowing someone to beable to change the font size or having audio read out loud are not just nice touches to add, but required by law.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    a. Make it responsive - so that those with different sized devices and screens can access accordingly.
+    b. Make it closed captioned for the hearing impaired if including video so subtitles can be read.
+    c. Allow for easy font size increase or decrease in size so those with visual impairment can see and read content easily.
+
 3. How would you explain the concept of a variable to someone new to programming?
+A variable is like a storage information box that holds information you put in it. You can put info in, take it out and put other info in the box as needed.
 4. What is the purpose of using functions in code?
+The purpose of using a function is to be able to access a block of code whenever you need it. It can be used over and over instead of rewriting the code over and over.
+
+I like these questions the best, I can usally answer them just fine - like I understand the overall concepts. Doing the actual code is when I ...have trouble.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -35,19 +44,21 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Follow these steps to set up your project:
 
-1. Fork the repo
-2. Clone your forked version of the repo
-3. cd into your repo and create a branch with your first and last name
+1. Fork the repo - ok
+2. Clone your forked version of the repo - ok
+3. cd into your repo and create a branch with your first and last name - took me a minute but ok
 NOTE: Tests will run for the JavaScript portion of this challenge only
-4. open the terminal in your vs code and type `npm install`
-5. next type `npm run test:watch` in your terminal
+4. open the terminal in your vs code and type `npm install` - I still don't understand the point of this
+
+5. next type `npm run test:watch` in your terminal- don't get this part either
+
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
+* [ ] Add a viewport meta tag to the head of your index.html page. - ok
 * [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript

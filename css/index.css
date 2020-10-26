@@ -134,3 +134,12 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/**** Media Queries ****/
+
+@media (max-width: 500px) {
+    body {
+        background-color: olive;
+      }
+    }
+
