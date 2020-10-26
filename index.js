@@ -209,11 +209,20 @@ Practice accessing data above by console.log-ing following items:
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
+console.log(artists[0]["name"]);
+console.log(artists[2]["bio"]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+function editName(arrayName, indexLoc, newName) 
+{
+arrayName[indexLoc]["name"] = newName;
+return(newName);
+}
+
+editName(artists, 8, "Vincent Van Gogh");
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -225,8 +234,10 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arrayName, indexLoc)
+{
+  console.log(`the artist at index ${[indexLoc]} is ${arrayName[indexLoc]["name"]}`);
+  return(`the artist at index ${[indexLoc]} is ${arrayName[indexLoc]["name"]}`);
 }
 
   
@@ -234,11 +245,21 @@ function getArtistByIndex(/*Your Code Here*/) {
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(newArrayToFilter)
+{ 
+
+  let get20sArray = [];
+  for (let i = 0; i < newArrayToFilter.length; i++)
+  {
+     if  (newArrayToFilter[i]["years"] >= "1900-2000")
+         {
+         get20sArray.push(newArrayToFilter[i]["name"]); 
+         }
+     
+  }   
+  console.log(get20sArray);
+  return get20sArray;
 }
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `removeArtist` that takes two arguments:
@@ -251,9 +272,13 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arrayToReduce, indexLoc)
+{
+  arrayToReduce.splice(indexLoc, 1);
+  console.log(arrayToReduce.length);
+  return(arrayToReduce.length);
 }
+
    
 
 /**
