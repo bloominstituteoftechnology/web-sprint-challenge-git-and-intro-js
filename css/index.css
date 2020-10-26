@@ -20,6 +20,11 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+
+
+*{
+    border:solid black 1px !important;
+}
 html{
     font-size:62.5%;
 }
@@ -133,4 +138,34 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 500px) {
+    nav a{
+        margin: 0 2rem;
+    }
+
+    .title-container div{
+        width: 100%;
+        height:;
+        background-position:center center;
+    }
+
+
+    .artists-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    .artist{
+        margin: 0 auto;
+    }
+    .artist {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:auto;
+    }
 }
