@@ -304,7 +304,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(arr) {
 	for (let i = 0; i < arr.length; i++) {
-		let manyPaintings = "";
+		let manyPaintings = [];
 		if (arr[i].paintings > 100) {
 			manyPaintings.push[i].name;
 			return manyPaintings;
