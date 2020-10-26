@@ -295,17 +295,8 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(arrayToAddTo, addedArtist)
-{ 
-  let addedArtist = 
+function addArtist()
 {
-  ["id"]: 20,
-  ["name"]: 'Brandon Alverson',
-  ["years"]: years,
-  ["genre"]: genre,
-  ["nationality"]: nationality,
-  ["bio"]: bio
- };
  
 }
 
