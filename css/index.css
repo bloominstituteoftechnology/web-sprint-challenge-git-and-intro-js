@@ -149,7 +149,8 @@ button:hover{
     
     a {	
         display:flex;
-        flex-direction: space-evenly;
+        justify-content:space-between;
+        /* flex-direction: space-evenly; */
         text-decoration: none;	
         color: black;
         font-size:2rem;	

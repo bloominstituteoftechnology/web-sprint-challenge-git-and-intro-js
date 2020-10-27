@@ -209,12 +209,14 @@ Practice accessing data above by console.log-ing following items:
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-console.log(artists=name[0]);
-console.log(artists=bio[2])
+// console.log(artists[0].name);
+// console.log(artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+artists[8].name = 'Vincent van Gogh';
+// console.log(artists[8].name);
 
 
 
@@ -227,19 +229,30 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array,index) {
+  const id = index;
+  const name = array[index].name;
+  console.log("getArtistByIndex: ", `The artist at ${id} is ${name}`);
 }
+getArtistByIndex(artists,0);
 
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(array){
+  let specificYear = [];
+  for (let i = 0; i < array.length; i++){
+    let arrayYears = array[i].years.split ('-');
+ 
+    if (arrayYears[0] >= 1900 &&  arrayYears[1] <= 2000){
+    specificYear.push(array[i].name)  
+    }
+  }
+  console.log(specificYear);  
 }
-
+get20s(artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -253,10 +266,12 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array, index) {
+  let artistIndex = array[index];
+  array.splice(artistIndex,1);
+  console.log("remove artist function:", array,array.length);
 }
-   
+  removeArtist(artists,0); 
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -272,11 +287,19 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
-  }
 
+function addArtist(arr,newID,newName,newYears,newGenre,newNationality,newBio){
+  arr.push({
+  "id": newID,
+  "name" : newName,
+  "years" : newYears,
+  "genre" : newGenre,
+  "nation": newNationality,
+  "bio" : newBio});  
   
+ console.log(artists);
+}
+addArtist(artists,'20','Nicole Kenney', '1973 - 2020', 'Web Design', 'American', 'rockstar coder');
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Create a function called lotsOfArt() that takes one argument: 
@@ -287,11 +310,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  let names = [];
+  for (let i = 0; i < array.length; i++){
+
+    if (array[i].paintings > 100) {
+      names.push(array[i].name);
+    }
+  } 
+  console.log(names);
 }
-
-
+lotsOfArt(artists);
 
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -316,21 +345,21 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+// function getHTML(/* Code here */){
 
-    /* Code here */
+//     /* Code here */
 
-  }
+//   }
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+// function randomize(/* Code here */){
 
-    /* Code here */
+//     /* Code here */
 
-  }
+//   }
 
 
  /* 💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪
