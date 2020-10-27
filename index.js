@@ -1,4 +1,4 @@
-export const artists = [
+ const artists = [
     {
       "id": 0,
       "name": "Amedeo Modigliani",
@@ -209,13 +209,27 @@ Practice accessing data above by console.log-ing following items:
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
-
+console.log(artists[0].name)
+console.log(artists[2].bio)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+function changeName(name1, name2){
+  /* for loop function */
+   for( let i = 0; i < artists.length; i++){
+     /* if reviews at 0 for name =  the name entered in the parameter */
+    if(artists[i].name === name1 ){
+      /* then reviews at 0 for feedback will return the feedback entered in the parameter */
+      artists[i].name = name2
+    }
 
+  }
+  /* returns whats in the scope  from the loop */
+ 
+}
+changeName("Vincent van Dough", "Vincent Van Gogh")
 
-
+console.log(artists)
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -343,11 +357,11 @@ function randomize(/* Code here */){
   return 'bar';
 }
 /*Don't touch the code after this line! */
-export default{
+ /* default{
   foo,
   getArtistByIndex,
   get20s,
   removeArtist,
   addArtist,
   lotsOfArt
-}
+} */
