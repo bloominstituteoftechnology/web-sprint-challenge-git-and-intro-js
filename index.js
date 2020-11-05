@@ -219,20 +219,22 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
- *     (2) a number which is the desired index in the array.
- * getArtistByIndex returns a string in the format `The artist at index {id} is {name}.`
+ *     (2) a number, which is the desired index in the array.
+ * getArtistByIndex returns a string in the format `The artist at index {id} is {name}`
  * 
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
- * it will return `The artist at index 0 is Amedeo Modigliani`.
+ * it will return `The artist at index 0 is Amedeo Modigliani`
 */
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
-}
-
-  
+}  
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
+Create a function called get20s() 
+it takes one argument of data
+it returns an array with names of artists who were born in and died in 20th century (1900-2000) 
+example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included
+If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/*Your Code Here*/){
   /*Your Code Here*/
@@ -247,20 +249,19 @@ Create a function called `removeArtist` that takes two arguments:
  * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
  * 
  * For example, if removeArtist is invoked with the data and the number 0,
- * it will remove Amedeo Modigliani from our dataset and log the number 19. 
- * 
- * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+ * it will remove Amedeo Modigliani from our dataset and log the number 19.  
 */
 function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+   /*Your Code Here*/
 }
    
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+Create a function called `addArtist` that can accepts an an array  
+It should add an object of information to the end of the array. 
 
-For example, you could add the following information: 
+Add the following information: 
 id: 20,
 name: Your Name Here, 
 years: Your Birth Year - current day,
@@ -271,7 +272,7 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
+    /*Your Code Here*/
   }
 
   
