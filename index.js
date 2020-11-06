@@ -250,12 +250,12 @@ function get20s(array, index){
   let arr = array[index]["years"]
   let newArray = []
   if (arr >= 1900){
-    newArray.push()
+    newArray.splice(arr)
   }
   return newArray
  }
 
-get20s(artists, "19");
+get20s(artists, [19]);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -269,14 +269,13 @@ Create a function called `removeArtist` that takes two arguments:
 */
 function removeArtist(array, index) {
   
-  if (array[index] > 0) {
-    array.splice()
+    array.pop()
     return array.length
   
 }
-}
+
    
-removeArtist(artists, 0)
+removeArtist(artists, [0])
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `addArtist` that can accepts an an array  
@@ -307,7 +306,7 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
+function lotsOfArt(artists){
   /*Your Code Here*/
 }
 
