@@ -247,7 +247,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(artists){
   for(let i = 0; i < artists.length; i++){
-    console.log(artists[i].includes("##insert string here - [years]1900-2000")){
+    console.log(artists[i].includes("## still working on this line! [years]1900-2000")){
       return artists[name];
     }
   }
@@ -285,10 +285,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(artists, id, name, years, genre, nationality, bio){
+    artists.push({id, name, years, genre, nationality, bio})
+    return artists;
   }
-
+console.log(addArtist(artists, 20, "Timmy Nguyen", "1989 - current day", "Web Design", "Vietnamese", "This is my bio"));
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -300,8 +301,10 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(artists){
+  for(let i = 0; i < paintings.length; i++){
+    console.log(artists[paintings].includes("100" > "0"))
+  }
 }
 
 
