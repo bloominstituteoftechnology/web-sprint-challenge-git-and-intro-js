@@ -235,7 +235,7 @@ Create a function called `getArtistByIndex` that takes two arguments:
 */
 function getArtistByIndex(artists,[id]) {
   for(let i = 0; i < artists.length; i++){
-    console.log(artists[i].includes([id] || [name] ));
+    console.log(artists[i].includes(`The artist at index` + [id] + `is` + [name] ));
   }
 }  
 
@@ -247,7 +247,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(artists){
   for(let i = 0; i < artists.length; i++){
-    console.log(artists[i].includes("## still working on this line! [years]1900-2000")){
+    console.log(artists[i].includes(`These are backticks`[years]1900-2000")){
       return artists[name];
     }
   }
@@ -303,7 +303,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(artists){
   for(let i = 0; i < paintings.length; i++){
-    console.log(artists[paintings].includes("100" > "0"))
+    console.log(artists[paintings].includes("1000" > "100"))
   }
 }
 
