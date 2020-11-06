@@ -303,10 +303,10 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(arr){
   for (let i=0; i < arr.length; i++){
-    if (arr[i].paintings >100){
-    return arr[i].name.split();
+    arr[i].paintings >100;
+    console.log(arr[i].name.split());
     }
-    }
+    
  } console.log(lotsOfArt(artists));
 
 
