@@ -23,9 +23,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+<!-- 
+Accessilbility is essentially making the web site available to everyone, even if they have different sensory perception than we do. It is very important, on a moral level, to make the website available to everyone. In addition, legally, websites are required to maintain ADA standards or website accesability and websites without these features can face fines, citations, and even be shut down.  -->
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+<!-- There are various things you can do to ensure a smooth transition to accesible websites. When creating the website, using ALT attributes on every image is crucial. This will give the user a text description of the item, and if the user is using a reader, will then have an understanding of why the image was on the page. In addition, creating text scripts for any video or audio files can be very important to people that are hard of hearing. With text description, it allows those peope not to miss any video content AND still have a clear understanding of why the video was put on the website. Lastly, simple semantics can be very important in creating an accesible website. Creating 'sections' instead of using many divs can be very helpful and clear to to a reader having difficulties. If a section is clearly labeled "contacts, about, more reading" , then the user knows immediately that this is a new section of information, and can imperitively clarify and organize the website for them.  -->
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+<!-- A variable is a piece of information, which, depending on how it is declared, can be altered or reassigned and used in various ways. If using var, it can be updated and reassigned. If using let, you can change the value locally, but it cannot be redeclared. Lastly, const can't be redirected or redeclared. Its constant.  -->
+
 4. What is the purpose of using functions in code?
+
+<!-- Functions are a great and accesible way to reuse code with different variables to output the same result. For example, if we wanted to double an amount, instead of writing the code individually for every amount, we could basically write amount*2, and using a function input different amounts with a predicted result. Its very impotant in programming because they save vast amounts of time and make everyones lives easier!  -->
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
