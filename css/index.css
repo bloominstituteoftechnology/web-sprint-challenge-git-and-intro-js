@@ -82,6 +82,9 @@ nav span{
 
 }
 /*Title Section Styles*/
+
+@media(max-width: 500px){
+
 .title-container{
     display:flex;
     flex-wrap: wrap;
@@ -133,4 +136,5 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
 }
