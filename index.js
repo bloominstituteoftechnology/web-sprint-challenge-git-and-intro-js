@@ -279,12 +279,20 @@ At the end, this function should return the new array with information added"*/
 
 
 
-  function addArtist(artists.push)){
-console.log(value)
+//   function addArtist(artists.push)){
+// console.log(value)
+// }
+function addArtist(array,id,name,years,genre,nationality,bio){
+  array.push({id,name,years,genre,nationality,bio})
+  return array;
 }
+console.log(addArtist(artists,"21","Nic Leach","1980-Present","American","Nic Leach was born and raised in central Utah, attended Brigham Young University where he studied industrial design, architecture, animation, philosophy, design drafting and prototyping, fine art and art history. He graduated with a BFA in Animation in 2006 with a 3.7 GPA and was already applying to graduate schools. At this time, Nic was already working in his area of expertise which was in visual development in the lighting/shading department of Digital Domain, a leading visual effects studio in Venice, CA."))
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-Create a function called lotsOfArt() that takes one argument: 
+Create a function called lotsOfArt() that takes one argume
+nt: 
 
 
     (1) artists array 
