@@ -246,16 +246,17 @@ it returns an array with names of artists who were born in and died in 20th cent
 example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array, index){
-  let arr = array[index]["years"]
-  let newArray = []
-  if (arr >= 1900){
-    newArray.splice(arr)
+function get20s(array){
+  for (let i=0; i<array.length;i++){
+    let years = array[i]['years']
+    let newArray = []
+    if(years >= 1900){
+      newArray.push()
   }
-  return newArray
  }
+}
 
-get20s(artists, [19]);
+get20s(artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -291,11 +292,19 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+    newArtist = {
+      id: 20,
+      name: "Your Name Here", 
+      years: "Your Birth Year - current day",
+      genre: "Web Design", 
+      nationality: "Your Nationality Here"
+      bio: "Add 1-2 sentences (or use lorem ipsum) "
   }
+  array.push(newArtist)
+}
 
-  
+  addArtist(artists)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Create a function called lotsOfArt() that takes one argument: 
