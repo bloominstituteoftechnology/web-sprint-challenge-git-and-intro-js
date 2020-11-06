@@ -204,7 +204,7 @@ export const artists = [
 // 🖌🖼 M V P 🖼🖌 //
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Practice accessing data above by console.log-ing following items:
+Practice accessing data above by console.log-ing following items: test
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
