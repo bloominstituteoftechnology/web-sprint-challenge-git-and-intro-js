@@ -138,15 +138,19 @@ button:hover{
 body{
     font-size: 1.4rem;
 }
-img {	
-    height:auto;	
-    object-fit: cover;	 
-    display: block;	
-    margin: 2%;	
-    margin-top: 4%;	
-    margin-left: auto;	
-    margin-right: auto;	
-    border-radius: 2%;	
+img {
+	display: block;
+	max-height: 100%;
+	width: auto;
+	margin: 0 auto;
+	padding: 5px;
+}
+.title-container div {	
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}	
+    
 }
 a{
    width:60%;
@@ -155,10 +159,14 @@ a{
 .artists-container{
     display:flex;
     flex-wrap:wrap;
+    width: 45%;
 }
 .artist .img{
-    background-image: url('ihttps://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg');
-    background-size:cover;
+        display: block;
+        max-height: 100%;
+        width: auto;
+        margin: 0 auto;
+        padding: 5px;
     width:50%;
 }
 .artist{
