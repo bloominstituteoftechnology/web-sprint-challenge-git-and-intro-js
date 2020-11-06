@@ -244,7 +244,7 @@ function get20s(/*Your Code Here*/){
 }
 
 
-
+vhxgfcvj
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
