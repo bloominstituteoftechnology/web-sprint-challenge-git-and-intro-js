@@ -298,7 +298,7 @@ function addArtist(array){
       name: "Your Name Here", 
       years: "Your Birth Year - current day",
       genre: "Web Design", 
-      nationality: "Your Nationality Here"
+      nationality: "Your Nationality Here",
       bio: "Add 1-2 sentences (or use lorem ipsum) "
   }
   array.push(newArtist)
