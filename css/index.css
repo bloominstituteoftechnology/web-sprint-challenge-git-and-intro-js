@@ -14,7 +14,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+border: 2px solid red;  
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -136,7 +136,19 @@ button:hover{
 }
 
 @media (max-width: 500px) {
+    nav{
+        width: 50%;
+    }
     .title-container div{
+        width: 100%;
+    }
+
+    .artists-container{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .artist{
         width: 100%;
     }
 }
