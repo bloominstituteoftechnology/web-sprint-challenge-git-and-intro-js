@@ -208,7 +208,8 @@ Practice accessing data above by console.log-ing following items:
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
-
+console.log(artist[0].name);
+console.log(artist[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -225,8 +226,8 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array,index) {
+  return `the artist at index ${index} is ${artists[index].name}`;
 }
 
   
@@ -270,7 +271,7 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
+function addArtist(array, id, name, years, genre, nationality, bio){
   /*Your Code Here*/
   }
 
@@ -285,9 +286,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+function lotsOfArt(arr, string){
+    let newarr = [];
+    for(let i = 0, i < arr.length; i++){
+      if (arr[i].includes('paintings' >=100)){
+        newarr.push(arr.name[i]);
+      }
+    }
+    return newarr
+  }
+
 
 
 
