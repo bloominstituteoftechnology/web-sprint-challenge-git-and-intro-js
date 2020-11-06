@@ -208,13 +208,21 @@ Practice accessing data above by console.log-ing following items:
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
-
-
+console.log(artists[0]);
+console.log(artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
-
+function changeArtName(artists, refName, newArtName){
+  for(let i in artists){
+    if(artists[i].name.includes(refName)){
+      artists[i].name = newArtName;
+    }
+  }
+  return array;
+}
+let newArr = changeArtName([9],"name", "Vincent Van Gogh")
+console.log(newArr);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `getArtistByIndex` that takes two arguments:
@@ -225,20 +233,25 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(artists,[id]) {
+  for(let i = 0; i < artists.length; i++){
+    console.log(artists[i].includes([id] || [name] ));
+  }
 }  
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Create a function called get20s() 
-it takes one argument of data
+Create a function called get20s() it takes one argument of data
 it returns an array with names of artists who were born in and died in 20th century (1900-2000) 
 example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+function get20s(artists){
+  for(let i = 0; i < artists.length; i++){
+    console.log(artists[i].includes("##insert string here - [years]1900-2000")){
+      return artists[name];
+    }
+  }
+}  
 
 
 
@@ -251,10 +264,11 @@ Create a function called `removeArtist` that takes two arguments:
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset and log the number 19.  
 */
-function removeArtist(/*Your Code Here*/) {
-   /*Your Code Here*/
+function removeArtist(artists) {
+   artists.splice([i]);
+   console.log(artists);
 }
-   
+
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 

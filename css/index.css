@@ -148,9 +148,6 @@ img {
     display: block;	
     margin: 2%;	
     margin-top: 4%;	
-    margin-left: auto;	
-    margin-right: auto;	
-    border-radius: 2%;	
 }	
 
 /*HEADER STYLES */
@@ -187,20 +184,19 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:80%;
+    width:90%;
 }
-
 .artist{
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap:nowrap;
     align-items: center;
-    width:80%;
+    width:90%;
 }
 .artist img{
     display: flex;
-    width:100%;
+    width:80%;
 }
 
 }/***End of Media Queries***/
