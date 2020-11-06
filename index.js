@@ -207,8 +207,12 @@ export const artists = [
 Practice accessing data above by console.log-ing following items:
 
 (1) Name of the first artist (0th index) in the array
+
+*/console.log(artists[name[0]])/*
+
 (2) Bio of the third artist (2nd index) in the array */
 
+*/console.log(artists[bio[2]])/*
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -225,9 +229,10 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
-}  
+function getArtistByIndex(array, index) {
+  return `The artist at index {$index} is {$artist}`
+  }  
+getArtistByIndex(artists,4);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called get20s() 
