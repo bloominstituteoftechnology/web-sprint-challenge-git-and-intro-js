@@ -208,18 +208,19 @@ Practice accessing data above by console.log-ing following items:
 
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
-
+function x(){
 console.log("the artist at index 0 is " + artists[0]["name"])
-console.log(`the bio at index 2 is ${artists[2]["bio"]}`)
+console.log("the bio at index 2 is " + artists[2]["bio"])
 
-
+}
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-// newName = ["Vincent Van Gogh"]
-// artists[8]["name"].push(newName)
-// console.log(artists[8]["name"])
-
+// let newName = "Vincent Van Gogh"
+function y() {
+(artists[8]["name"]).push("Vincent Van Gogh")
+console.log(artists[8]["name"])
+}
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `getArtistByIndex` that takes two arguments:
@@ -247,13 +248,16 @@ example born in 1901 and died in 1959 - included / born in 1889 and died in 1925
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
-  for (let i=0; i<array.length;i++){
-    let years = array[i]['years']
-    let newArray = []
-    if(years >= 1900){
-      newArray.push()
+  let i
+  let newArray = []
+  
+  for (i=0; i < array.length; i++){
+    
+    if (array[i].years > "1900" && array[i].years <= "2000") {
+      newArray.push(array[i].name)
+    }
   }
- }
+  return newArray
 }
 
 get20s(artists);
@@ -293,15 +297,16 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(array){
-    newArtist = {
+    let newArtist = [{
       id: 20,
       name: "Your Name Here", 
       years: "Your Birth Year - current day",
       genre: "Web Design", 
       nationality: "Your Nationality Here",
       bio: "Add 1-2 sentences (or use lorem ipsum) "
-  }
+  }]
   array.push(newArtist)
+  return array
 }
 
   addArtist(artists)
@@ -315,11 +320,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(artists){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  let i 
+  let newArray = []
+  for (i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100){
+      newArray.push(array[i].name)
+    }
+  }
+  return newArray
 }
 
-
+lotsOfArt(artists)
 
 
 // 🎨🎨 STRETCH 🎨🎨//
