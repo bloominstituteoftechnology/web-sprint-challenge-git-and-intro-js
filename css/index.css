@@ -24,8 +24,8 @@ html{
     font-size:62.5%;
 }
 body{
-    font-size:1.6rem;
-    line-height: 1.5;
+    font-size:.5rem; /* change: */
+    line-height: 1.5; 
     font-family: 'Raleway', sans-serif;	
 }
 h1, p, .name, .bio {	
@@ -34,13 +34,15 @@ h1, p, .name, .bio {
     margin: 4%;	
 }	
 h1{
-    font-size:6rem;
+    font-size:3.8rem; /* change: font was too big */
+    line-height: 4.5rem; /* change: space between words was too big */
     margin:0;
+    margin-bottom: 1%; /* change: space btwn button and title too small*/
 }
 a {	
     text-decoration: none;	
     color: black;
-    font-size:2.5rem;	
+    font-size:1.8rem;	/* change: */
 }	
 a:hover {	
     font-weight: bold;	
@@ -78,7 +80,9 @@ nav a{
     color:#626262;
 }
 nav span{
-    border-left:3px solid #626262;
+    border-left:1px solid #626262; /* change: */
+
+ 
 
 }
 /*Title Section Styles*/
@@ -89,25 +93,26 @@ nav span{
 }
 .title-container div {	
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
-    background-position: center;	
+    background-position: center;
+    background-size: 175%; /* change:  match the proportion of painting showing in design*/
     color: white;	
     width:80%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:60vh;
+    height:40vh; /*change: smaller portion of screen */
     margin:5% 0;
 }	
 .title-container div:hover {	
     opacity: 80%;	
 }	
 .title-container hr{
-    width:80%;
+    width:85%; /* change: make wider */
 }
 button{
     padding:1% 3%;
-    font-size: 1.6rem;
+    font-size: 1.1rem; /* change: smaller*/
     border-radius:6px;
     border:2px solid #626262;
     box-shadow: 2px 2px 1px #626262;
@@ -123,27 +128,60 @@ button:hover{
 .artists-container{
     display:flex;
     justify-content: space-around;
-    width:80%;
+    width:90%; /* change: more white space*/
     margin:0 auto;
 }
 
 .artist{
-    width:40%;
+    width:40%; /* change: more white space*/
     text-align:center;
+    padding-top: 2%; /* change: more white space*/
+}
+.artist a {
+    font-size: 1.2rem; /* change: */
+    font-weight: 100; /* change: */
+    margin-top: 5%;
 }
 .artist img{
-    width:100%;
+    width:80%;
+    height:25vw;
+    object-fit: cover;
+    margin-bottom: 4%; /* change: */
+}
+.bios {
+    font-size: .5rem; 
 }
 
 /* Responsive Breakpoint for Mobile Display */
 /* 500 px max width */	
 @media (max-width: 500px) {
+    nav{
+        width:45%; /* spread out*/
+    }
+    nav a {
+        font-size: 1.2rem;
+    }
+    
     .artists-container{
         flex-direction: column;
+        align-items: center;
     }
     .artist{
     
-        width:100%;
+        width:80%;
         text-align:center;
     }
+    .artist img{
+        width:60%;
+        height: 40vw;
+        object-fit: cover;
+    }
+    .title-container div {	
+        width:100%;
+    }
+    .title-container hr{
+        width:100%; /* change: make wider */
+    }
+
+
 }
