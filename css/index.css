@@ -138,20 +138,14 @@ button:hover{
 body{
     font-size: 1.4rem;
 }
-img {
-	display: block;
-	max-height: 100%;
-	width: auto;
-	margin: 0 auto;
-	padding: 5px;
-}
+
 .title-container div {	
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin:0%;
+    width:100%;
+    background-repeat:no-repeat;
+    
 
 }	
-    
-}
 a{
    width:60%;
    padding: 0 10%;
@@ -159,25 +153,19 @@ a{
 .artists-container{
     display:flex;
     flex-wrap:wrap;
-    width: 45%;
-}
-.artist .img{
-        display: block;
-        max-height: 100%;
-        width: auto;
-        margin: 0 auto;
-        padding: 5px;
-    width:50%;
 }
 .artist{
     width:100%;
     height: 10%;
 }
-.artist .bio{
-    width:100%;
-    font-size:100%;
+.artist img{
+    border: 1px solid red;
+    height:auto;
+    width:60%;
 }
-
-
-
+.artist p{
+    width:70%;
+}
+.title-container hr{
+    width:100%;
 } /* media @500px closing tag*/
