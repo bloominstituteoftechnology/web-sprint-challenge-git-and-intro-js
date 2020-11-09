@@ -247,7 +247,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(artists){
   for(let i = 0; i < artists.length; i++){
-    console.log(artists[i].includes(`These are backticks`[years]1900-2000")){
+    console.log(artists[i].includes(//* `These are backticks`[years]1900-2000" */)){
       return artists[name];
     }
   }
