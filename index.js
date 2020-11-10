@@ -1,4 +1,4 @@
-export const artists = [
+ const artists = [
     {
       "id": 0,
       "name": "Amedeo Modigliani",
@@ -301,14 +301,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(numArt){
-  for(i in array){
-    if(array[i].paintings > 99);
-    console.log(numArt);
+function lotsOfArt(artists){
+  for(artProfile in artists){
+    if(artProfile.paintings > 99){
+      artists100=[...artists100,artProfile.name];
+
+    }
+    console.log();
   }
 }
+let artists100 = []
 
-
+console.log("artString");
 
 
 // 🎨🎨 STRETCH 🎨🎨//
