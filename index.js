@@ -205,35 +205,41 @@ export const artists = [
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Practice accessing data above by console.log-ing following items:
+(no functions needed) */
 
-(1) Name of the first artist (0th index) in the array
-(2) Bio of the third artist (2nd index) in the array */
+//(1) Name of the first artist (0th index) in the array
+
+
+//(2) Bio of the third artist (2nd index) in the array 
 
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+(no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Create a function called `getArtistByIndex` that takes two arguments:
- *     (1) artists array
- *     (2) a number, which is the desired index in the array.
- * getArtistByIndex returns a string in the format `The artist at index {id} is {name}`
- * 
- * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
- * it will return `the artist at index 0 is Amedeo Modigliani`
-*/
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
+ Use getArtistByIndex to do the following:
+ 1. Receive an array
+ 2. Receive a number, which is the desired index in the array.
+ 3. Return a string in the format `the artist at index {id} is {name}`
+ 
+ Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
+
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
 }  
 
+
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Create a function called get20s() 
-it takes one argument of data
-it returns an array with names of artists who were born in and died in 20th century (1900-2000) 
-example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included
+Use get20s to do the following: 
+1. Receive an array
+2. Return a new array with names of artists who were born in and died in 20th century (1900-2000) 
+
+Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/*Your Code Here*/){
@@ -243,33 +249,34 @@ function get20s(/*Your Code Here*/){
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Create a function called `removeArtist` that takes two arguments:
- *     (1) artists array
- *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.
- * 
- * For example, if removeArtist is invoked with the data and the number 0,
- * it will remove Amedeo Modigliani from our dataset and log the number 19.  
-*/
-function removeArtist(/*Your Code Here*/) {
+ Use removeArtist to do the following:
+ 1. Receive an array
+ 2. Receive a number which is the desired index in the array
+ 3. The function should remove an artist from the array at the index
+ 4. Return the length of the remaining dataset.
+ 
+ For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
+
+function removeArtist(/*Your Code Here*/){
    /*Your Code Here*/
 }
    
 
-/**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Create a function called `addArtist` that can accepts an an array  
-It should add an object of information to the end of the array. 
+Use addArtist to do the following: 
+1. Receive an array
+2. Add this object of information to the end of the array
+    { 
+      id: 20,
+      name: Your Name Here, 
+      years: Your Birth Year - current day,
+      genre: Web Design, 
+      nationality: Your Nationality Here
+      bio: Add 1-2 sentences (or use lorem ipsum)
+    }  
+3. Return the resulting array
 
-Add the following information: 
-id: 20,
-name: Your Name Here, 
-years: Your Birth Year - current day,
-genre: Web Design, 
-nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) 
-
-At the end, this function should return the new array with information added"*/
+Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(/*Your Code Here*/){
     /*Your Code Here*/
@@ -278,13 +285,11 @@ function addArtist(/*Your Code Here*/){
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
-Create a function called lotsOfArt() that takes one argument: 
+Use lotsOfArt to do the following: 
+1. Receive an array 
+2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
-    (1) artists array 
-
-and returns an array with names of artists who painted more than 100 paintings.
-
-For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
+For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(/*Your Code Here*/){
   /*Your Code Here*/
