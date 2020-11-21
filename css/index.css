@@ -1,23 +1,23 @@
 /*CSS RESET*/
-html, body, div, span, applet, object, iframe,  
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
-a, abbr, acronym, address, big, cite, code,  
-del, dfn, em, img, ins, kbd, q, s, samp,  
-small, strike, strong, sub, sup, tt, var,  
-b, u, i, center,  
-dl, dt, dd, ol, ul, li,  
-fieldset, form, label, legend,  
-table, caption, tbody, tfoot, thead, tr, th, td,  
-article, aside, canvas, details, embed,  
-figure, figcaption, footer, header, hgroup,  
-menu, nav, output, ruby, section, summary,  
-time, mark, audio, video {  
-margin: 0;  
-padding: 0;  
-border: 0;  
-font-size: 100%;  
-font: inherit;  
-vertical-align: baseline;  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /*GENERAL STYLES*/
 html{
@@ -26,44 +26,50 @@ html{
 body{
     font-size:1.6rem;
     line-height: 1.5;
-    font-family: 'Raleway', sans-serif;	
+    font-family: 'Raleway', sans-serif;
 }
-h1, p, .name, .bio {	
-    font-family: 'Raleway', sans-serif;	
-    text-align: center;	
-    margin: 4%;	
-}	
+h1, p, .name, .bio {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 4%;
+}
 h1{
     font-size:6rem;
     margin:0;
 }
-a {	
-    text-decoration: none;	
+a {
+    text-decoration: none;
     color: black;
-    font-size:2.5rem;	
-}	
-a:hover {	
-    font-weight: bold;	
-}	
-.name{	
-    font-size: 150%;	
-    font-weight: 200;	
-}	
-img {	
-    height:39rem;	
-    object-fit: cover;	
-    display: block;	
-    margin: 2%;	
-    margin-top: 4%;	
-    margin-left: auto;	
-    margin-right: auto;	
-    border-radius: 2%;	
-}	
-img:hover {	
-    opacity: 80%;	
-}	
+    font-size:2.5rem;
+}
+a:hover {
+    font-weight: bold;
+}
+.name{
+    font-size: 150%;
+    font-weight: 200;
+}
+img {
+    height:39rem;
+    object-fit: cover;
+    display: block;
+    margin: 2%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+img:hover {
+    opacity: 80%;
+}
 
 /*HEADER STYLES */
+@media screen and (max-width: 800px) {
+    header, nav, nav a, nav span{
+        width: 100%;
+        margin: 5px;
+    }
+}
 header{
     display:flex;
     justify-content: center;
@@ -81,16 +87,28 @@ nav span{
     border-left:3px solid #626262;
 
 }
+
+
+
 /*Title Section Styles*/
+@media screen and (max-width: 800px) {
+    .title-container, .title-container div{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 5%;
+    }
+}
+
+
 .title-container{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.title-container div {	
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
-    background-position: center;	
-    color: white;	
+.title-container div {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');
+    background-position: center;
+    color: white;
     width:80%;
     display:flex;
     flex-direction: column;
@@ -98,10 +116,10 @@ nav span{
     align-items: center;
     height:60vh;
     margin:5% 0;
-}	
-.title-container div:hover {	
-    opacity: 80%;	
-}	
+}
+.title-container div:hover {
+    opacity: 80%;
+}
 .title-container hr{
     width:80%;
 }
@@ -119,7 +137,21 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
+
+
 /*Artists Section Styles */
+@media screen and (max-width: 800px) {
+    .artists-container, .artist{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 5px;
+        font-size: 15px;
+    }
+}
+
 .artists-container{
     display:flex;
     justify-content: space-around;
