@@ -134,3 +134,24 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    border 1px lightblue;
+&nbsp; padding: 20px 1.25%;
+}
+
+@media(max-width 1125px) {
+    body{
+        background-color: darkcyan;
+}
+
+.container header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+&nbsp;.container header nav a {
+    margin-bottom: 20px;
+}
