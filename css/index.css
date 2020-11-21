@@ -142,3 +142,15 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+@media only screen and (max-width: 375px) {
+    .artists-container {
+        width: 200%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+
+
+    }
+}
