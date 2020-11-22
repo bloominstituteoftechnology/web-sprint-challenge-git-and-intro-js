@@ -242,10 +242,18 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(arr){
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++){
+    let yearBorn = parseInt((arr[i].years).substring(0,4));
+    let yearDead = parseInt((arr[i].years).substring(7,11));
+    if (( yearBorn > 1900) && (2000 > yearDead)){
+      newArr.push(arr[i].name);
+    }
+  }
+  return newArr;
 }
-
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -257,9 +265,11 @@ function get20s(/*Your Code Here*/){
 
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(arr, id){
+  arr.shift([id]);
+  return arr.length;
 }
+console.log(removeArtist(artists,0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -278,11 +288,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(arr){
+    artists.push(arr);
+    return artists;
   }
 
-
+console.log(addArtist({
+  id: 20,
+  name: 'Andrew Castillo',
+  years: '1997 - 2020',
+  genre: ['Web Design', 'Artist'],
+  nationality: 'Mexican',
+  bio: 'Um hoping this works so I will just write something random. Math.random(); hah get it?'
+}));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following:
@@ -291,11 +309,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(arr){
+  let artistNames = [];
+  arr.map(item => {
+    if (item.paintings > 100){
+      artistNames.push(item.name)
+    }
+  })
+     return artistNames;
 }
-
-
+console.log(lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
