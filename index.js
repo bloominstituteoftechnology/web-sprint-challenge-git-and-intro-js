@@ -200,6 +200,77 @@ export const artists = [
       "paintings": 328
     }
 ]
+/* Task 1 */
+
+console.log(artists[0].name);
+console.log(artists[2].bio);
+
+/* Task 2 */
+
+artists[8].name="Vincent Van Gogh";
+console.log(artists[8].name);
+
+/* Task 3 */
+
+function getArtistByIndex(name, id) {
+  let artist = name[id];
+  return `the artist at index ${artist.id} is ${artist.name}`;
+}  
+
+console.log(getArtistByIndex(artists, 0));
+
+/* Task 4 */
+
+function get20s(arr){
+  let newArr =[];
+  for (let i = 0; i < arr.length; i++){
+    let yearBorn = parseInt((arr[i].years).substring(0,4));
+    let yearDead = parseInt((arr[i].years).substring(7,11));
+    if (( yearBorn > 1900) && (2000 > yearDead)){
+      newArr.push(arr[i].name);
+    }
+  }
+  return newArr;
+}
+console.log(get20s(artists));
+
+/* Task 5 */
+
+function removeArtist(arr, id){
+  arr.shift([id]);
+  return arr.length;
+}
+console.log(removeArtist(artists,0));
+
+/* Task 6 */
+
+function addArtist(arr){
+  artists.push(arr);
+  return artists;
+}
+
+console.log(addArtist({
+  id: 20,
+  name: 'Brett Adams',
+  years: '1998-2020',
+  genre: 'Web Design',
+  nationality: 'American',
+  bio: 'Fingers crossed that this will work.',
+}));
+
+/* Task 7 */
+
+function lotsOfArt(arr){
+  let artistNames = [];
+  arr.map(item => {
+    if (item.paintings > 100){
+      artistNames.push(item.name)
+    }
+  })
+  return artistNames;
+}
+
+console.log(lotsOfArt(artists));
 
 // 🖌🖼 M V P 🖼🖌 //
 
@@ -228,11 +299,6 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
-}  
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -241,10 +307,6 @@ Use get20s to do the following:
 
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
-
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
-}
 
 
 
