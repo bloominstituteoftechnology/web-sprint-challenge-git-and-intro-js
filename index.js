@@ -286,7 +286,7 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
+function addArtist(artists){
     /*Your Code Here*/
   }
 
@@ -300,14 +300,14 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(artists){
-  let paintingNumbers = "paintings";
+ let results = [];
+ let num = 100;
+ for(var i = 0; i < artists.length; i++){
+   if (artists[i].paintings > num){
+     results.push(artists[i].name)
+   } }
 
-  if(paintingNumbers >= 100);
-  return("name");
-}
-else {
-  alert("Sorry - try again soon");
-  
+return results;
 }
 
 
