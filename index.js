@@ -318,12 +318,18 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(artists){
   /*Your Code Here*/
+  var newArray = [];
   for(i = 0; i < artists.length; i ++){
     if(artists[i].paintings > 100){
-      return artists[i].name;
+       newArray.push(artists[i].name);
+      
     }
+    return newArray;
   }
 }
+
+console.log(lotsOfArt(artists));
+
 
 
 
