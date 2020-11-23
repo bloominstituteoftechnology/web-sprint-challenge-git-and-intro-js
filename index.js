@@ -246,7 +246,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(artists){
   /*Your Code Here*/
-  parseint(artists[8].years);
+  for(i = 0; i < artists.length; i ++){
+    let death = parseInt(artists[i].years[artists[i].years.length - 3]);
+    let birth = parseInt(artists[i].years);
+    
+     if(birth >= 1900 && birth < 2000 && death === 9){
+       console.log(artists[i].name);
+     }
+  }
 }
 console.log(get20s(artists));
 
@@ -286,12 +293,16 @@ Example: addArtist(artists) should return the artists array with the above objec
 
 function addArtist(artists){
     /*Your Code Here*/
-    artists.push({id: 20,
+  artists.push({
+     
+      id: 20,
       name: "Name Here", 
       years: "Birth Year - current day",
       genre: "Web Design", 
       nationality: "Your Nationality Here",
-      bio: "Add 1-2 sentences"})
+      bio: "Add 1-2 sentences"
+    
+    })
 
   return artists;
   }
@@ -305,8 +316,13 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
+function lotsOfArt(artists){
   /*Your Code Here*/
+  for(i = 0; i < artists.length; i ++){
+    if(artists[i].paintings > 100){
+      return artists[i].name;
+    }
+  }
 }
 
 
