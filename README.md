@@ -32,7 +32,7 @@ You can use flexible, responsive units for size, add breakpoints at key size poi
 a variable is a container for a little set of information which belongs to your code, and plays a part in its functioning.
 
 4. What is the purpose of using functions in code?
-functions are mini programs and these run chunks of code, by calling the function name. this saves ypu from tedious repetition
+functions are "mini programs" and these run blocks of code when you call the function name. this can save you from tedious repetition
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
