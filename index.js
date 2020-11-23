@@ -217,7 +217,7 @@ console.log(artists[2]);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
+artists.splice(9, 1, "Vincent Van Gogh");
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -228,9 +228,15 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(artists) {
+  var id = "id";
+  var name = "name";{
+    alert("The artist at index [] is []");
+  }
+  
+  
 }  
+getArtistsByIndex();
 
 
 
@@ -257,9 +263,11 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(artists){
+  artists.splice(6, 1);
+  artists.length();
 }
+
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -291,8 +299,15 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(artists){
+  let paintingNumbers = "paintings";
+
+  if(paintingNumbers >= 100);
+  return("name");
+}
+else {
+  alert("Sorry - try again soon");
+  
 }
 
 
