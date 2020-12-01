@@ -26,10 +26,11 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 accessibility is coding your web page so that anyone with a disability could read it or see it 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
-
+use meaningful syntax, using page breaks, using color code
 3. How would you explain the concept of a variable to someone new to programming?
+a variable is something that can be used to hold data for usage
 4. What is the purpose of using functions in code?
-
+functions are created so you can do a complex task once quickly 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions

@@ -134,3 +134,6 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+@media screen and (min-width: 400px)
