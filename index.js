@@ -233,7 +233,7 @@ function getArtistByIndex(artistsArray, indexNum) {
   return "the artist at index " + indexNum + " is " + artistsArray[indexNum].name
 }  
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 okay
 Create a function called get20s() 
 it takes one argument of data
 it returns an array with names of artists who were born in and died in 20th century (1900-2000) 
