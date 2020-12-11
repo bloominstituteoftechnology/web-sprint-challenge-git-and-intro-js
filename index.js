@@ -201,7 +201,7 @@ export const artists = [
     }
 ]
 
-// 🖌🖼 M V P 🖼🖌 //
+// 🖌🖼 M V P 🖼🖌  test//
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Practice accessing data above by console.log-ing following items:
