@@ -246,13 +246,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 
 function get20s(taskFourArray){
-  let returnArray=[];
-  for (let i=0;i<taskFourArray.length;i++){
+  let returnArray=[]; //empty array to take in names
+  let sampleArray=[]; //empty array to place successful 20s entries
+  for (let i=0;i<taskFourArray.length;i++){ //for loop to go through artists
     let arrayFor20 = taskFourArray[i].years.split("");
     if (arrayFor20[0]>=1900 && arrayFor20[2]<=2000){
-      returnArray.push(taskFourArray[i].name); 
+      sampleArray.push(taskFourArray[i].name); 
     }
-    return returnArray;
+    return sampleArray;
   }
   
 }
