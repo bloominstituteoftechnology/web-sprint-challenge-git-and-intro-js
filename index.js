@@ -244,8 +244,17 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+
+function get20s(taskFourArray){
+  let returnArray=[];
+  for (let i=0;i<taskFourArray.length;i++){
+    let arrayFor20 = taskFourArray[i].years.split("");
+    if (arrayFor20[0]>=1900 && arrayFor20[2]<=2000){
+      returnArray.push(taskFourArray[i].name); 
+    }
+    return returnArray;
+  }
+  
 }
 
 
@@ -259,8 +268,10 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(taskFiveArray, selectedIndex){
+   taskFiveArray.splice(selectedIndex,1);
+   let result=taskFiveArray.length;
+   return result;
 }
    
 
@@ -280,8 +291,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(taskSixArray){
+    let willObject = {
+      id:20,
+      name:'William Dye',
+      years:'1993 - 2020',
+      genre: 'Web Design',
+      nationality: 'Mixed',
+      bio: 'He\'s learning how to code. Thankfully, he\'s understanding more his second time around!'
+    }
+    taskSixArray.push(willObject)
+    return taskSixArray
   }
 
   
@@ -293,8 +313,15 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(taskSevenArray){
+  let prolificArtistArray=[];
+  for (let i=0;i<taskSevenArray.length;i++){
+    if (taskSevenArray[i].paintings>100){
+      prolificArtistArray.push(taskSevenArray[i].name)
+    }
+  }
+ 
+  return prolificArtistArray
 }
 
 
