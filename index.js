@@ -208,17 +208,18 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+console.log(artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
-
+console.log(artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+artists[8].name = 'Vincent Van Gogh';
+console.log(artists[8].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -228,11 +229,10 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(artists, index) {
+  const artist = artists[index];
+  return `the artist at index ${index} is ${artist.name}`;
 }  
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -242,8 +242,18 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(artists){
+  const twentiesArtists = [];/*creates new empty array*/
+  for (let i = 0; i < artists.length; i++){ /*loops as many times as the array length*/
+    const artist = artists[i];
+    /*1900 - 2000*/
+    const years = artist.years;
+    const parsedYears = years.split(' - ');/*['1900', '2000']*/
+    if (Number(parsedYears[0]) >= 1900 && Number(parsedYears[1]) < 2000){
+      twentiesArtists.push(artist.name);
+    }
+  }
+  return twentiesArtists;
 }
 
 
@@ -257,8 +267,10 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(artists, index){
+   const artist = artists[index];
+   artists.splice(artist, 1);
+   return artists.length;
 }
    
 
@@ -278,8 +290,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(artists){
+    const newArtist = 
+      { 
+      "id": 20,
+      "name": "Gregory Walton", 
+      "years": "Feb. 9, 1995 - Present Day",
+      "genre": "Web Design",
+      "nationality": "American",
+      "bio": "Pablo Ruiz Picasso (; Spanish: [ˈpaβlo piˈkaso]; 25 October 1881 – 8 April 1973) was a Spanish painter, sculptor, printmaker, ceramicist, stage designer, poet and playwright who spent most of his adult life in France. Regarded as one of the most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture, the co-invention of collage, and for the wide variety of styles that he helped develop and explore. Among his most famous works are the proto-Cubist Les Demoiselles d'Avignon (1907), and Guernica (1937), a dramatic portrayal of the bombing of Guernica by the German and Italian airforces during the Spanish Civil War."
+    }
+  artists.push(newArtist);
+  return artists;
   }
 
   
@@ -291,8 +313,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(artists){
+  const hunnits = [];
+  for (let i = 0; i < artists.length; i++){ /*loops as many times as the array length*/
+    const artist = artists[i]; /*artists[0], artists[1], artists[2]...*/
+    const numPaintings = artist.paintings;
+    if (numPaintings >= 100){
+      hunnits.push(artist.name);
+    }
+  }
+  return hunnits;
 }
 
 
