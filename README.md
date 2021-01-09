@@ -23,9 +23,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+Accessibility in programming addresses the need to make web content to be compatible for use by all in the intended audience despite their visible and 'non-visible' difficulties(disabilities). It encourages programmers to include those considerations when developing web content. For instance, contents developed with screen readers in mind, aids the visually impaired.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+a. Information is accessed on different kinds of devices and so if we do not consider this while developing content and suitable do media queries for at least most generalized kinds of devices, our content may not be accessible in whole or as intended to our audience. This process of runnung media quries makes the information suitable for most devices...
+b. The use of alt text and good semantics makes the web content equitably accessible despite visual inpairment or hearing disabilities.
+c. The use of close captioning in videos used in web contents help not only the audience with hearing impairment, but also those with difficulty in comprehending the accent of the speaker......
 3. How would you explain the concept of a variable to someone new to programming?
+   Variables are tools used as storages for pieces of information used in coding, so that they can be called back for use later by just referencing that particular variable. Variable are like boxes storing that content.
 4. What is the purpose of using functions in code?
+   Functions are used to store data as codes which can be recalled as and when needed by referencing that function. This makes coding easy in that we do not have to repeatedly create the data or block of code each time we need to accomplish the same task in our program. A saved function can be easily invoked.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
