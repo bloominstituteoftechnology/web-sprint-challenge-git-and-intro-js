@@ -71,7 +71,7 @@ After finishing your required elements, you can push your work further. These go
 
 ## Resources
 
-📚[Best Practices for Responsive Design](https://www.browserstack.com/guide/responsive-design-breakpoints)
+📚[Best Practices for Responsive Design](https://www.browserstack.com/guide/respo   nsive-design-breakpoints)
 
 🤝[W3 Schools - Responsive Design](https://www.w3schools.com/html/html_responsive.asp)
 
