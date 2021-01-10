@@ -135,6 +135,7 @@ button:hover{
 .artist img{
     width:100%;
 }
+/*media query for navigation menu*/
 @media (max-width: 500px) {
     nav a {
         font-size: 1.5rem;
@@ -146,17 +147,13 @@ button:hover{
 }
 @media(max-width: 500px) {
     nav {
-justify-content: space-around;
-align-items: center;
-width:50%
+        justify-content: space-around;
+        align-items: center;
+        width:50%
     }
 }
 
-@media(max-width: 500px)   {
-    nav a {
-        font-size: 2rem;
-    }
-}
+/*media query for aligning items in artists container*/
 @media(max-width: 500px) {
     .artists-container {
         flex-direction: column;
@@ -165,7 +162,8 @@ width:50%
 }
 @media(max-width: 500px) {
     .artist img {
-        height: 40%;
+        height: 80%;
+        
     }
 }
 @media(max-width: 500px) {
@@ -177,5 +175,33 @@ width:50%
     margin:0 auto;
     font-size: 30%;
     
+    }
+}
+/*media query to reduce text tize in container*/
+@media(max-width: 500px) {
+    .bio {
+        font-size: 0.5rem;
+    }
+        
+}
+/*media query to position dividers in navigation bar*/
+
+@media(max-width: 500px) {
+    nav span {
+        border: 3px solid #626262;
+    }
+}
+/*media query to reduc size of name of artist within the image container*/
+@media(max-width: 500px) {
+    a {
+        font-size: 1rem;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+/* media query to adjust size of main heading*/
+@media(max-width: 500px) {
+    h1{
+        font-size: 4rem;
     }
 }
