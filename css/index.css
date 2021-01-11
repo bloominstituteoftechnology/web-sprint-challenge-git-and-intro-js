@@ -134,3 +134,22 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media (max-width: 450px) {
+    body{
+        width: 100%;
+        display: flex;
+    }
+    img {	
+        height:39rem;	
+        object-fit: cover;	
+        display: flex;	
+        margin: 2%;	
+        margin-top: 4%;	
+        margin-left: auto;	
+        margin-right: auto;	
+        border-radius: 2%;	
+    }	
+    
+
+}
