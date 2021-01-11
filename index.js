@@ -284,7 +284,15 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(artists, id) {}
+function removeArtist(artists, id) {
+  const newArr = [];
+  artists.map((artist) => {
+    if (artist.id !== id) {
+      newArr.push(artist);
+    }
+  });
+  return newArr.length;
+}
 
 /**
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
