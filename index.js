@@ -322,7 +322,12 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(artistsArray) {}
+function lotsOfArt(artists) {
+  const artistsArray = artists.filter((artist) => artist.paintings > 100);
+  return artistsArray.map((artist) => {
+    return artist.name;
+  });
+}
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
