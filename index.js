@@ -217,8 +217,8 @@ console.log(artists[2].bio);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-console.log(artists.splice(8,1, "Vincent Van Gogh")
-
+artists[8].name = "Vincent Van Gogh";
+console.log(artists[8]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -227,10 +227,6 @@ console.log(artists.splice(8,1, "Vincent Van Gogh")
  3. Return a string in the format `the artist at index {id} is {name}`
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
-
-   /*Your Code Here*/
-    /*Your Code Here*/
-  
 
 
 
