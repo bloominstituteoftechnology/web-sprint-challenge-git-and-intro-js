@@ -298,11 +298,24 @@ Use addArtist to do the following:
     }  
 3. Return the resulting array
 
-Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
+Example: addArtist(artists) should return the artists array with the above object added to
+ the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+ function addArtist(array){
+  let data = {
+      "id": 20,
+      "name": "Tarah Agbokhana", 
+      "years": "1982 - 2021",
+      "genre": "Web Design", 
+      "nationality": "American",
+      "bio": "I was a career assistant to executives and self-taught graphic designer who desired challenging work within the tech industry. In 2018, I decided to enroll into a Java programming class and the rest was history. "
   }
+  array.push(data);
+  return array;
+}
+
+ 
+console.log(addArtist(artists));
 
   
 
