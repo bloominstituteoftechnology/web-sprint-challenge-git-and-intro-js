@@ -20,6 +20,10 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+*{
+    box-sizing:border-box; 
+    max-width:100%;
+}
 html{
     font-size:62.5%;
 }
@@ -83,6 +87,7 @@ nav span{
 }
 /*Title Section Styles*/
 .title-container{
+    margin-top:3%;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -134,3 +139,44 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+
+@media (max-width:500px){
+    nav a{
+        margin-bottom:1%;
+    }
+    nav span{
+        margin:7%;
+    }
+    .title-container div{
+        width:100%;
+        margin:2% 0;
+    }
+    .title-container hr{
+        width:100%;
+    }
+    .artists-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        margin:0 auto;
+    }
+
+    .artist{
+        width:60%;
+        text-align:center;
+    }
+    .artist a{
+        font-weight: 100;
+        font-size: 1.4rem;
+    }
+    .artist img{
+        width:70%;
+        height:40%;
+    }
+    .bio{
+        font-size: 1.1rem;
+    }
