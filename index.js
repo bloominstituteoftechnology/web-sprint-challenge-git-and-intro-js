@@ -220,11 +220,11 @@ console.log(artists[2].bio);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-function changeName(array, index, name) {
-  array[index].name = name;
-  return array;
-}
-console.log(changeName(artists, 8, 'Vincent Van Gogh'));
+//function changeName(array, index, name) {
+//   array[index].name = name;
+//   return array;
+// }
+// console.log(changeName(artists, 8, 'Vincent Van Gogh'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -235,11 +235,11 @@ console.log(changeName(artists, 8, 'Vincent Van Gogh'));
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex() {
+function getArtistByIndex(array, index) {
     return `the artist at index ${this.id} ,is ${this.name}`;
 }  
 
-console.log(getArtistByIndex);
+
  
 
 
@@ -251,9 +251,11 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  
-  //unsure how to do this when the years are in the object as strings//
+function get20s(array){
+  const nineteens = [];
+  for(let i = 0; i < array.length; i++);
+  if(array[i].years.include("19")||array[i].years.include("2000"));
+  nineteens.push(array[i]);
 }
 
 
@@ -267,8 +269,9 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   delete artists[0]
+function removeArtist(arrayName, indexNumber){
+   delete artists[indexNumber];
+   return(removeArtist(artists.length));
 }
    
 
@@ -288,8 +291,9 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array, id, name, years, genre, nationality, bio){
+    array.push({id: id, name: name, years: years, genre: genre, nationality: nationality, bio: bio});
+    return(array);
   }
 
   
@@ -301,8 +305,11 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  for(let i = 0; i < array.length; i++);
+    if(array.paintings >= 100);
+     return(lotsOfArt);
+  
 }
 
 
