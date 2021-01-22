@@ -247,17 +247,15 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(arr, string, key, key2){
-  const results = [];
+function get20s(arr){
+  let results = [];
   for(let i = 0; i < arr.length; i++){
-    if(arr[i].key.includes('19') || (arr[i].key.includes('2000'))){
-      results.push(arr[i][key2]);
+    if(arr[i].years >= '1900' && arr[i].years <= '2000'){
+      results.push(arr[i].name);
     }
   }
   return results;
 }
-
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -271,7 +269,7 @@ function get20s(arr, string, key, key2){
 
 function removeArtist(myArray, index){
    /*Your Code Here*/
-   myArray.splice[index];
+   myArray.splice([index], 1 );
 
    return myArray.length;
 
@@ -294,9 +292,11 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(artists){
+function addArtist(arr, id, name, years, genre, nationality, bio){
     /*Your Code Here*/
-    artists.push();
+    arr.push({id, name, years, genre, nationality, bio});
+
+    return arr;
   }
 
   
@@ -310,12 +310,14 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(arr){
   /*Your Code Here*/
-  if(artists.paintings >= 100)
-  {
-    return artists.name;
-  }else{
-    return;
+  const art = [];
+
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].paintings >= 100){
+      art.push(arr[i].name);
+    }
   }
+  return art;
 }
 
 
