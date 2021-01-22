@@ -322,13 +322,24 @@ console.log(addArtist(artists));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
-2. Return an array with names of artists in the received array who painted more than 100 paintings.
+2. Return an array with names of artists in the received array who painted more than 
+100 paintings.
 
-For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
+For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... 
+"Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  var newArray = [];
+  for (let i = 0; i < array.length; i++) {
+      if(array[i].paintings > 100) {
+        newArray.push(array[i].name);
+      }
+  }
+  return newArray;
 }
+
+ 
+console.log(lotsOfArt(artists));
 
 
 
