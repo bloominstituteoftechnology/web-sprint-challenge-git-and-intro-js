@@ -211,7 +211,7 @@ Practice accessing data above by console.log-ing following items:
 console.log(artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
-
+console.log(artists[0].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
