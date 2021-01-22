@@ -144,18 +144,27 @@ button:hover{
 
 @media (max-width:500px){
     nav a{
-        margin-bottom:1%;
+        margin:3% 0;
+        font-size: 1.7rem;
     }
     nav span{
         margin:7%;
+        border-left: 2px solid #626262;
     }
     .title-container div{
         width:100%;
         margin:2% 0;
-        height:40vh;
+        height:30vh;
+        background-position: center;
+        background-size:210% ;
     }
     .title-container hr{
         width:100%;
+        border-bottom: 1px solid  #626262;
+    }
+    .title-container h1{
+        font-size: 3.5rem;
+        font-weight: 600;
     }
     .artists-container{
         display:flex;
@@ -176,7 +185,7 @@ button:hover{
     }
     .artist img{
         width:70%;
-        height:40%;
+        height:0%;
     }
     .bio{
         font-size: 1.1rem;

@@ -285,6 +285,7 @@ function removeArtist(array,number){
 }
 
 console.log('task 5');
+
   //  i can't display it in a console here but it works
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -337,6 +338,9 @@ function lotsOfArt(array){
   }
   return lotsofpaints;
 }
+  console.log('task 7');
+  console.log(lotsOfArt(artists));
+
 
 
 
