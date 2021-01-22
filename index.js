@@ -227,13 +227,15 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  Use getArtistByIndex to do the following:
  1. Receive an array
  2. Receive a number, which is the desired index in the array.
- 3. Return a string in the format `the artist at index {id} is {name}`
+ 3. Return a string in the format   
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
-}  
+ function getArtistByIndex(array, index) {
+  return `the artist at index ${index} is ${array[index].name}`
+ }
+ 
+console.log(getArtistByIndex(artists, 4));  
 
 
 
