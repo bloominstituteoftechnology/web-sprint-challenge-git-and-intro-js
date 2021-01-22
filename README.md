@@ -22,10 +22,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
-1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+1. How would you describe accessibility on the web to someone new to programming?
+
+In and ideal world accessibility means EVERYBODY can use any website without problems or restrictions but with lots of comfort, depends on their current situation, also it should be easy readable and accessible for other developers.
+This means we should create websites which matches with current standards in industry and above, our website must match all expectations of people with restrictions(this includes people with slow hardware or a bad connection)
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+1) I can make my website responsible to devices with mobile view. this means no width scrolling, readable fonts, decent picture quality.
+2) Also i should add comments/leave space between lines to most parts of my code to make it easier understand to other developers
+3) it should have light version for places with slow connection(small size) but it also has to provide all important information.
+4) many other things such a comments for text readers(for blind people), etc
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+ It's a storage location paired with symbolic name. You can put some value here (for example, a number, another data type).
+
 4. What is the purpose of using functions in code?
+
+It's a reusable block of code to perform a single, related action.
+In other words, we use functions to avoid writing tones of code to do same action. it saves our time and makes code easier to read.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
