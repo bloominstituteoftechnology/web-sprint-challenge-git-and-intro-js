@@ -63,6 +63,18 @@ img:hover {
     opacity: 80%;	
 }	
 
+@media screen and (max-width: 500px){
+    img {
+        max-height: 20%;
+        max-width: 60%;
+    }
+    .artist{
+        align-items: flex-end;
+        flex-flow: column;
+    }
+
+}
+
 /*HEADER STYLES */
 header{
     display:flex;
