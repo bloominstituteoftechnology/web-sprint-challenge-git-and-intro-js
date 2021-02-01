@@ -19,6 +19,7 @@ In this challenge, you will use a data set of artists to build an "influential a
 Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead.
 
 ## Interview Questions
+### (please edit this file and write your answer below each question. In addition, you may also review these questions with your mentor)
 
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
