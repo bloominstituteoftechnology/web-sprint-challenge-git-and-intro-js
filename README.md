@@ -23,10 +23,41 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+ans:
+    The use of the web is diverse and different for all users because of our abilities and capabilities.  As a programmer, you will have to take this into consideration so that any user can use all its features and content, regardless of how the user accesses the web even and especially users with physical or mental impairments.  People with auditory, visual, physical, or cognitive abilities should be able to use the program
+
+    The Sites should be accessible to all the different input and output devices that are available no on the market.  There are guidelines established for programmers to follow
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+ans:
+
+    a.      video, audio, and image content need to be given 
+            proper textual alternatives, so they can be understood by assistive technologies and their users
+
+    b.      With the use of mobile devices being and popular
+            platforms such as iOS and Android having fully-fledged accessibility tools, it is important to consider the accessibility of your web content on these platforms
+
+c.          what tools different people use to interact with the web
+ 
 3. How would you explain the concept of a variable to someone new to programming?
+
+ans:
+
+    A variable is like a storage box for various type of information.  Using variables make it easier to reference information in a program.  For example, instead typing “Lambda School’ over and over again, you can make a variable called x to store the word.  When you use the word all you must do is type x.
+
+    There are different type of variables for different information.  For example, Int to store integers, char for letters and characters, double, float and long for decimals, string to store words and boolean to store true and false.
+
+    You can also change the value of a variable anytime
+
 4. What is the purpose of using functions in code?
 
+ans:
+
+    Use of functions enhances the readability of a program. A big code is always difficult to read. Breaking the code in smaller Functions keeps the program organized, easy to understand and makes it reusable.
+
+    
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
@@ -48,7 +79,7 @@ NOTE: Tests will run for the JavaScript portion of this challenge only
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
 * [ x] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [ x] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
