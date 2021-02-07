@@ -233,6 +233,8 @@ console.log(artists[8].name)
 
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
+
+  `the artist at index {id} is {name}`
 }  
 
 
