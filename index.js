@@ -312,10 +312,15 @@ Use lotsOfArt to do the following:
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
  
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
-
 function lotsOfArt(array) {
-
+  for (let i = 0; i < artists.length; i++) {
+    if (artists[i].paintings > 100) {
+      return artists[i].name;
+    }
+  }
 }
+lotsOfArt(artists);
+
 
 
 
