@@ -24,11 +24,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+    Accessibility on the web refers to the delelopment that enables all users to interact and understand the web regardless of disabilities.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+    A website can be accessible by including an alt text for images so an alternative text will be read by a screen reader when the image can't be viewed. Allowing the font size to be controlled by the user and using semantic HTML also provides more accessiblity. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    A variable is a name used to hold value for a code. 
+
+
 4. What is the purpose of using functions in code?
 
+    Functions are used to repeat a block of code so you don't have to write it over and over. It simplifies the process of getting the same output again. 
+
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
+
+
 
 ## Instructions
 
@@ -44,7 +58,7 @@ NOTE: Tests will run for the JavaScript portion of this challenge only
 5. next type `npm run test:watch` in your terminal
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
-### Task 2a:  Minimum Viable Product - Responsive Design
+### Task 2a:  Minimum Viable Product - Responsive DesignS
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
