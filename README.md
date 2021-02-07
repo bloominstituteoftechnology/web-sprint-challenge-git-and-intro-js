@@ -87,5 +87,3 @@ After finishing your required elements, you can push your work further. These go
 👀 [Styling with HTML and CSS](https://www.w3schools.com/html/html_css.asp)
 
 ## Submission format
-
-Please see canvas for cohort specific submission instructions 
