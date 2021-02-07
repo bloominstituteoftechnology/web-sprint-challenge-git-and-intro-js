@@ -134,3 +134,32 @@ button:hover{
 .artist img{
     width:100%;
 }
+@media screen and (max-width:500px){
+
+    .artists-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin:0 auto;
+
+       
+    }
+    .bio {	
+        font-family: 'Raleway', sans-serif;	
+        text-align: center;	
+        margin: 4%;
+        font-size: 1rem;
+    } 
+
+    .artist{
+        width:60%;
+        text-align:center;
+    }
+    .artist img{
+        width:80%;
+        height: 80%;
+    }
+}
