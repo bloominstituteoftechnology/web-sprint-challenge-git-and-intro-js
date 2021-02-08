@@ -234,7 +234,7 @@ artists[8].name = "Vincent Van Gogh";
 function getArtistByIndex(sourceArray, index) {
     return `the artist at index ${index} is ${sourceArray[index].name}`;
 }
-console.log(getArtistByIndex(artists, 8))
+// console.log(getArtistByIndex(artists, 8))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -248,14 +248,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(sourceArray) {
     const artists_20s = []
     sourceArray.map(artist => {
-        const born = parseInt(artist.years.split(/\s/)[0]);
-        const died = parseInt(artist.years.split(/\s/)[2]);
-        if (born >= 1900 && died < 2000) {
-            console.log(`${artist.name} was born in ${born} and died in ${died}`);
-            artists_20s.push(artist.name);
-        }
-    })
-    console.table(artists_20s);
+            const born = parseInt(artist.years.split(/\s/)[0]);
+            const died = parseInt(artist.years.split(/\s/)[2]);
+            if (born >= 1900 && died < 2000) {
+                // console.log(`${artist.name} was born in ${born} and died in ${died}`);
+                artists_20s.push(artist.name);
+            }
+        })
+        // console.table(artists_20s);
     return artists_20s;
 }
 get20s(artists);
@@ -304,7 +304,7 @@ function addArtist(sourceArray) {
     sourceArray.push(newArtist);
     return sourceArray;
 }
-console.log(addArtist(artists));
+// console.log(addArtist(artists));
 
 
 
@@ -315,10 +315,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt( /*Your Code Here*/ ) {
-    /*Your Code Here*/
+function lotsOfArt(sourceArray) {
+    const prolificArtists = [];
+    sourceArray.map(artist => {
+        if (artist.paintings > 100) {
+            prolificArtists.push(artist.name);
+        }
+    })
+    return prolificArtists;
 }
 
+// console.log(lotsOfArt(artists))
 
 
 
