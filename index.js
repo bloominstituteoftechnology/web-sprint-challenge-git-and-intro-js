@@ -301,9 +301,19 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+    function addArtist(artist){
+      artists.push{
+        id:"20";
+        name:"Darlene Arias";
+        years: "1983-2021";
+        genre: "diversified";
+        nationality: "italian";
+        bio: "lorem ipsum:";
+      }
+      return artists;
+    }
   }
-
+  console.log(addArtist(artists))
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
