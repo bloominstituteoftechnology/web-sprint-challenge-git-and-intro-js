@@ -235,6 +235,9 @@ button:hover {
 }
 
 @media all and (max-width: 500px) {
+    body {
+        font-size: 13px;
+    }
     nav {
         width: 50%;
     }
@@ -248,12 +251,12 @@ button:hover {
         flex-direction: column;
         align-items: center;
     }
-    .artist {
-        width: 50%;
+    div.artist {
+        width: 100%;
     }
     img {
-        width: 50vw;
         height: auto;
-        aspect-ratio: 1/1;
+        width: 70% !important;
+        aspect-ratio: 12/10 !important;
     }
 }
