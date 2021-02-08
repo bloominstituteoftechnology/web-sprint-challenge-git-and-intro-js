@@ -208,16 +208,24 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+console.log(artist[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
-
+console.log(artists[0].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+artists.push(
+newNames={
+  correct:'Vincent Van Gogh',
 
+
+
+})
+
+console.log(artists[8].name),
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -228,8 +236,10 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array[0]) {
+    console.log(`${array[0].artist} ${array[0].id}
+  
+
 }  
 
 
@@ -242,10 +252,18 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+function get20s(arr){
+  let newArr = [];
 
+  for(i=0; i < arr.length; i++){
+    let birth = arr[i].years.string(0,4);
+    let death = arr[i].years.string(7,11);
+    if(birth>= 1900 && death<= 1930)
+      newArr.push(arr[i].artists)
+  }
+  ]
+}
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -258,9 +276,13 @@ function get20s(/*Your Code Here*/){
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+   fucntion removeArtist(artist, index){
+     let remove = artists[index];
+     artists.splice(remove, index)
+     return artists.length;
+   }
 }
-   
+  console.log(removeArtist(artists,1)) 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
