@@ -207,14 +207,16 @@ export const artists = [
 Practice accessing data above by console.log-ing following items:
 
 (1) Name of the first artist (0th index) in the array
+console.log(artist[0].name);
 (2) Bio of the third artist (2nd index) in the array */
-
+console.log(artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+artists[8].name = "Vincent van Gogh";
+console.log(artists[8].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Create a function called `getArtistByIndex` that takes two arguments:
@@ -251,9 +253,13 @@ Create a function called `removeArtist` that takes two arguments:
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(artists, index) {
+  let art = artists[index];
+  artists.spice(art, index)
+
+  return artists.length;
 }
+console.log(removeArtist(artists, 1))
    
 
 /**
@@ -270,10 +276,17 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/*Your Code Here*/){
-  /*Your Code Here*/
+function addArtist(artists){
+  artists.push({
+    "id": "Huey Gauthier",
+    "years": "1990-2021",
+    "genre": "Web Design",
+    "Nationality": "African American",
+    "bio": "Here's 1 to 2 sentences about me. That was technically 1, right?",
+  })
+  return artists;
   }
-
+console.log(addArtist(artists))
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -285,10 +298,18 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(artists){
+  let a = [];
+  for(i=0;i < artists.length; i++)
+  {
+    if(artists[i].paintings > 100)
+    {
+      a.push(artists[i].name);
+    }
+  }
+  return a;
 }
-
+console.log(logsOfArt(artists))
 
 
 
