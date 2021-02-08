@@ -246,12 +246,17 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(sourceArray) {
-    // const artists_20s = []
-    artists.map(artist => {
+    const artists_20s = []
+    sourceArray.map(artist => {
         const born = parseInt(artist.years.split(/\s/)[0]);
         const died = parseInt(artist.years.split(/\s/)[2]);
-        console.log(`${artist.name} was born in ${born} and died in ${died}`)
+        if (born >= 1900 && died < 2000) {
+            console.log(`${artist.name} was born in ${born} and died in ${died}`);
+            artists_20s.push(artist.name);
+        }
     })
+    console.table(artists_20s);
+    return artists_20s;
 }
 get20s(artists)
 
