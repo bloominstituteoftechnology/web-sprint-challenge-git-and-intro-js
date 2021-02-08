@@ -152,6 +152,7 @@ img:hover {
 header {
     display: flex;
     justify-content: center;
+    font-size: 1em;
 }
 
 nav {
@@ -239,7 +240,8 @@ button:hover {
         font-size: 13px;
     }
     nav {
-        width: 50%;
+        width: 60%;
+        justify-content: space-around;
     }
     .title-container div {
         width: 100%;
@@ -258,5 +260,8 @@ button:hover {
         height: auto;
         width: 70% !important;
         aspect-ratio: 12/10 !important;
+    }
+    button {
+        padding: .5em 1em;
     }
 }
