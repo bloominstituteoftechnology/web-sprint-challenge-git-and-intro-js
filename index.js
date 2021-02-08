@@ -236,7 +236,7 @@ artists[2].bio;
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-artists[8].name = Vincent Van Gogh;
+artists[8].name = "Vincent Van Gogh";
 console.log(artists[8]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -247,9 +247,9 @@ console.log(artists[8]);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
- function getArtistByIndex(anArray, inx) {
+function getArtistByIndex(anArray, inx) {
   /*Your Code Here*/
-  console.log(`the artist at index ${anArray[inx].id} is ${anArray[inx].name}`);
+  return `the artist at index ${anArray[inx].id} is ${anArray[inx].name}`;
 }
 getArtistByIndex(artists, 0);
 
@@ -261,15 +261,14 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-
 function get20s(anArray) {
   /*Your Code Here*/
   let newArray = [];
-  for(let i =0; i < anArray.length; i++){
+  for (let i = 0; i < anArray.length; i++) {
     let years = anArray[i].years;
-    let yearSplit = years.split(' - ');
+    let yearSplit = years.split(" - ");
 
-    if (yearSplit[0] >= 1900 && yearSplit[1] <= 2000 ) {
+    if (yearSplit[0] >= 1900 && yearSplit[1] <= 2000) {
       newArray.push(anArray[i].name);
     }
   }
@@ -287,8 +286,8 @@ function get20s(anArray) {
 
 function removeArtist(anArray, inx) {
   /*Your Code Here*/
-  anArray.splice(inx,1);
-  return anArray[length];
+  anArray.splice(inx, 1);
+  return anArray.length;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -307,8 +306,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
+function addArtist(anArray) {
   /*Your Code Here*/
+  anArray.push({
+    id: 20,
+    name: "Creighton Chingarande",
+    years: "1960 - 2100",
+    genre: "Web Design",
+    nationality: "Zimbabwean",
+    bio: "I am a Lambda Web Dev Student!!",
+  });
+
+  return anArray;
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -318,8 +327,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
+function lotsOfArt(anArray) {
   /*Your Code Here*/
+  let newArray = [];
+  for (let i = 0; i < anArray.length; i++) {
+    let paintMore = anArray[i].paintings;
+
+    if (paintMore >= 100) {
+      newArray.push(anArray[i].name);
+    }
+  }
+  return newArray;
 }
 
 // 🎨🎨 STRETCH 🎨🎨//
