@@ -229,11 +229,12 @@ console.log(artists[9]);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
- function getArtistsByIndex (index, name){
- 
-  return `the artist at index ${index} is ${name}`;
+ function getArtistByIndex (artists, index){
+ console.log(artists[index])
+  return `the artist at index ${index} is ${artists[index].name}`;
+  
 }
-console.log(getArtistsByIndex(5, artists[5].name))
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -245,17 +246,34 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 
-function get20s(artists){
-  let results = [];
-  let dates = 1900-2000;
-  for(var i = 0; i < artists.length; i++){
-    if (artists[i].paintings > dates){
-      results.push(artists[i].name)
-    } }
+
+
+
+//   let results = [];
+//   let years = 1900;
+//   for(var i = 0; i < artists.length; i++){
+//     if (artists[i].years > years){
+//       return results.push(artists[i].name)
+//     } }
  
- return results;
- }
- console.log(get20s(artists))
+//  return results;
+
+function get20s(artists){
+  let twentiethCentury = []
+  let years = "1900";
+   for(let i = 0; i < artists.length; i++) {
+      
+    if (artists[i].years > years) {
+     twentiethCentury.push(artists[i].name);
+    } 
+   }
+   console.log(twentiethCentury)
+    return twentiethCentury;
+   }
+  
+  console.log(get20s(artists))
+  
+ 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -266,12 +284,13 @@ function get20s(artists){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
- function removeArtist(artists){
+ function removeArtist(artists, index){
+   artists.splice(index, 1)
   return(artists.length);
 }
 
-console.log(removeArtist(artists.splice(6,1)))
-console.log(artists.length)
+console.log(removeArtist(artists, 6))
+
 
    
 
@@ -291,16 +310,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-let Nicole = (
+let Nicole = 
   {id: 20,
    name:"Nicole", 
    years: 1982-2021,
    genre: "Web Design", 
    nationality:"human",
-   bio: "Bla Bla"})
+   bio: "Bla Bla"}
 
 function addArtist(artists){
-return artists.push(Nicole)
+artists.push(Nicole)
+return artists
 }
 console.log(addArtist(artists))
   
