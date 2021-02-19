@@ -127,10 +127,25 @@ button:hover{
     margin:0 auto;
 }
 
-.artist{
+.artist1,.artist2{
     width:40%;
     text-align:center;
 }
-.artist img{
+.artist1 img,.artist2 img{
     width:100%;
+}
+/*Mobile View */
+@media (max-width:500px){
+    .artists-container{
+        flex-direction:column;
+        align-items:center;
+    }
+    .artist1{
+        width:70%;
+        margin:10rem;
+    }
+    .artist2{
+        width:70%;
+        margin:10rem;
+    }
 }
