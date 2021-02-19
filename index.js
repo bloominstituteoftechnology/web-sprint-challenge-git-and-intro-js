@@ -272,11 +272,15 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {  
-  for(let i = 0; i < array.length; i++);
+ const newArray = [];
+  for(let i = 0; i < array.length; i++) {
     if(array[i].born >= 1900 && array[i].died <=2000){
-      return get20s[i];
-    }
+       newArray.push(array[i].name);  
+    } 
   }
+  return newArray;
+}
+/* I have spent over two hours alone on this task and lotsOfArt. I have gone through all of the class codepens, recordings, also Googling all of the regular sites to find what I could be doing wrong here. I have a feeling that I am on the right track. I plan on reaching out somehow, to someone and find the solution after the class sprint is over. */
 
 
 
@@ -290,9 +294,9 @@ function get20s(array) {
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(arrayName, indexNumber){
-   delete artists[indexNumber];
-   return(removeArtist(artists.length));
-   
+  arrayName.splice(indexNumber, 1);
+  return arrayName.length;
+  
 }
    
 
@@ -327,10 +331,15 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  for(let i = 0; i < array.length; i++);
-    if(array.paintings >= 100);
-     return(lotsOfArt);
+  /* I have spent over two hours alone on this task and get20s. I have gone through all of the class codepens, recordings, also Googling all of the regular sites to find what I could be doing wrong here. I have a feeling that I am on the right track. I plan on reaching out somehow, to someone and find the solution after the class sprint is over. */
+  const newArr = [];
+for (i = 0; i <= array.length-1; i++) {
   
+  if(array[i].paintings > 100){
+    newArr.push(array[i].name);
+  }
+  return newArr;
+}
 }
 
 
