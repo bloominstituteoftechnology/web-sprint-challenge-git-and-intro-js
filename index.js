@@ -333,13 +333,12 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array){
   /* I have spent over two hours alone on this task and get20s. I have gone through all of the class codepens, recordings, also Googling all of the regular sites to find what I could be doing wrong here. I have a feeling that I am on the right track. I plan on reaching out somehow, to someone and find the solution after the class sprint is over. */
   const newArr = [];
-for (i = 0; i <= array.length-1; i++) {
-  
+for (i = 0; i < array.length; i++) {
   if(array[i].paintings > 100){
     newArr.push(array[i].name);
   }
-  return newArr;
-}
+ }
+ return newArr;
 }
 
 
