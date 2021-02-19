@@ -182,7 +182,7 @@ button:hover{
     }
     .title-container hr{
         width: 100%;
-        height: 5%;
+        border-width: 3px;
     }	
     .title-container div:hover {	
         opacity: 80%;	
