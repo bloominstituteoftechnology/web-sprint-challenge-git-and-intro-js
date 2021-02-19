@@ -209,6 +209,8 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
+//Temporarily Commented Out to Avoid Error:
+    //console.log(`the artist at index ${id} is ${name}`);//
 
 //(2) Bio of the third artist (2nd index) in the array 
 
@@ -218,6 +220,9 @@ Practice accessing data above by console.log-ing following items:
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+  //Temporarily Commented Out to Avoid Error:
+    //artists[8].name = 'Vincent Van Gogh';
+    //console.log(artists[8].name);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -227,11 +232,10 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  3. Return a string in the format `the artist at index {id} is {name}`
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
-
-function getArtistByIndex(/*Your Code Here*/) {
+function getArtistByIndex(/*Your Code Here*/artists) {
   /*Your Code Here*/
-}  
-
+  return `the artist at index ${artists[0].id} is ${artists[0].name}`;
+}
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -241,11 +245,17 @@ Use get20s to do the following:
 
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
-
-function get20s(/*Your Code Here*/){
+let newArray = [];
+function get20s(/*Your Code Here*/artists){
   /*Your Code Here*/
+  for(let i = 0; i < artists.length; i++){
+    if(parseInt(artists[i].years >= 1900 && parseInt(artists[i].years.slice(7, 11)) <= 2000)){
+      newArray.push(artists[i].name);
+    }
+  }
+  console.log(newArray);
+  return newArray;
 }
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -256,9 +266,11 @@ function get20s(/*Your Code Here*/){
  4. Return the length of the remaining dataset.
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
-
-function removeArtist(/*Your Code Here*/){
+let arrayIndex = 0;
+function removeArtist(/*Your Code Here*/artists, arrayIndex){
    /*Your Code Here*/
+   artists.splice(arrayIndex,arrayIndex + 1);
+   return artists.length;
 }
    
 
@@ -278,9 +290,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
+function addArtist(/*Your Code Here*/artists){
     /*Your Code Here*/
-  }
+  artists.push(meMe);
+  const meMe = {
+    id: 20,
+    name: 'Zach Morris', 
+    years: 2000 - 2021,
+    genre: 'Web Design', 
+    nationality: 'U.S. of A Baby',
+    bio: 'Its me, your main man, your best bud. Me: biggeh cheese, biggeh smalls. Me: Your local Sandlot Soundcloud Rapper.'};
+  return artists;
+}
 
   
 
@@ -290,9 +311,15 @@ Use lotsOfArt to do the following:
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
-
-function lotsOfArt(/*Your Code Here*/){
+let hundredArray = [];
+function lotsOfArt(/*Your Code Here*/artists){
   /*Your Code Here*/
+  for(let i = 0; i < artists.length; i++){
+    if(artists[i].paintings > 100){
+      hundredArray.push(artists[i].name);
+    }
+  }
+  return hundredArray;
 }
 
 
