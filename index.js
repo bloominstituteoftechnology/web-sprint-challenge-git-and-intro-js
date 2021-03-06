@@ -252,7 +252,7 @@ function get20s(arr){
   let twenty = [];
 
   for ( let i = 0; i < arr.length; i++) {
-    if (arr[i].years <= 2000 & arr[i].years >= 1900) {
+    if (arr[i].years <= '2000' && arr[i].years >= '1900') {
       twenty.push(arr[i].name)
     }
   }
