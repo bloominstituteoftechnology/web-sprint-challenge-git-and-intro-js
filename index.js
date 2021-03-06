@@ -330,7 +330,7 @@ console.log(lotsOfArt(artists))
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
 Programmatically console.log HTML element structure.
 
-In HTML, every artist and associated content uses the following structure: 
+In HTML,every artist and associated content uses the following structure: 
 
 <div id="artist">
 <div class="image">
