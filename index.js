@@ -249,9 +249,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(arr){
   /*Your Code Here*/
-  if ( arr.years >= '1900' && arr.years <= '2000') {
-    return arr;
+  let twenty = [];
+
+  for ( let i = 0; i < arr.length; i++) {
+    if (arr[i].years <= 2000 & arr[i].years >= 1900) {
+      twenty.push(arr[i].name)
+    }
   }
+  return twenty
 }
 
 
@@ -308,12 +313,13 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(arr){
   /*Your Code Here*/
-  // let newArr = [];
-  // if (arr.paintings >= 100){
-  //   console.log(arr)
-  //   return arr;
-  // }
-  // return newArr
+  let newArr = [];
+ for ( let i = 0; i < arr.length; i++) {
+   if (arr[i].paintings >= 100) {
+     newArr.push(arr[i].name);
+   }
+ }
+ return newArr
 }
 
 
