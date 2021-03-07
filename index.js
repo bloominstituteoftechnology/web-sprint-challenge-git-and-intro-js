@@ -357,3 +357,4 @@ export default{
   addArtist,
   lotsOfArt
 }
+ const myName = "Devra"
