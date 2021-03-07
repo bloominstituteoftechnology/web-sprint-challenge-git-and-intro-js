@@ -134,3 +134,34 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* Responsive mobile elements*/ 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    img {
+        height: 15rem;
+    }
+
+    .artists-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .artist {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .title-container div {
+        height: 30vh;
+    }
+
+    a {
+        font-size: 2rem;
+        margin: auto 5%;
+    }
+}
