@@ -299,11 +299,11 @@ Example: addArtist(artists) should return the artists array with the above objec
 function addArtist(artists){
   artists.push({
     "id": 20,
-    "name": "Mitchell Griffith",
-    "years": "1990-2021",
+    "name": "Owen Damron",
+    "years": "1998-2021",
     "genre": "Web Design",
-    "Nationality": "American",
-    "bio": "This is the bio section",
+    "nationality": "American",
+    "bio": "This is going to be the bio section",
   })
   return artists;
  }
