@@ -252,12 +252,14 @@ function get20s(arr){
     const born = arr[i].years.slice(0,4);
     const died = arr[i].years.slice(7,11);
 
-    if (born > 1900 && died < 2000)
-    newArr.push(arr[i].name);
-    return newArr
+    if (born > 1900 && died < 2000){
+      newArr.push(arr[i].name);
+      return newArr
+    }
   }
 }
 
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -269,10 +271,11 @@ function get20s(arr){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(arr, i){
+   arr.splice (i, 1);
+   return arr.length;
 }
-   
+   console.log(removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
