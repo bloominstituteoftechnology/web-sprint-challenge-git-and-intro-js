@@ -201,7 +201,7 @@ export const artists = [
     }
 ]
 
-// 🖌🖼 M V P 🖼🖌 // comment innitial commit
+// 🖌🖼 M V P 🖼🖌 // comment innitial commit 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Practice accessing data above by console.log-ing following items:
