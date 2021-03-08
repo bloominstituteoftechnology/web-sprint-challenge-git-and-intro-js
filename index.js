@@ -343,7 +343,7 @@ function lotsOfArt(array, name){
   }
   return(results);
 }
-console.log(lotsOfArt();
+console.log(lotsOfArt(Amedeo Modigliani);
 
 
 
