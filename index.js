@@ -310,10 +310,19 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(arr){
+  let painters = []
+  for(let i =0; i < arr.length; i++){
+    if (arr[i].paintings >= 100){
+      painters.push(arr[i].name)
+    }
+  }
+    return painters
   
 }
 
 console.log(lotsOfArt(artists))
+
+
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
