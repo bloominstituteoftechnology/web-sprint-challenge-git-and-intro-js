@@ -123,6 +123,7 @@ button:hover{
 .artists-container{
     display:flex;
     justify-content: space-around;
+    flex-direction: row;
     width:80%;
     margin:0 auto;
 }
@@ -134,3 +135,73 @@ button:hover{
 .artist img{
     width:100%;
 }
+nav{
+        width:80%;
+        display:flex;
+        justify-content:space-evenly;
+        margin-top:5%;
+    }
+    .artists-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width:80%;
+        margin:0 auto;
+    }
+
+    .artist{
+        width:100%;
+        text-align:center;
+    }
+    .artist img{
+        width:90%;
+    }
+
+    @media (max-width:500px){
+        nav a{
+            margin:3% 0;
+            font-size: 1.7rem;
+        }
+        nav span{
+            margin:7%;
+            border-left: 2px solid #626262;
+        }
+        .title-container div{
+            width:100%;
+            margin:2% 0;
+            height:30vh;
+            background-position: center;
+            background-size:210% ;
+        }
+        .title-container hr{
+            width:100%;
+            border-bottom: 1px solid  #626262;
+        }
+        .title-container h1{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .artists-container{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            margin:0 auto;
+        }
+    
+        .artist{
+            width:60%;
+            text-align:center;
+        }
+        .artist a{
+            font-weight: 100;
+            font-size: 1.4rem;
+        }
+        .artist img{
+            width:70%;
+            height:0%;
+        }
+        .bio{
+            font-size: 1.1rem;
+        }

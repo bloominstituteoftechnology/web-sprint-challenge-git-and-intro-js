@@ -19,20 +19,22 @@ In this challenge, you will use a data set of artists to build an "influential a
 Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead.
 
 ## Interview Questions
-### (please edit this file and write your answer below each question. In addition, you may also review these questions with your mentor)
 
-Please answer the following questions below, you may edit the readme file to include your answers below the question.
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+It is a way to add features to help people with disabilities navigate and use your website across all screen sizes.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+descripition of images(alt), adding color blind support, auditory screen reader
 3. How would you explain the concept of a variable to someone new to programming?
+a variable is a a container you can declare to store values
 4. What is the purpose of using functions in code?
-
+to perform certain tasks within a program
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
 
-### Task 1: Project Set-Up
+### Task 1: Project Set Up
 
 Follow these steps to set up your project:
 
@@ -59,8 +61,8 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to implement ARIA roles)  
-* [ ] Student demonstrates and can explain a deep understanding of basic programming concepts when walking Team Lead through the explanation of their code.
+* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)  
+* [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
 * [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
 
 
