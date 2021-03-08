@@ -302,7 +302,7 @@ function addArtist(arr){
       'nationality' : 'Chilean',
       'bio' : 'This is a sentence. This is another sentence.'
     })
-    return arr[19]
+    return arr[20]
   }
   console.log(addArtist(artists));
   
