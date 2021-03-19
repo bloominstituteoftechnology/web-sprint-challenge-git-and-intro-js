@@ -147,5 +147,25 @@ button:hover{
        padding-left: 3%;
        margin-left: 4%;
     }
-    
+    nav .bordered{
+        padding-right: 7%;
+    }
+    .title-container div{
+        width: 100%;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .artists-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .artist{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
