@@ -134,3 +134,18 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* Media Queries */
+/* Phone */
+@media(max-width:500px){
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    nav span{
+       padding:3%;
+       padding-left: 3%;
+       margin-left: 4%;
+    }
+    
+}
