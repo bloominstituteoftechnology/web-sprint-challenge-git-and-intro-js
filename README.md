@@ -16,7 +16,7 @@ In this challenge, you will use a data set of artists to build an "influential a
 
 ### Commits
 
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your team lead.
+Commit your code regularly and meaningfully. 
 
 ## Interview Questions
 ### (please edit this file and write your answer below each question. In addition, you may also review these questions with your mentor)
