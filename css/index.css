@@ -134,3 +134,30 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* == Breakpoints == */
+
+@media (max-width: 500px) {
+
+    nav {
+        justify-content: space-around;
+        width: 60%;
+    }
+
+    .title-container div {
+        width: 100%;
+    }
+
+    .title-container hr {
+        width: 100%;
+    }
+
+    .artist {
+        width: 90%;
+    }
+    
+    .artist img {
+        width: 80%;
+        height: 300px;
+    }
+}
