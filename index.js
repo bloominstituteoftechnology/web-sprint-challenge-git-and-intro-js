@@ -336,13 +336,20 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(data){
 
-    /* Code here */
-
-  }
-
-
+    let newdata = data.map(x =>{
+      return {image:x.wikipedia, bio: x.bio}
+  })
+   for(let i = 0; i < newdata.lenght-1; i++){
+     let artistDiv = document.createElement("div");
+     let artistimg = newdata[i].image;
+     artistDiv.appendChild(artistimg)
+   }
+   console.log("newdata find div",newdata)
+  return newdata;
+}
+getHTML(artists);
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
