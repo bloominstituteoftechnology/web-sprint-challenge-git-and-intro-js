@@ -261,8 +261,9 @@ console.log(get20s(artists))
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(arr, number){
-  arr.splice(number,1)
-   return arr.length;
+  let remove = [...arr];
+ remove.splice(number,1)
+   return remove.length;
 }
    
 console.log(removeArtist(artists, 1))
@@ -282,11 +283,20 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(arr){
+    let person = { 
+      id: 20,
+      name: "Amlak Befekau", 
+      years: 1974 - 2021,
+      genre: "Web Design",
+      nationality: "Ethiopia",
+      bio: "Hobby soccer love to ConvolverNode."
   }
+   arr.push(person)
+  return arr;
+}
 
-  
+  addArtist(artists)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
