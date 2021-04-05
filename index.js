@@ -231,7 +231,7 @@ console.log(artists[8].name);
 
 function getArtistByIndex(list, index) {
   var selectedIndex = list[index];
-  return `the artist at index ${index} is ${selectedIndex.name}`
+  return `the artist at index ${index} is ${selectedIndex.name}` // interpolation of the selected artist
 }  
 getArtistByIndex(artists, 0);
 
@@ -249,9 +249,9 @@ function get20s(list){
   for (let i = 0; i <list.length; i++) {
     let years = list[i].years.split('-');
     let born = Number(years[0]);
-    let died = Number(years[1]);
+    let died = Number(years[1]);  // Defining our year passed and year born as numbers. Makes it easier to run our if statement to determine if 20th century artist.
     if (born >= 1900 && died <= 2000) {
-      my20sBabies.push(list[i].name);
+      my20sBabies.push(list[i].name); // including those artist names in our new 20sbabies array
     }
   }
   return my20sBabies
@@ -269,7 +269,7 @@ get20s(artists);
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(list, index){
-   list.splice(index, 1);
+   list.splice(index, 1);  // splice removes 1 item from an array
    return list.length;
 }
 removeArtist(artists, 0);   
@@ -299,7 +299,7 @@ function addArtist(list){
     nationality: 'American',
     bio: 'Born and raised in a small Idaho town. Developed a love for painting and being creative early on. Now loves to paint landscapes and ethereal portaits.'
   }  
-  list.push(newArtist);
+  list.push(newArtist); // .push adds to the end of existing array.
   return list
 }
 addArtist(artists);
@@ -315,8 +315,8 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(list){
   let busyBees = [];
   for (let i = 0; i <list.length; i++) {
-    if (list[i].paintings> 100) {
-      busyBees.push(list[i].name);
+    if (list[i].paintings > 100) { // if check to see if an artists current paintings is over 100
+      busyBees.push(list[i].name); // adding the artist name to our new array of busybees
     }
   }
   return busyBees
