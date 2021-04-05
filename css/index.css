@@ -156,4 +156,6 @@ button:hover{
         padding-left: 4%;
         margin-left: 4%;
     }
+    .bio {font-size-adjust: 0.5;
+    }
 }
