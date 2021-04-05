@@ -134,3 +134,14 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+/* My Code */
+@media screen and (max-width: 500px) {
+    .artists-container {
+        flex-direction: column;
+    }
+    .artist img {
+        width: 100%;
+    }
+}
