@@ -244,8 +244,13 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(array){
+  let newList = []
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].years.includes(word)) {
+        newList.push(list[i]);
+      }
+    }
 }
 
 
@@ -259,8 +264,9 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(array, index){
+   array.splice(index, 1);
+   return array.length;
 }
    
 
@@ -280,8 +286,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+  let newArtist = { 
+    id: 20,
+    name: 'Craig Johnson', 
+    years: '1986 - current day',
+    genre: 'Web Design', 
+    nationality: 'Human',
+    bio: "father husband and nerd. I play ps4 and xbox with my son and were about to start painting warhammer armies togeather."
+  };
+   let list = array
+   list.push(newArtist)
+  return list;
+    
   }
 
   
