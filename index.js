@@ -259,8 +259,11 @@ function get20s(arr,Year){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array,number){
+function removeArtist(array){
+  return array.splice(num, 2);
+}
 
+console.log(artists.length);
 
  
    
@@ -281,7 +284,16 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(){   
+function addArtist(arr){ 
+  let newartist = { 
+    "id": 20,
+    "name": "Luna Tauer", 
+    "years": "1991- current day",
+    "genre": "Web Developer", 
+    "nationality": "Hispanic",
+    "bio": "Lover of all animals, sweets and a brand new Web Developer."
+  }    
+  return arr.push(newartist);
   
 
   
@@ -292,7 +304,13 @@ Use lotsOfArt to do the following:
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
-function lotsOfArt(array){
+function lotsOfArt(arr){
+  let art = []
+  for (let i=0; i<arr.length; i++){
+   if (arr[i].paintings > 100){
+     art.push(arr[i].name)
+   }
+return art;
 
 
 
