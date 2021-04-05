@@ -34,11 +34,13 @@ One great way to ensure good website accessiblity would be to have your page rea
 
 3. How would you explain the concept of a variable to someone new to programming?
 
+The concept of a variable is simple because all that its basically a value you can manipulate at anytime. Variables can be rated depending on importance or use. In thisa case we are talking about "var". To summerize its bacially playdough that we can play with none sttop because its technially not dired up(the var can be changed).
+
 
 
 4. What is the purpose of using functions in code?
 
-the purpose of using a function is to make sure that 
+Functions are basically "self contained" modules of code that accomplish a specific task. Functions usually "take in" data, process it, and "return" a result. Once a function is written, it can be used over and over and over again. 
 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
@@ -61,8 +63,8 @@ NOTE: Tests will run for the JavaScript portion of this challenge only
 
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
-* [ ] Add a viewport meta tag to the head of your index.html page.
-* [+-] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [+] Add a viewport meta tag to the head of your index.html page.
+* [+] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
