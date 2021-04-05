@@ -324,7 +324,6 @@ function lotsOfArt(list){
 lotsOfArt(artists);
 
 
-
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
 Programmatically console.log HTML element structure.
