@@ -268,8 +268,9 @@ console.log(get20s(artists));
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, idx) {
+  arr.splice(idx, 1);
+  return arr.length;
 }
 
 
@@ -313,15 +314,12 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].painted > 100) {
+    if (arr[i].paintings > 100) {
       newArr.push(arr[i].name)
     }
   }
   return newArr;
 }
-console.log(lotsOfArt(artists));
-
-
 
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -335,7 +333,7 @@ In HTML, every artist and associated content uses the following structure:
     <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
 </div>
 <div class = "name">
-   <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Vincent Van Gogh</a>
+  <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Vincent Van Gogh</a>
 </div>
 <div class = "bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.</div>
 </div>

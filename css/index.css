@@ -137,11 +137,45 @@ button:hover{
 
 
 /* My Code */
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
+nav {
+    width: 250px;
+}
+/* TITLE STUFF */
+    .title-container div {
+        background-size: 950px;
+        width: 100%;
+        height: 30vh;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .title-container hr{
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+/* MAIN FOCUS!!!!!! */
     .artists-container {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .artist img {
+
+    .artist {
         width: 100%;
+    }
+
+    .artist img{
+        width: 250px;
+    }
+
+    .bio {
+        width: 80%;
+        font-size: 13px;
     }
 }
