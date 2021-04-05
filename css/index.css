@@ -135,6 +135,12 @@ button:hover{
     width:100%;
 }
 
+@media only screen and (max-width: 900px) {
+    .artist img {
+        height: 25rem;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     nav a {
         padding: 0 10px;
