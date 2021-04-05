@@ -30,8 +30,8 @@ body{
 }
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
-    text-align: center;	
-    margin: 4%;	
+    text-align:center;
+    margin:4%;	
 }	
 h1{
     font-size:6rem;
@@ -133,4 +133,34 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+@media(max-width:500px){
+a{
+ font-size: 16px;
+}
+nav span{
+    border-left:2px solid #626262;
+}
+nav{
+    width:35%;
+    justify-content:space-between;
+}
+.title-container div {
+    width: 100%;
+}
+img{
+   height: 140px; 
+   object-fit: scale-down;
+}
+.artist{
+    width: 80%;
+}
+.artists-container{
+    display:list-item;
+    justify-content:space-evenly;
+    width:120%;
+}
+h1{
+    font-size: 50px;
+    padding-top: 60px;
 }
