@@ -211,7 +211,7 @@ Practice accessing data above by console.log-ing following items:
 console.log(artists[0].name)
 
 //(2) Bio of the third artist (2nd index) in the array 
-console.log(artists[2].name)
+console.log(artists[2].bio)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -245,8 +245,11 @@ included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array)
- { return array.years.filter (art => art.includes (1900-1959))
-}
+ {
+   const map = Array.prototype.map
+   const birthYear = map.call(years, )
+} 
+
 
 
 
@@ -262,7 +265,7 @@ function get20s(array)
   and return the number 19. */
 
 function removeArtist(array,ind){
-  
+ 
  array.splice(ind,1)
  return array.length
 }
@@ -285,32 +288,35 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array){
-  artists.push({ 
+  
+array.push ({
     id: 20,
     name: "B Angele Kunkowski", 
     years: "1983 - current day",
     genre: "Web Design", 
     nationality:"Black American",
     bio: "Im learing more about visualising the life I want to have",
+    paintings: 5,
   })
-  return array
+return array
   }
+ 
 
   
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀 2222222222222222222222222222222222222222222222🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
 2. Return an array with names of artists
- in the received array who painted more than 100 paintings.
+ in the received array who painted more than 100 paintings..2
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  const advArtist = array.paintings.filter(paint => paint.includes > 100)
-  return array
+let narray = array.filter(paint => paint.paintings >= 100)
+let tarray = narray.map(aname => aname.name)
+return tarray
 }
-
 
 
 
@@ -336,11 +342,14 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+// function getHTML(data){for (let index = 0; index < array.length; index++) {
+  // const element = array[index];
 
-    /* Code here */
+// }
 
-  }
+// console.log(data)
+
+  // }
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
