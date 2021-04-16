@@ -252,7 +252,7 @@ function get20s(/*Your Code Here*/){
 }
 
 function get20s(array){
-  
+
   return newArray = 
 }
 
@@ -302,6 +302,16 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(/*Your Code Here*/){
   /*Your Code Here*/
+}
+
+function lotsOfArt(arr, string){
+  let newarr = [];
+  for(let i = 0, i < arr.length; i++){
+    if (arr[i].includes('paintings' >=100)){
+      newarr.push(arr.name[i]);
+    }
+  }
+  return newarr
 }
 
 
