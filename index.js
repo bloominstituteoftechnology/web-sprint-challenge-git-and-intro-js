@@ -250,11 +250,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(/*Your Code Here*/){
   /*Your Code Here*/
 }
-
+//  not complete, im not sure how to target or gain access to the numbers(centries).
 function get20s(array){
+  for ( let i = array[0]; i < array.length; i++){
+    // if (array[i].years=< || array[i].years=> ){
+      return newArray = [array[i].name]
+    }
+  }
 
-  return newArray = 
-}
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
