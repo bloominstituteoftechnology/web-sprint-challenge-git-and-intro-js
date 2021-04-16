@@ -252,9 +252,10 @@ function get20s(/*Your Code Here*/){
 }
 //  not complete, im not sure how to target or gain access to the numbers(centries).
 function get20s(array){
+  let twenties = []
   for ( let i = array[0]; i < array.length; i++){
-    // if (array[i].years=< || array[i].years=> ){
-      return newArray = [array[i].name]
+      if (array[i].years >= "1900 - 2000" ){
+        return twenties.push(array[i].name)
     }
   }
 
@@ -275,7 +276,8 @@ function removeArtist(/*Your Code Here*/){
 
 function removeArtist(array, num){
   const theRemover = array.splice(index, 1);
-}return theRemover.length
+  return theRemover.length
+}
 
    
 
@@ -397,4 +399,5 @@ export default{
   removeArtist,
   addArtist,
   lotsOfArt
+ }
 }
