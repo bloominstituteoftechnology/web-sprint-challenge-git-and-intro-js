@@ -287,9 +287,13 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+    let index = array.length;
+    let obj = {"id": 20, "name": 'Giovanni Torres',"years":'1994-2021','genre':'Web Design','nationality':'Hispanic',"bio":"Trying to learn to code and get better at it. Javascript is really hard!!!"};
+    array.splice (index, 0, obj );
+    return array
   }
+  console.log(addArtist(artists))
 
   
 
