@@ -273,6 +273,7 @@ function removeArtist(/*Your Code Here*/){
 function removeArtist(array, num){
   const theRemover = array.splice(index, 1);
 }return theRemover.length
+
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -319,11 +320,6 @@ function lotsOfArt(/*Your Code Here*/){
   /*Your Code Here*/
 }
 
-function lotsOfArt(arr){
-
-}
-
-
 
 
 function lotsOfArt(arr, string){
@@ -335,6 +331,7 @@ function lotsOfArt(arr, string){
   }
   return newArray
 }
+
 
 
 
