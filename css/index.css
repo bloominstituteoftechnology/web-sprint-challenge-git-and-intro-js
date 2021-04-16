@@ -134,3 +134,22 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+@media only screen and (max-width : 500px){
+    header nav a{
+        margin: 0 10%;
+    }
+    .artists-container{
+        display:flex;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+    .artist img{
+        width: 200%;
+        height: auto;
+    }
+    a{
+        display: flex;
+        flex-direction: row;
+    }
+}
