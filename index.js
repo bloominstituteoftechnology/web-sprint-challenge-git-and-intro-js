@@ -219,6 +219,7 @@ console.log(artists[2].bio)
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 artists[8].name = "Vincent Van Gogh"
+console.log(artists[8].push)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -232,6 +233,9 @@ artists[8].name = "Vincent Van Gogh"
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
 }  
+ function getArtistByIndex(array ,num){
+   return `the artist at index ${array[num]} is ${array[num].name}`
+ }
 
 
 
@@ -247,6 +251,10 @@ function get20s(/*Your Code Here*/){
   /*Your Code Here*/
 }
 
+function get20s(array){
+  
+  return newArray = 
+}
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
