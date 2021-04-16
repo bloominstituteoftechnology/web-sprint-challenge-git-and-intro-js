@@ -141,22 +141,47 @@ button:hover{
    
     nav a {
         padding: 0rem 1rem 0rem 1rem;
+        /*Changes the header to spread while in 500px*/
     }
-    .title-container {
-    max-width: 100%; 
-    color: white;	
-    }
+ 
     .title-container div {
+    height: 50vh;
     background-size:140rem;
     width: 100%;
     background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    /*makes background img use all width and is bigger*/
     }
     h1 {
         font-size: 4rem;
+        font-weight: bold;
+        /*Changed Font Size and made bold*/
+    }
+    .title-container hr {
+        width: 100%;
+    }
+    /*Artist Containers Media Styles*/
+    .artists-container{
+        flex-direction: column;
+        align-items: center;
+           
+        
+    }
+   
+ 
+    .artist a {
+        font-size: 2rem;
     }
 
 
-
-
-
 }
+
+
+
+/* .artist{
+    width:40%;
+    text-align:center;
+}
+.artist img{
+    width:100%;
+} */ */
