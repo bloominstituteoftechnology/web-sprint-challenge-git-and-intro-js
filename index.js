@@ -269,6 +269,10 @@ function get20s(array){
 function removeArtist(/*Your Code Here*/){
    /*Your Code Here*/
 }
+
+function removeArtist(array, num){
+  const theRemover = array.splice(index, 1);
+}return theRemover.length
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -291,6 +295,17 @@ function addArtist(/*Your Code Here*/){
     /*Your Code Here*/
   }
 
+  function addArtist(array){
+    const newObject = {
+      id: 20, 
+      name: "peter",
+      years: 2021-2000,
+      genre: "Web Design",
+      nationality: "Nigerian",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+    return array.push(newObject)
+  }
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -304,14 +319,21 @@ function lotsOfArt(/*Your Code Here*/){
   /*Your Code Here*/
 }
 
+function lotsOfArt(arr){
+
+}
+
+
+
+
 function lotsOfArt(arr, string){
-  let newarr = [];
-  for(let i = 0, i < arr.length; i++){
+  let newArray = [];
+  for(let i = 0; i < arr.length; i++){
     if (arr[i].includes('paintings' >=100)){
-      newarr.push(arr.name[i]);
+      return newArray.push(arr.name[i]);
     }
   }
-  return newarr
+  return newArray
 }
 
 

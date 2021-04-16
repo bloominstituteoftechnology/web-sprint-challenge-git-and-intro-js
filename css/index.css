@@ -135,8 +135,8 @@ button:hover{
     width:100%;
 }
 
-@media only screen and (max-width : 500px){
-    header nav a{
+/* @media only screen and (max-width : 500px){
+    /* header nav a{
         margin: 0 10%;
     }
     .artists-container{
@@ -152,4 +152,61 @@ button:hover{
         display: flex;
         flex-direction: row;
     }
-}
+} */ 
+
+@media (max-width: 500px){
+    h1 {
+        font-size: 4.5rem;
+    }
+    nav {
+        width: 50%;
+        padding: 0rem 2rem;
+    }
+    nav span {
+        border-left: 2px solid #626262;
+    }
+    a {
+        font-size: 1.8rem;
+    }
+    button {
+        font-size: 1.4rem;
+        border: 1px;
+        border-radius: 3px;
+        box-shadow: 1px #626262;
+        width: 23%;
+    }
+    .title-container div {
+        height: 70vh;
+        width: 100%;
+        background-size: 200% 200%;
+        background-position: 50% 50%;
+    }
+
+    .title-container hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .artists-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .artist {
+        width: 100%;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist img {
+        width: 65%;
+        height: 30%;
+    }
+
+    .bio {
+        width: 70%;
+    }
