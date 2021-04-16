@@ -233,7 +233,7 @@ console.log(artists[8].push)
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
 }  
- function getArtistByIndex(array ,num){
+ function ggetArtistByIndex (array ,num){
    return `the artist at index ${array[num]} is ${array[num].name}`
  }
 
@@ -392,7 +392,7 @@ function randomize(/* Code here */){
   return 'bar';
 }
 /*Don't touch the code after this line! */
-export default{
+  export default{
   foo,
   getArtistByIndex,
   get20s,
