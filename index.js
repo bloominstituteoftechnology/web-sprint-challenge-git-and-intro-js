@@ -260,7 +260,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array) {
   let yungins = [];
   for (let i = 0; i < array.length; i++) {
-    if (array[i].years >= "1900") {
+    if (array[i].years >= "1900" && array[i].years <= "2000") {
       yungins.push(array[i].name);
     }
   }
@@ -325,6 +325,7 @@ function lotsOfArt(array) {
       masDeCien.push(array[i].name);
     }
   }
+  console.log(masDeCien);
   return masDeCien;
 }
 
