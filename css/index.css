@@ -138,8 +138,10 @@ button:hover{
 /*Media Query Phone Size*/
 
 @media(max-width: 500px){
+
    
     nav a {
+        font-size: 2rem;
         padding: 0rem 1rem 0rem 1rem;
         /*Changes the header to spread while in 500px*/
     }
@@ -164,25 +166,33 @@ button:hover{
     /*Artist Containers Media Styles*/
 
     .artists-container{   
+        display: flex;
         flex-direction: column;
-        justify-content: center;    
+        justify-content: space-around;    
         align-items: center;
         margin-bottom: 10rem;   
         max-width: 100%;
-        font-size: 1rem;
+        font-size: 1rem; 
         
     }
+ 
     
-    .artist{
+    .artists-container div{
+        
         width: 100%;
-        text-align:center;    
+        text-align:center;  
+          
     }
     .artist a{
+        width:50%;
         font-size: 2rem;
     }
     .artist img{
         width: 100%;
+        max-height: fit-content;
+        max-block-size: inherit;
     }
+    
     
 }
 
