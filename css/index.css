@@ -160,28 +160,30 @@ button:hover{
     .title-container hr {
         width: 100%;
     }
+
     /*Artist Containers Media Styles*/
-    .artists-container{
+
+    .artists-container{   
         flex-direction: column;
+        justify-content: center;    
         align-items: center;
-           
+        margin-bottom: 10rem;   
+        max-width: 100%;
+        font-size: 1rem;
         
     }
-   
- 
-    .artist a {
+    
+    .artist{
+        width: 100%;
+        text-align:center;    
+    }
+    .artist a{
         font-size: 2rem;
     }
-
-
+    .artist img{
+        width: 100%;
+    }
+    
 }
 
 
-
-/* .artist{
-    width:40%;
-    text-align:center;
-}
-.artist img{
-    width:100%;
-} */ */
