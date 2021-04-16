@@ -134,3 +134,29 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/*Media Query Phone Size*/
+
+@media(max-width: 500px){
+   
+    nav a {
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    .title-container {
+    max-width: 100%; 
+    color: white;	
+    }
+    .title-container div {
+    background-size:140rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+
+
+
+
+
+}
