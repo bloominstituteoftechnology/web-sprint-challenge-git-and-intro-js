@@ -244,13 +244,13 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){
-  let twenties = []
+  let twenties = [];
   for (let i = 0; i < array.length; i++){
-    if(array[i].years >= 1900){
-      twenties.slice(array[i].name);  
+    if(array[i].years >= "1900-2000"){
+      twenties.push(array[i].name);  
     }        
   }   
-  return twenties
+  return twenties;
 }
 console.log(get20s(artists))
 
@@ -267,9 +267,9 @@ console.log(get20s(artists))
 
 function removeArtist(array, index){
   array.shift(index);  
-  return array.length
+  return array.length;
 }
-   console.log(removeArtist(artists,0))
+   console.log(removeArtist(artists,0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -290,12 +290,10 @@ Example: addArtist(artists) should return the artists array with the above objec
 function addArtist(array){
     let index = array.length;
     let obj = {"id": 20, "name": 'Giovanni Torres',"years":'1994-2021','genre':'Web Design','nationality':'Hispanic',"bio":"Trying to learn to code and get better at it. Javascript is really hard!!!"};
-    array.splice (index, 0, obj );
+    array.splice (index,  obj );
     return array
   }
-  console.log(addArtist(artists))
-
-  
+  console.log(addArtist(artists)); 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -314,7 +312,7 @@ function lotsOfArt(array){
   return painters;
 }
 
-console.log(lotsOfArt(artists))
+console.log(lotsOfArt(artists));
 
 
 // 🎨🎨 STRETCH 🎨🎨//
