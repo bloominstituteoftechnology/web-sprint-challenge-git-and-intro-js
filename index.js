@@ -229,7 +229,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(arr, i) {
-  return artists[i] = 'the artists at index 'artists[i] 'is ' artists[i].name;
+  return 'the artist at index ' + [i] + ' is ' + (arr[i].name);
 }  
 
 
