@@ -230,8 +230,8 @@ console.log(artists[8]);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(array, index) {
- return `the artist at index ${(index)} is ${array[index].name}`
+function getArtistByIndex(array, number) {
+ return `the artist at index ${array[number]} is ${array[number].name}`
 }  
 
 
@@ -244,11 +244,11 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array){
+function get20s(array) {
   let twenties = []
-  for (let i = 0, i < array.length, i++){
-    if (array[i].years >= 1900) {
-      twenties.slice(array[i].name)
+  for (let i = array[0]; i < array.length; i++) {
+    if (array[i].years >= "1900 - 2000") {
+      return twenties.slice(array[i].name)
     }
   }
 }
@@ -264,11 +264,11 @@ function get20s(array){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, index){
-  array.shift(index)
+function removeArtist(array, number){
+  array.shift(index, 1)
   return array.length
 }
-   
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -286,8 +286,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array){
+  let index = array.length
+  let object = {
+    "id": 20,
+    "name": 'Brandon Verfurth',
+    "years": '1992-2021',
+    "genre": 'Web Development',
+    "nationality": 'Spanish',
+    "bio": 'This material is difficult to learn! But with the right mindset and passion, anyone can do it!!';
+    array.splice(index, 0, object)
+  }
+  console.log(addArtist(artists))
   }
 
   
@@ -299,8 +309,13 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  let paint = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i].paintings > 100) {
+      paint.push(array[i].name)
+    }
+  }
 }
 
 
