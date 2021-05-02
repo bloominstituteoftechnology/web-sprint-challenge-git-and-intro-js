@@ -254,7 +254,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(/*Your Code Here*/){
   /*Your Code Here*/
 }
-
+Making a push
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
