@@ -127,13 +127,13 @@ button:hover{
     margin:0 auto;
 }
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
     .artist-container {
         display: flex;
         flex-direction: column;
 
     }
-} */
+}
 
 .artist{
     width:40%;
