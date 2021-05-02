@@ -333,7 +333,7 @@ function addArtist(artArr) {
 	});
 	return artArr;
 }
-
+/*added*/
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
