@@ -2,9 +2,13 @@
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
-This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS and introductory JavaScript concepts. During this Sprint, you studied responsive web design, variable declaration, conditionals, loops, functions, arrays, and objects. In your challenge this week, you will demonstrate proficiency by creating a website of influential artists with data from an object.
+This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint 
+explored advanced CSS and introductory JavaScript concepts. During this Sprint, you studied responsive web design, variable declaration, conditionals, 
+loops, functions, arrays, and objects. In your challenge this week, you will demonstrate proficiency by creating a website of influential artists 
+with data from an object.
 
-This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
+This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the 
+material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
 You are not allowed to collaborate during the Sprint Challenge. Your work reflects your proficiency in Responsive Design, and JavaScript Basics.
 
@@ -23,9 +27,25 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+ANSWER: Accessibility is the practice of making your websites usable by as many people as possible. It isn't just about people with disabilities,
+        but making sure your website is accessible to other groups such as those using mobile devices, or those with slow network connections.
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+ANSWER: Make descriptive alts on img and anchors. Contrasting colors, especially for those that are color blind. Make sure the flow for keyboard 
+        makes sense. Use the Wai-Aria Roles to make it easier for screen readers.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+ANSWER: A variable can be anything. We can name it something and then give it a value.then we can use that variable later, such as naming a variable
+        'a' and giving it a value of 5. We then can use the variable of 'a' later in many ways: a + 3, a/7 , a*46. variable can have a value of a 
+        number, letter, word, string, etc.
+
 4. What is the purpose of using functions in code?
+
+ANSWER: Functions allow you to keep your code DRY. They can be written once and used multiple times inputting different arguments.
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -38,7 +58,9 @@ Follow these steps to set up your project:
 1. Fork the repo
 2. Clone your forked version of the repo
 3. cd into your repo and create a branch with your first and last name
+
 NOTE: Tests will run for the JavaScript portion of this challenge only
+
 4. open the terminal in your vs code and type `npm install`
 5. next type `npm run test:watch` in your terminal
 6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
@@ -56,11 +78,19 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 ### Task 3: Stretch Problems
 
-After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
+After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but 
+they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to implement ARIA roles)  
-* [ ] Student demonstrates and can explain a deep understanding of basic programming concepts when walking Team Lead through the explanation of their code.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
+
+* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement 
+      where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be 
+    required to implement ARIA roles)  
+
+* [ ] Student demonstrates and can explain a deep understanding of basic programming concepts when walking Team Lead through the explanation of 
+      their code.
+
+* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s 
+      with .filter, for example) - do this seperate from your MVP tasks
 
 
 ## Resources
