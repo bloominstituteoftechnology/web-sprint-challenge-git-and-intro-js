@@ -100,7 +100,7 @@ nav span{
     margin:5% 0;
 }	
 .title-container div:hover {	
-    opacity: 80%;	
+    opacity: 90%;	
 }	
 .title-container hr{
     width:80%;
@@ -111,7 +111,7 @@ button{
     border-radius:6px;
     border:2px solid #626262;
     box-shadow: 2px 2px 1px #626262;
-    transition: 2s;
+    transition: 1s;
 }
 button:hover{
     background-color:#626262;
@@ -143,21 +143,40 @@ button:hover{
         background-position: center;	
         color: white;
         font-size: 2rem;	
-        width: 40%;
+        width: 100%;
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height:40vh;
-        margin:5% 0;
     }
 
     nav{
-        width:10%;
+        width:15%;
         display:flex;
         justify-content:space-evenly;
         margin-top:2vh;
-        font-size: 3vh;
+        font-size: 1rem;
     }
 
+    a {	
+        text-decoration: none;	
+        color: black;
+        font-size:1.75rem;
+        padding: 1rem;	
+    }
+
+    .artists-container{
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        position: center;
+        width:80%;
+        margin:15% auto;
+    }
+    
+    .artist{
+        width:60%;
+        text-align:center;
+    }
 }
