@@ -128,8 +128,10 @@ button:hover{
 }
 
 @media (max-width: 500px) {
-    .artist-container {
+     .artist, img, a, .bio{
+        position: relative;
         display: flex;
+        justify-content: center;
         flex-direction: column;
 
     }
