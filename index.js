@@ -296,7 +296,7 @@ function lotsOfArt(/*Your Code Here*/){
 }
 
 
-
+const myName = 'Debra'
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
