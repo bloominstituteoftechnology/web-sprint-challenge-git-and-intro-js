@@ -262,7 +262,7 @@ function get20s(list){
   }
   return my20sBabies
 }
-
+/*just adding a note to commit and push for code */
 get20s(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
