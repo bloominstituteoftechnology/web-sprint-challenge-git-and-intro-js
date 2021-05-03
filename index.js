@@ -209,19 +209,20 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
-//ANSWER:
+
 // const firstName = 'Amedeo';
 // const lastName = 'Modigliani'; 
 // const whoIs = `The artist at index 0 is ${firstName} ${lastName}`;
 // console.log(whoIs);
 
-//console.log(artists[0]);
+//ANSWER:
+console.log(artists[0]);
 
 
 //(2) Bio of the third artist (2nd index) in the array 
 
 //ANSWER:
-//console.log(artists[2].bio);  
+console.log(artists[2].bio);  
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -242,6 +243,8 @@ console.log(artists[8].name = "Vincent Van Gogh")
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
+
+ //ANSWER:
  function getArtistByIndex(array, num){
     return `the artist at index ${array[num].id} is ${array[num].name}`;
 } 
@@ -256,24 +259,27 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
+//ANSWER:
 function get20s(array){
   let newArray = []
   for (let i=0; i < array.length; i++){
-    const artistsCentury = array[i].years.split(' ');
-    // const firstYear => artistsCentury[1900];
-    // const secondYear <= artistsCentury[2000];
+    let artistsCentury = array[i].years.split(' ');
+    // const artistsCentury = array[i].years.split(' ');
+    // const firstYear = artistsCentury[1900];
+    // const secondYear = artistsCentury[2000];
 
     let firstYear = artistsCentury[0];
     let secondYear = artistsCentury[2];
 
     if(firstYear >= 1900 && secondYear <= 2000){
-      newArray.push(array[i].name);
+    newArray.push(array[i].name);
     }
   }
   return newArray
 }
 
 
+    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -285,30 +291,33 @@ function get20s(array){
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our 
  aset and return the number 19. */
 
-function removeArtist(array, num){
-   /*test test test*/
+ //ANSWER:
+ function removeArtist(array, num){
+    array.splice(array.indexOf([num]));
+     return array.length;
 }
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
-2. Add this object of information to the end of the array
-    { 
+2. Add this object of information to the end of the array 
+3. Return the resulting array */
+//Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
+
+//ANSWER:
+
+   function addArtist(array){
+    array.push({
       id: 20,
-      name: Your Name Here, 
-      years: Your Birth Year - current day,
-      genre: Web Design, 
-      nationality: Your Nationality Here
-      bio: Add 1-2 sentences (or use lorem ipsum)
-    }  
-3. Return the resulting array
-
-Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
-
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+      name: 'Constance Beebe', 
+      years: 1962 - 2021,
+      genre: 'Web Design', 
+      nationality: 'AMERICAN',
+      bio: 'lorem ipsum'});
+      return array;
+    }
+      
 
   
 
@@ -319,8 +328,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+//ANSWER:
+
+function lotsOfArt(artists){
+  let newArray = [];
+  for(let i = 0; i < artists.length; i++){
+  if(artists[i].paintings > 99){
+    newArray.push(artists[i].name);
+    }
+  }
+  return newArray;
 }
 
 
