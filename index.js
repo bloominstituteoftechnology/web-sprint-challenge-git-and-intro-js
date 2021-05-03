@@ -248,11 +248,12 @@ function get20s(array) {
   let newArray = [];
   for (let i = 0; i < array.length; i++) {
     let birth = parseInt((artists[i].years).substring(0.4));
-    let death = parseInt((artists[i].years).substring(7))
-    if ((birth > 1900) && (death < 2000)) {
+    if ((birth >= 1900) && (birth <= 2000)) {
       newArray.push(array[i].name)
+      console.log(array[i].name)
     }
   }
+  console.log(newArray)
   return newArray;
 }
 
