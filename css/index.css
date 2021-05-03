@@ -136,5 +136,8 @@ button:hover{
 }
 
 @media (max-width: 500px) {
-    
-}
+    header nav {
+      display: flex;
+      flex-flow: column;
+    } 
+  }
