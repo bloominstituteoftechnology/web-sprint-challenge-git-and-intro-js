@@ -24,9 +24,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+Making sure the code is written so it can be modified by the end user to fit their needs and so that auto readers can read the web page correctly.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+You can make sure to include alt tags in your images so that readers can tell what the picture is.
+You should use rem instead of static units like pixels so that the font can be scaled correctly.
+Use semantic HTML so that the information can be read properly by readers.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Variables are used to hold/store values so they are important for almost every task you will do in Java Script.
+
 4. What is the purpose of using functions in code?
+
+To do tasks that are required to get the proper functionality you need from Java Script.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
