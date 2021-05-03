@@ -266,6 +266,7 @@ console.log(get20s(artists));
  function removeArtist(array, index){
   array.shift(index);  
   return array.length;
+}
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
