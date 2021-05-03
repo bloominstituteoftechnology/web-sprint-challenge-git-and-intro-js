@@ -203,8 +203,6 @@ export const artists = [
 
 // 🖌🖼 M V P 🖼🖌 //
 
-const myName ="david"
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Practice accessing data above by console.log-ing following items:
 (no functions needed) */
