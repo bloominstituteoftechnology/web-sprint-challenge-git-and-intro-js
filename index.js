@@ -208,8 +208,12 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
+console.log(artists[0]);
 
 
+//(2) Bio of the third artist (2nd index) in the array 
+
+console.log(artists[2].bio);
 
 
 
@@ -218,8 +222,8 @@ Practice accessing data above by console.log-ing following items:
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-artists[8].name = "Vincent Van Gogh"
-
+artists[8].name = 'Vincent Van Gogh'
+console.log(artists[8])
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
  1. Receive an array
@@ -228,9 +232,13 @@ artists[8].name = "Vincent Van Gogh"
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
- function getArtistByIndex(array ,num){
-  return `the artist at index ${array[num]} is ${array[num].name}`
-} 
+ function getArtistByIndex(arr, i) {
+  const name = arr[i].name
+  const id = arr[i].id
+
+  return `the artist at index ${id} is ${name}`
+}  
+console.log(getArtistByIndex(artists, 0)); 
 
 
 
@@ -242,17 +250,20 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array){
-  let twenties = []
-  for (let i = 0; i < array.length; i++){
-    if(array[i].years >= 1900){
-      twenties.slice(array[i].name);  
-    }        
-  }   
-  return twenties;
+function get20s(list){
+  let my20sBabies = [];
+  for (let i = 0; i <list.length; i++) {
+    let years = list[i].years.split('-');
+    let born = Number(years[0]);
+    let died = Number(years[1]);
+    if (born >= 1900 && died <= 2000) {
+      my20sBabies.push(list[i].name);
+    }
+  }
+  return my20sBabies
 }
-console.log(get20s(artists));
 
+get20s(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -263,11 +274,11 @@ console.log(get20s(artists));
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
- function removeArtist(array, index){
-  array.shift(index);  
-  return array.length;
+ function removeArtist(arr, i){
+  arr.splice (i, 1);
+  return arr.length;
 }
-   
+console.log(removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -285,13 +296,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array){
-  let index = array.length;
-  let obj = {"id": 20, "name": 'Brandon Worobi',"years":'1985-2021','genre':'Web Design','nationality':'Hispanic Mutt',"bio":"Jack of all Trades, Master at None."};
-  array.splice (index, 0, obj );
-  return array
+function addArtist(list){
+  let newArtist = { 
+    id: 20,
+    name: 'Brandon S. Worobi', 
+    years: '1985 - 2021',
+    genre: 'Web Design', 
+    nationality: 'Hispanic Mutt',
+    bio: 'Jack of all Trades, Master at None.'
+  }  
+  list.push(newArtist);
+  return list
 }
-console.log(addArtist(artists))
+addArtist(artists);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -299,12 +316,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array){
-  return array.filter(array => array.paintings > 100);
+function lotsOfArt(list){
+  let busyBees = [];
+  for (let i = 0; i <list.length; i++) {
+    if (list[i].paintings> 100) {
+      busyBees.push(list[i].name);
+    }
+  }
+  return busyBees
 }
-console.log(lotsOfArt(artists));
 
-
+lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
