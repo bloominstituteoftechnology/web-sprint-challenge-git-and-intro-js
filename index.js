@@ -208,11 +208,11 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-//console.log(artists[0].name);
+console.log(artists[0].name);
 
 
 //(2) Bio of the third artist (2nd index) in the array 
-//console.log(artists[2].bio);
+console.log(artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -221,7 +221,7 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 artists[8].name = "Vincent Van Gogh";
 
 
-//console.log(artists);
+console.log(artists);
 
 
 
@@ -270,9 +270,12 @@ function get20s(array){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array){
-   /*Your Code Here*/
+function removeArtist(array, index){
+   array.splice(index, 1);
+   return (array.length);
+
 }
+console.log(removeArtist(artists,0));
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
