@@ -286,7 +286,7 @@ function get20s(array){
  aset and return the number 19. */
 
 function removeArtist(array, num){
-   /*Your Code Here*/
+   /*test test test*/
 }
    
 
