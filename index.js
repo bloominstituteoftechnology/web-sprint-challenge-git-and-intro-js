@@ -271,8 +271,8 @@ function get20s(array){
     let firstYear = artistsCentury[0];
     let secondYear = artistsCentury[2];
 
-    if(firstYear >= 1900 && secondYear <= 2000){
-    newArray.push(array[i].name);
+      if(firstYear >= 1900 && secondYear <= 2000){
+        newArray.push(array[i].name);
     }
   }
   return newArray
@@ -315,7 +315,7 @@ Use addArtist to do the following:
       genre: 'Web Design', 
       nationality: 'AMERICAN',
       bio: 'lorem ipsum'});
-      return array;
+        return array;
     }
       
 
@@ -332,9 +332,9 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 function lotsOfArt(artists){
   let newArray = [];
-  for(let i = 0; i < artists.length; i++){
-  if(artists[i].paintings > 99){
-    newArray.push(artists[i].name);
+    for(let i = 0; i < artists.length; i++){
+    if(artists[i].paintings > 99){
+      newArray.push(artists[i].name);
     }
   }
   return newArray;

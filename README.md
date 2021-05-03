@@ -67,14 +67,17 @@ NOTE: Tests will run for the JavaScript portion of this challenge only
 
 ### Task 2a:  Minimum Viable Product - Responsive Design
 
-*Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
+*Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the 
+ home page was built. During this time, [Review the provided design files](design/). You have been provided all content 
+ necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
 * [ ] Add a viewport meta tag to the head of your index.html page.
 * [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
-Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges below.
+Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) 
+to find the challenges below.
 
 ### Task 3: Stretch Problems
 
