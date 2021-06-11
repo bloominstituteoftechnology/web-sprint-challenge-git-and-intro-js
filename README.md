@@ -23,9 +23,20 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+- Accessibility on the web is a pretty broad term in general, but in context with what we discussed this week in class, I believe it's referring to how accessible a website is to those with specific disabilities or impairments.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+- There are a few ways to do this from a design perspective.  For instance, making sure that the keyboard alone makes the content easily navigable helps those with mobility issues. Using alternative text for images may be helpful to those with visual impairment.  For this same reason, attention to color contrast with respect to the background and font colors is imperative in general for what's to be considered "good design;" especially in the context of being more accessible to those with visual deficiencies.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+- In this sprint, we learned about arrays and how to use them with variables.  Basically, an array allows us to call out variables by their position within the array.  Using an array with variables allows us to choose variables within a specific context.  Put more simply, a variable is a container for different types of data which can be extracted through logical coding.
+
 4. What is the purpose of using functions in code?
+
+- Functions allow the programmer to define a block of code.  Once given a name, the function can be executed as many times as you want.  The function is defined by its keyword and can be executed using an operator or "()".  The function isn't tied to just one parameter, it can include many parameters depending on how efficient the programmer.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
