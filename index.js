@@ -247,7 +247,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   const newArray = [];
   for (let i = 0; i < array.length; i++){
-    if(!array[i]["years"].includes("18")){
+    if(!array[i]["years"].includes("18") && !array[i]["years"].includes("17" && !array[i]["years"].includes("16") && !array[i]["years"].includes("15") && !array[i]["years"].includes("14")  ) ){
       newArray.push(array[i]["name"]);
     }
   }
@@ -298,9 +298,7 @@ function addArtist(array){
     });
     return array;
   }
-  console.log('Task 6', artists[20]);
-
-  
+  console.log('Task 6', addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -309,9 +307,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  const artArray = [];
+  for (let i = 0; i < array.length; i++){
+      if ((array[i]["paintings"]) > 100){
+          artArray.push(array[i]["name"]);
+      }
+  }
+  return artArray;
 }
+console.log('task 7', lotsOfArt(artists));
 
 
 
