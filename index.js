@@ -198,8 +198,8 @@ export const artists = [
       "bio": "Albrecht Dürer (; German: [ˈʔalbʁɛçt ˈdyːʁɐ]; 21 May 1471 – 6 April 1528) sometimes spelt in English as Durer or Duerer, without umlaut, was a painter, printmaker, and theorist of the German Renaissance. Born in Nuremberg, Dürer established his reputation and influence across Europe when he was still in his twenties due to his high-quality woodcut prints.",
       "wikipedia": "http://en.wikipedia.org/wiki/Albrecht_Dürer",
       "paintings": 328
-    }
-]
+    },
+  ]
 
 // 🖌🖼 M V P 🖼🖌 //
 
@@ -208,17 +208,16 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+console.log(artists[0]['name']);
 
 //(2) Bio of the third artist (2nd index) in the array 
-
-
+console.log(artists[2]['bio']);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-
-
+/*artists[9]['name']='Vincent Van Gogh';
+console.log(artists[9]['name']);*/
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -228,8 +227,9 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
+function getArtistByIndex(entry, position) {
   /*Your Code Here*/
+  return `the artist at index ${entry[position]['id']} is ${entry[position]['name']}`;
 }  
 
 
@@ -242,11 +242,13 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
+function get20s(stuff){
   /*Your Code Here*/
+  
 }
 
-
+/*artists.splice(1,1);
+return artists.length;
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -257,11 +259,13 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
+
+function removeArtist(art, location){
    /*Your Code Here*/
+   art.splice(location, 1);
+   return art.length;
 }
    
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
@@ -278,8 +282,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
+function addArtist(addition){
     /*Your Code Here*/
+    addition.push(
+    { 
+      'id': 20,
+      'name': 'Your Name Here', 
+      'years': 'Your Birth Year - current day',
+      'genre': 'Web Design', 
+      'nationality': 'Your Nationality Here',
+      'bio': 'Add 1-2 sentences (or use lorem ipsum)'
+    }  
+    )
+    return addition;
   }
 
   

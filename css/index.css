@@ -136,13 +136,14 @@ button:hover{
 }
 /*Responsive styles*/
 @media(max-width:500px){
-    nav{width:60%;
+    nav{width:50%;
     display:flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     align-items: center;
     flex-direction:row;
     margin-top:5%;
-    margin-right: 3%;
+    
 }
 .artists-container{
     display:flex;
@@ -156,7 +157,20 @@ button:hover{
     width: 40rem;
 }
 .bio{
-    border: 0rem;
-    margin-bottom: 150rem;
+    width: 40rem;
+    text-align: center;
 }
+nav a{
+    color:#626262;
+}
+nav span{
+    border-left:0.005rem solid #626262;
+
+}
+a {	
+    text-decoration: none;	
+    color: black;
+    font-size:2.5rem;	
+    margin-left: 10rem;
+}	
 }
