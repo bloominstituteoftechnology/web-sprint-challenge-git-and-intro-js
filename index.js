@@ -266,7 +266,7 @@ console.log('Task 4:', get20s(artists));
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, id){
-  array.slice(id, 1);
+  array.slice(id, 0);
   return array.length;
   }
   console.log('task 5', removeArtist(artists, 0)); 
