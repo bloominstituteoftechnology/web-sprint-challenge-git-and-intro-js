@@ -163,8 +163,11 @@ button:hover{
         align-items: center;
     }
     .title-container div{
-        width: cover;
-        /* background-size: cover; */
+        width: 100%;
+        background-image: auto;
+    }
+    .title-container hr{
+        width:100%;
     }
 
     .artists-container{
