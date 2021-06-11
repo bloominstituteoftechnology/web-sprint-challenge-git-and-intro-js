@@ -208,10 +208,11 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log('Practice 1:', artists[0]['name']);
+console.log('Task 1(1):', artists[0]['name']);
 
 
 //(2) Bio of the third artist (2nd index) in the array 
+console.log('Task 1(2)', artists[2]["bio"]);
 
 
 
@@ -219,7 +220,8 @@ console.log('Practice 1:', artists[0]['name']);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+artists[8]["name"] = "Vincent Van Gogh";
+console.log('task 2', artists[8]["name"]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -229,11 +231,10 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(array, id) {
+  return`the artist at index ${id} is ${array[id]["name"]}`;
 }  
-
-
+console.log('Task 3', getArtistByIndex(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
