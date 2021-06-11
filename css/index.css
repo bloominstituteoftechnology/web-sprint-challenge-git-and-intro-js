@@ -14,12 +14,22 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+/* border: 0;   */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
+:focus {
+	outline: 0;
+	}
 /*GENERAL STYLES*/
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px dashed black;
+}
 html{
     font-size:62.5%;
 }
@@ -133,4 +143,47 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+@media (max-width:500px) {
+
+    nav{
+        justify-content: space-around;
+        padding: 2%;
+        margin: 2%;
+    }
+    nav a{
+        justify-content: space-between;
+        margin: 4%;
+        font-size: 90%;
+    }
+    nav span{
+        border-left:2px solid #626262;
+    
+    }
+    .title-container div{
+        width: cover;
+        /* background-size: cover; */
+    }
+
+    .artists-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width:auto;
+        flex-wrap: wrap; */
+    }
+    .artist{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center;
+        width:auto; */
+    }
+    .artist img{
+        width:auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
