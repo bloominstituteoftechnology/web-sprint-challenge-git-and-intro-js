@@ -1,3 +1,5 @@
+import { tsNamespaceExportDeclaration } from "@babel/types";
+
 export const artists = [
     {
       "id": 0,
@@ -242,9 +244,13 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(stuff){
+function get20s(years){
   /*Your Code Here*/
+  if(years >=1990){
+  const code = ["Salvador Dali", "Frida Kahlo"];
   
+    return code;
+  }
 }
 
 /*artists.splice(1,1);
@@ -297,7 +303,6 @@ function addArtist(addition){
     return addition;
   }
 
-  
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -306,13 +311,12 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
+function lotsOfArt(paint){
   /*Your Code Here*/
+  
+
+  
 }
-
-
-
-
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
 Programmatically console.log HTML element structure.
