@@ -145,6 +145,10 @@ button:hover{
     width:100%;
 }
 @media (max-width:500px) {
+    /* Header & nav */
+    header{
+        align-items: center;
+    }
 
     nav{
         justify-content: space-evenly;
@@ -159,36 +163,40 @@ button:hover{
         margin: 7% 0;
     
     }
-    header{
-        align-items: center;
+    /* Title Container */
+    .title-container{
+        width: 100%;
+        height: fit-content
     }
     .title-container div{
         width: 100%;
-        background-image: auto;
+        /* background-image: center; */
+        height: 40vh;
+    }
+    .title-container div h1{
+        font-size:4rem;
     }
     .title-container hr{
         width:100%;
     }
-
+    /* Artist Container */
     .artists-container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* width:auto;
-        flex-wrap: wrap; */
+        width:auto;
+        flex-wrap: wrap;
     }
-    .artist{
+    div.artist{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center;
-        width:auto; */
+        align-items: center;
+        width: 50%;
     }
     .artist img{
-        width:auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 90%;
     }
+    .artist 
     
 }
