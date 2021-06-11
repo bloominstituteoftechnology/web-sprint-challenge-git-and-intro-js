@@ -247,7 +247,10 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   const newArray = [];
   for (let i = 0; i < array.length; i++){
-    if(!array[i]["years"].includes("18") && !array[i]["years"].includes("17" && !array[i]["years"].includes("16") && !array[i]["years"].includes("15") && !array[i]["years"].includes("14")  ) ){
+    // if(!array[i]["years"].includes("18") && !array[i]["years"].includes("17" && !array[i]["years"].includes("16") && !array[i]["years"].includes("15") && !array[i]["years"].includes("14")))
+    if(array[i].years.includes(19))
+
+    {
       newArray.push(array[i]["name"]);
     }
   }
