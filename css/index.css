@@ -147,9 +147,7 @@ button:hover{
 @media (max-width:500px) {
 
     nav{
-        justify-content: space-around;
-        padding: 2%;
-        margin: 2%;
+        justify-content: space-evenly;
     }
     nav a{
         justify-content: space-between;
@@ -158,7 +156,11 @@ button:hover{
     }
     nav span{
         border-left:2px solid #626262;
+        margin: 7% 0;
     
+    }
+    header{
+        align-items: center;
     }
     .title-container div{
         width: cover;
