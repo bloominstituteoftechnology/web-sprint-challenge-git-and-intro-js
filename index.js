@@ -247,8 +247,15 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   const newArray = [];
   for (let i = 0; i < array.length; i++){
+    //first thoughts remove century by "not"
     // if(!array[i]["years"].includes("18") && !array[i]["years"].includes("17" && !array[i]["years"].includes("16") && !array[i]["years"].includes("15") && !array[i]["years"].includes("14")))
-    if(array[i].years.includes(19))
+
+    //Second thoughts try to isolate "years" and separte dates into single numbers like 1900 to find no numbers under 1900
+
+    // array["years"].forEach((lifeSpan) => { return lifeSpan});
+    let yearSplitArray = array["years"].split("-");
+    yearSplitArray.trim();
+    if(yearSplitArray > 1900)
 
     {
       newArray.push(array[i]["name"]);
