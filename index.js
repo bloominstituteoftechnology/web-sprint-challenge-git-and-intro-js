@@ -253,11 +253,9 @@ function get20s(array){
     //Second thoughts try to isolate "years" and separte dates into single numbers like 1900 to find no numbers under 1900
 
     // array["years"].forEach((lifeSpan) => { return lifeSpan});
-    let yearSplitArray = array["years"].split("-");
-    yearSplitArray.trim();
-    if(yearSplitArray > 1900)
-
-    {
+    let yearSplitArray = array[i]["years"].split("-");
+    // yearSplitArray.trim();
+    if(yearSplitArray[0] > 1900 && yearSplitArray[1] <2000){
       newArray.push(array[i]["name"]);
     }
   }
