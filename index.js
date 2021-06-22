@@ -307,7 +307,7 @@ function lotsOfArt(/*Your Code Here*/){
   return 'bar';
 }
 /*Don't touch the code after this line! */
-export default{
+module.exports = {
   foo,
   getArtistByIndex,
   get20s,
