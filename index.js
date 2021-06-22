@@ -1,4 +1,4 @@
-export const artists = [
+const artists = [
   {
     "id": 0,
     "name": "Amedeo Modigliani",
@@ -306,6 +306,7 @@ function foo() {
   console.log('its working');
   return 'bar';
 }
+foo();
 /*Don't touch the code after this line! */
 module.exports = {
   foo,
