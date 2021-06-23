@@ -56,13 +56,6 @@ NOTE: Tests will run for the JavaScript portion of this challenge only
 
 Navigate to `index.js` and complete the MVP challenges. Note that you need to scroll past data (or collapse data in VScode) to find the challenges below.
 
-### Task 3: Stretch Problems
-
-After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
-
-* [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to implement ARIA roles)  
-* [ ] Student demonstrates and can explain a deep understanding of basic programming concepts when walking Team Lead through the explanation of their code.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
 
 
 ## Resources
@@ -72,6 +65,8 @@ After finishing your required elements, you can push your work further. These go
 🤝[W3 Schools - Responsive Design](https://www.w3schools.com/html/html_responsive.asp)
 
 👀 [Styling with HTML and CSS](https://www.w3schools.com/html/html_css.asp)
+
+🦄 [Sprint Challenge Study Guide](https://www.notion.so/lambdaschool/Unit-1-Sprint-2-Study-Guide-16f656025c8744458addb068e6348101)
 
 ## Submission format
 
