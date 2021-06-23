@@ -78,7 +78,6 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 🦄 [Sprint Challenge Study Guide](https://www.notion.so/lambdaschool/Unit-1-Sprint-2-Study-Guide-16f656025c8744458addb068e6348101)
 
-## Submission format
 
 ## Submission format
 
