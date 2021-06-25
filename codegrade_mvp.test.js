@@ -1,4 +1,4 @@
-import functions from '../index';
+import functions from './index';
 let artists;
 beforeEach(()=>{
     artists = [
@@ -224,28 +224,6 @@ describe('get20s', ()=>{
     it('get20s returns an array', ()=>{
         expect(functions.get20s(artists)).toEqual([ 'Salvador Dali', 'Frida Kahlo' ]);
     })
-    it('get20s returns an array', ()=>{
-      expect(functions.get20s([{
-        "id": 5,
-        "name": "Salvador Dali",
-        "years": "1904 - 1989",
-        "genre": "Surrealism",
-        "nationality": "Spanish",
-        "bio": "Salvador Domingo Felipe Jacinto Dalí i Domènech, 1st Marquis of Dalí de Púbol (11 May 1904 – 23 January 1989), known professionally as Salvador Dalí (; Catalan: [səlβəˈðo ðəˈli]; Spanish: [salβaˈðoɾ ðaˈli]), was a prominent Spanish surrealist born in Figueres, Catalonia, Spain.",
-        "wikipedia": "http://en.wikipedia.org/wiki/Salvador_Dalí",
-        "paintings": 139
-      },
-      {
-        "id": 6,
-        "name": "Edouard Manet",
-        "years": "1832 - 1883",
-        "genre": "Realism,Impressionism",
-        "nationality": "French",
-        "bio": "Édouard Manet (US: ; UK: ; French: [edwaʁ manɛ]; 23 January 1832 – 30 April 1883) was a French modernist painter. He was one of the first 19th-century artists to paint modern life, and a pivotal figure in the transition from Realism to Impressionism.",
-        "wikipedia": "http://en.wikipedia.org/wiki/Édouard_Manet",
-        "paintings": 90
-      }])).toEqual([ 'Salvador Dali']);
-  })
 });
 
 describe('removeArtist', ()=>{
