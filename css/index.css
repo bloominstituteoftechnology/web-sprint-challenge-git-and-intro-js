@@ -14,12 +14,18 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0;  
-border: 0;  
+/* border: 0;   */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+*{
+    /* border:1px solid grey; */
+    box-sizing:border-box;
+    width:100%;
+}
+
 html{
     font-size:62.5%;
 }
@@ -27,6 +33,7 @@ body{
     font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
+    /* color:#4f4f4f; */
 }
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
@@ -43,7 +50,7 @@ a {
     font-size:2.5rem;	
 }	
 a:hover {	
-    font-weight: bold;	
+    font-weight: bolder;	
 }	
 .name{	
     font-size: 150%;	
@@ -71,34 +78,42 @@ header{
 nav{
     width:30%;
     display:flex;
-    justify-content:space-evenly;
-    margin-top:5%;
+    justify-content:center;
+    /* margin:2%; */
+    padding:3% 0;
 }
 nav a{
+    width:33%;
+    display: flex;
     color:#626262;
+    flex-direction: row;
+    justify-content: center;
 }
-nav span{
+#bold{
+    font-weight:bold;
+}
+/* nav span{
     border-left:3px solid #626262;
 
-}
+} */
 /*Title Section Styles*/
 .title-container{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.title-container div {	
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
-    background-position: center;	
-    color: white;	
-    width:80%;
-    display:flex;
+.title-container div {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg);
+    background-position: center;
+    color: white;
+    width: 80%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height:60vh;
-    margin:5% 0;
-}	
+    height: 90vh;
+    margin: 5% 0;
+    justify-content: center;
+}
 .title-container div:hover {	
     opacity: 80%;	
 }	
@@ -133,4 +148,15 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/*Responsive Styles*/
+/*Tablet*/
+@media(max-width:800px){
+
+}
+
+/*Phone*/
+@media(max-width:500px){
+
 }
