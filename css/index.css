@@ -137,36 +137,51 @@ button:hover{
 
 @media(max-width: 500px)
 {
-
     body{
-        font-size:1.3rem;
+        font-size:1.1rem;
         line-height: 1.2;
-        border: 1px solid red;
-
     }	
+
+    h1{
+        font-size: 110%;
+    } 
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 1% 3%;
+        font-size: 1.1rem;
+        border-radius: 2px;
+    }
+
     .name{	
         font-size: 150%;	
         font-weight: 200;	
-    }	
+    } 
+
     img {	
-        height:39rem;	
+        height:15rem;	
         object-fit: cover;	
         display: block;	
         margin: 2%;	
         margin-top: 4%;	
         margin-left: auto;	
-        margin-right: auto;	
-        
+        margin-right: auto;	   
     }	
 
     header{
         display:flex;
         justify-content: center;
     }
+
     nav{
         width:50%;
         display:flex;
         justify-content:space-evenly;
+        padding-bottom: 1rem;
     }
 
     .title-container{
@@ -183,7 +198,7 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height:40vh;
+        height:22vh;
         margin:0 auto;
     }	
     .title-container hr{
@@ -193,6 +208,7 @@ button:hover{
     .artists-container{
         display:flex;
         flex-direction: column;
+        align-items: center;
         width:60%;
         margin:0 auto;
     }
@@ -201,11 +217,13 @@ button:hover{
         display:flex;
         flex-direction: column;
         width:70%;
-        text-align:center;
+        
+    
     }
     .bio{
         display: flex;
         align-content: center;
+        font-size: 50%;
         
     }
     .artist img{
