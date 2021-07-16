@@ -248,10 +248,29 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(array) {
+  return array.filter(person => {
+    const years = person.years.split('-').map(year => year.trim());
+    const startYear = years[0];
+    const endYear = years[1];
+    return Number(startYear) >= 1900 && Number(endYear) <= 2000;
+  }).map(artist => artist.name);
 }
 
+console.log(get20s(artists)); 
+
+//made more reusable down below by replacing years searched for with x and y and placing those in the parameters, then the years in the arguments.
+
+/* function get20s(array, x, y) {
+//   return array.filter(person => {
+//     const years = person.years.split('-').map(year => year.trim());
+//     const startYear = years[0];
+//     const endYear = years[1];
+//     return Number(startYear) >= x && Number(endYear) <= y;
+//   }).map(artist => artist.name);
+// }*/
+
+// console.log(get20s(artists, 1900, 2000));*/
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -263,10 +282,11 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array, index) {
+  array.splice(index, 1);
+  return array.length;
 }
-
+console.log("Task 5:", removeArtist(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -274,20 +294,28 @@ Use addArtist to do the following:
 2. Add this object of information to the end of the array
   { 
     id: 20,
-    name: Your Name Here, 
-    years: Your Birth Year - current day,
-    genre: Web Design, 
-    nationality: Your Nationality Here
-    bio: Add 1-2 sentences (or use lorem ipsum)
+    name: "Rebecca Ogden", 
+    years: "1997 - July 16, 2021",
+    genre: "Web Design", 
+    nationality: "Irish, Scottish, English, Welsh"
+    bio: "I love to read and sing, but usually not at the same time. i have two younger brothers and an older sister who has made me an aunt to the sweetest little nephews on the planet! They are basically my whole world."
   }  
 3. Return the resulting array
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  array.push({
+    id: 20,
+    name: "Rebecca Ogden", 
+    years: "1997 - July 16, 2021",
+    genre: "Web Design", 
+    nationality: "Irish, Scottish, English, Welsh",
+    bio: "I love to read and sing, but usually not at the same time. i have two younger brothers and an older sister who has made me an aunt to the sweetest little nephews on the planet! They are basically my whole world."
+  });
+  return array;
 }
-
+console.log("Task 6:",addArtist(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -297,9 +325,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  const artGalore=[];
+  for (let i = 0; i < array.length; i++){
+    if (array[i].paintings > 100){
+    artGalore.push(array[i].name);
+    }
+  }
+  return artGalore;
 }
+console.log("Task 7:",lotsOfArt(artists));
 
 
 /* ***** END OF TASKS ***** */
