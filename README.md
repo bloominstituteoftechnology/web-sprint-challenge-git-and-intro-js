@@ -23,10 +23,27 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+- Acccessibility is where you write your code so that the users browser can adjust it according to the needs of the user.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+-1) Using a scaleable font size makes it so that the users browser can adjust the size of the words according to what the users settings are.
+2) Use the most semantic tags. it is easy to use div tags everywhere, but using the most semantic tags makes your webpage easy to read by any screenreaders and easy to search on for on the internet.
+3) Colors: avoiding colors that color blind people have a hard time differentiating is a big one. and if you do use those colors, such as red and green, use symbols with them to indicate the meaning that you are trying to convey.
+BONUS) filling out all ALT tags, this will make it so that any screen readers will be able to know what the picture is, and anyone not using a screenreader will be able to know what the image is if the picture is unable to show up for any reason.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+-A variable is a way to store and use data in code. it can be also be changed, but before i got into that, i would first describe the storing and using data as a legend on a map. the triangles on a map usually indicate mountains, and blue lines indicate rivers and bodies of water. everyone has seen a map in their lives, so it would be easier to comprehend. and once they understood this concept, i would explain how these can also be changed, (on this map, the triangles no longer represent mountains, but campsites... etc.)  
+
 4. What is the purpose of using functions in code?
+
+-Using a function inside of code is important because it saves us as programmers a lot of time having to write the same equations over and over again. and if we did have to write them countless times, that gives more time to make mistakes. and if we had to change one thing in each of them, it would take even longer. so in all, it just saves us a buttload of time and energy, while also looking clean and efficient.
+
 5. How do you access a key inside of an object inside of an array?
+
+- array-name[index-number].key-name
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
