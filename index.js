@@ -248,24 +248,24 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s() 
+function get20s(array) 
 { 
-    // const arrayArt20s = [];
-    // const array20s = array[years].split();
-    // let yearBorn = parseInt(array20s[0]);
-    // let yearDead = parseInt(array20s[2]);
-    
-    // for(let i=0; i< array.length; i++)
-    // {
-    //   if (yearBorn >= 1900 && yearDead <= 1999)
-    //   {
-    //     return arrayArt20s;
-    //   }  
-    // } 
+    const arrayArt20s = [];
+    for(let i=0; i< array.length; i++)
+    {
+      const array20s = array[i].years.split(" ");
+      let yearBorn = parseInt(array20s[0]);
+      let yearDead = parseInt(array20s[2]);
+      if (yearBorn >= 1900 && yearDead <= 1999)
+      {
+        arrayArt20s.push(array[i].name)
+      }  
+    } 
+    return arrayArt20s;
 }
 
-// const result20s = get20s(artists);
-// console.log("task 4", result20s);
+const result20s = get20s(artists);
+console.log("task 4", result20s);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -332,11 +332,11 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array) {
   const more100paintings = [];
 
-  for(let artist in array)
+  for(let i = 0; i < array.length; i++)
   {
-    if (artist.paintings >100)
+    if (array[i].paintings >100)
     {
-      more100paintings.push(artist);
+      more100paintings.push(array[i].name);
     }
   }
 
