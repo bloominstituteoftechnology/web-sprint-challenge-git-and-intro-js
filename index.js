@@ -251,7 +251,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s() 
 { 
     // const arrayArt20s = [];
-    // const array20s = array.years.split();
+    // const array20s = array[years].split();
     // let yearBorn = parseInt(array20s[0]);
     // let yearDead = parseInt(array20s[2]);
     
@@ -264,8 +264,8 @@ function get20s()
     // } 
 }
 
-const result20s = get20s(artists);
-console.log("task 4", result20s);
+// const result20s = get20s(artists);
+// console.log("task 4", result20s);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
