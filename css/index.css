@@ -142,30 +142,29 @@ button:hover{
 
     /*Mobile Navigation Styling*/ 
 
+    nav a {
+        margin: 0 6%;
+        font-size: 1.9rem; 
+    }
 
 
     /* 50 Influential Artists Styling*/
 
     .title-container {
         width: 100%
-        padding: 0;
         margin: 0;
     }
 
     .title-container div {	    
         width:100%;
+        padding: 10%;
+        background-size: cover;
         
     }
     /* H1 sizing down */
     .title-container h1 {	    
         font-size: 4rem;
         padding: 5%;
-    }
-
-    /* Button sizing down */
-
-    .title-container button {	    
-        
     }
 
     /*Artist Styling*/
@@ -177,13 +176,19 @@ button:hover{
     .artist {
         width: 100%;
         padding: 10%;
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .artist a {
+        font-size: 2.1rem; 
+        margin: 20% 0;
     }
 
     /* Sizing down image*/
 
-    .artist img {
-        
+    .artist-img {
+        object-fit: cover;
+        height: auto;
     }
     
     
