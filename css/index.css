@@ -24,32 +24,31 @@ html{
     font-size:62.5%;
 }
 body{
-    font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
 }
-h1, p, .name, .bio {	
+h1, p, .name, .bio{	
     font-family: 'Raleway', sans-serif;	
     text-align: center;	
     margin: 4%;	
 }	
 h1{
-    font-size:6rem;
+    font-size:3rem;
     margin:0;
 }
-a {	
+a{	
     text-decoration: none;	
     color: black;
     font-size:2.5rem;	
 }	
-a:hover {	
+a:hover{	
     font-weight: bold;	
-}	
+}
 .name{	
     font-size: 150%;	
     font-weight: 200;	
 }	
-img {	
+img{	
     height:39rem;	
     object-fit: cover;	
     display: block;	
@@ -59,33 +58,32 @@ img {
     margin-right: auto;	
     border-radius: 2%;	
 }	
-img:hover {	
+img:hover{	
     opacity: 80%;	
 }	
-/*HEADER STYLES */
 header{
     display:flex;
     justify-content: center;
 }
 nav{
-    width:30%;
+    width:60%;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     margin-top:5%;
 }
 nav a{
+    font-size: medium;
     color:#626262;
 }
 nav span{
     border-left:3px solid #626262;
 }
-/*Title Section Styles*/
 .title-container{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.title-container div {	
+.title-container div{	
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
     background-position: center;	
     color: white;	
@@ -94,10 +92,10 @@ nav span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:60vh;
+    height:50vh;
     margin:5% 0;
 }	
-.title-container div:hover {	
+.title-container div:hover{	
     opacity: 80%;	
 }	
 .title-container hr{
@@ -117,21 +115,44 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
-/*Artists Section Styles */
 .artists-container{
     display:flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     width:80%;
     margin:0 auto;
 }
 .artist{
-    width:40%;
+    width:80%;
     text-align:center;
 }
 .artist img{
     width:100%;
 }
-
-@media(max-width: 500px){
-
+@media screen and (min-width: 500px) {
+body{
+    font-size:1.6rem;
+}
+nav{
+    width: 30%;
+}
+nav a{
+    font-size: large;
+}
+h1{
+    font-size: 6rem;
+}
+.title-container div{
+    background-size: cover;
+    height: 60vh;
+}
+.artists-container{
+    flex-direction: row;
+    height: auto;
+    align-items: baseline;
+}
+.artist{
+    width: 40%;
+}
 }
