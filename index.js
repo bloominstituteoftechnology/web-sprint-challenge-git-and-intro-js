@@ -297,8 +297,6 @@ function addArtist(array) {
   return array
 }
 
-
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -306,8 +304,14 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  const artistArray = []
+  for (let i = 0 ; i < array.length ; i++) {
+    if (array[i].paintings > 100) {
+  artistArray.push(array[i].name)
+    }
+  }
+  return artistArray
 }
 
 
