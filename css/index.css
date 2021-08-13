@@ -62,7 +62,6 @@ img {
 img:hover {	
     opacity: 80%;	
 }	
-
 /*HEADER STYLES */
 header{
     display:flex;
@@ -79,7 +78,6 @@ nav a{
 }
 nav span{
     border-left:3px solid #626262;
-
 }
 /*Title Section Styles*/
 .title-container{
@@ -125,13 +123,15 @@ button:hover{
     justify-content: space-around;
     width:80%;
     margin:0 auto;
-    
 }
-
 .artist{
     width:40%;
     text-align:center;
 }
 .artist img{
     width:100%;
+}
+
+@media(max-width: 500px){
+
 }
