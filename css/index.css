@@ -134,3 +134,12 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* Mobile styling*/
+
+@media (max-width: 500px) {
+    .artists-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
