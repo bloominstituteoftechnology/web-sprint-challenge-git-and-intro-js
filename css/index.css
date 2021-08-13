@@ -175,7 +175,7 @@ button:hover{
     }
     .artist {
         width: 100%;
-        padding: 10%;
+        padding: 0 10% 10%;
         font-size: 1rem;
     }
 
