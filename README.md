@@ -38,11 +38,12 @@ Follow these steps to set up your project:
 
 1. Fork the repo
 2. Clone your forked version of the repo
-3. cd into your repo and create a branch with your first and last name
+3. cd into your repo and work on the main branch
 NOTE: Tests will run for the JavaScript portion of this challenge only
-4. open the terminal in your vs code and type `npm install`
-5. next type `npm run test` in your terminal
-6. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
+4. connect to codegrade
+5. open the terminal in your vs code and type `npm install`
+6. next type `npm run test` in your terminal
+7. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
 
 ### Testing & Debugging
 
@@ -78,8 +79,6 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 🦄 [Sprint Challenge Study Guide](https://www.notion.so/lambdaschool/Unit-1-Sprint-2-Study-Guide-16f656025c8744458addb068e6348101)
 
 
-## Submission format
 
-Please submit your project via codegrade by following [these instructions](https://www.notion.so/lambdaschool/Submitting-an-assignment-via-Code-Grade-A-Step-by-Step-Walkthrough-07bd65f5f8364e709ecb5064735ce374)
 
 
