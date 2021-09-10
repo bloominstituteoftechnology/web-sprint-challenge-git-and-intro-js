@@ -287,13 +287,14 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(artist) {
-  const artist.push;
+  const artist = addArtist.push {
       id: 20,
       name: "Abraham Salazar", 
       years: "1994 - current day",
       genre: "Web Design", 
       nationality: "Mexican",
       bio: "I am a prospective full stack engineer and UX designer."
+  }
   return artist
 }
 console.log(addArtist(artists))
