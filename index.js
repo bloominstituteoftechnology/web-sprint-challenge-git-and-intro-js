@@ -300,13 +300,13 @@ var artist = {
   nationality: "Your Nationality Here",
   bio: "Add 1-2 sentences (or use lorem ipsum)",
 };
-console.log(addArtist(artists, artist));
+
 function addArtist(array, artist) {
   /*Your Code Here*/
   array.push(artist);
   return array;
 }
-
+console.log(addArtist(artists, artist));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -315,7 +315,6 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-  /*Your Code Here*/
   var newArray = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i].paintings > 100) {
@@ -324,6 +323,8 @@ function lotsOfArt(array) {
   }
   return newArray;
 }
+console.log(lotsOfArt(artists)
+
 /* ***** END OF TASKS ***** */
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
