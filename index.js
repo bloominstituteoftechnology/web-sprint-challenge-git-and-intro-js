@@ -246,8 +246,8 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(arr) {
-  newArr = [];
-  for(i = 0; i < arr.length; i++){
+  let newArr = [];
+  for(let i = 0; i < arr.length; i++){
     const dates = arr[i].years.split(' ');
     let dateArr = arr[i].years.split(dates[1]);
     if(dateArr[0] > 1899 & dateArr[1] < 2001){
@@ -291,8 +291,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(arr) {
+  let newObj = {
+    id: 20,
+    name: 'Kenji Greene',
+    years: '2001 - 2021',
+    genre: 'Web Design',
+    nationality: 'North American',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  }
+  arr.push(newObj);
+  return arr
 }
 
 
@@ -304,8 +313,14 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(arr) {
+  let newArr = [];
+  for(let i = 0; i < arr.length; i ++){
+    if(arr[i].paintings > 100){
+      newArr.push(arr[i].name);
+    }
+  }
+  return newArr
 }
 
 
