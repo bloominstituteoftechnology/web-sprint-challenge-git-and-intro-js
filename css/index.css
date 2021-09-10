@@ -79,6 +79,7 @@ nav a{
 }
 nav span{
     border-left:3px solid #626262;
+   
 
 }
 /*Title Section Styles*/
@@ -133,4 +134,41 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+/*Media Queries */
+/*(phones size 500px and down) */
+@media (max-width:500px){
+    
+    /*Title Section Styles*/
+    .title-container div {	
+     background-repeat: no-repeat;  
+     background-position-y: -25em;
+     background-position-x: center;        
+    }
+
+    nav span{
+        border-left:3px solid #626262;
+        margin: 5%;    
+    }
+    h1{
+        font-size:3rem;   
+    }
+    button{
+       
+        font-size: 1.2rem;
+        border-radius:4px;
+        box-shadow: 1px 1px 0.5px #626262;
+        
+    }
+    /*Artists Section Styles */
+    .artist a{
+    
+        font-size:2rem ;
+        
+    }
+    .bio{
+        font-size:1.2rem ;
+    }
+
+  
 }
