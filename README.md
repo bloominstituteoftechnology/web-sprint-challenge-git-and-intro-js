@@ -23,7 +23,7 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-Acessibilty makes code more readable. It will be easy for developer to understand the code. For example,when you will see nav you will know it's represent navigation same thing with article,address,section..etc.
+Accessibility makes code more readable.It will be easy for developer to understand the code. For example,when you will see nav you will know it's represent navigation same thing with article,address,section..etc.
 2. Talk about 3 different things you can do to ensure your website is accessible.
   Heading tags (h1 - h6): help a user gage the structure and organization of your website. Visually headings usually larger, bolder and more distinct that the rest of the text on the page.
   Image:It’s important to compress your images so that they will load for those without a high speed internet connection
