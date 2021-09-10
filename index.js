@@ -221,10 +221,10 @@ console.log("bio");
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
-const artists = "name".pop('Dough')
-const artists = "name".push('Gogh')
+const artist = "name".pop('Dough')
+const artist = "name".push('Gogh')
 
-console.log(artists[9]);
+console.log(artist[9]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -235,7 +235,7 @@ Use getArtistByIndex to do the following:
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(id, name) {
-  const artists = id.push;
+  const artist = id.push;
   return `the artist at index ${this.id} is ${this.name}`;
 }
 console.log(getArtistByIndex);
@@ -264,10 +264,11 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(artist, number) {
+  let artist = removeArtist.splice[18, "El Greco"]
+  return removeArtist
 }
-
+console.log(removeArtist)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
