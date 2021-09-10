@@ -208,11 +208,12 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-
+let id = 0;
+console.log("name");
 
 //(2) Bio of the third artist (2nd index) in the array 
-
-
+let id = 2;
+console.log("bio");
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
