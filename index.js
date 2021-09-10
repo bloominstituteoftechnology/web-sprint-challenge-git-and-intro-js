@@ -243,7 +243,6 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  //Create new array
   var newarray = [];
   //engine to loop through and search
   for (let i = 0; i < array.length; i++) {
@@ -300,13 +299,13 @@ var artist = {
   nationality: "Your Nationality Here",
   bio: "Add 1-2 sentences (or use lorem ipsum)",
 };
-
+console.log(addArtist(artists, artist));
 function addArtist(array, artist) {
   /*Your Code Here*/
   array.push(artist);
   return array;
 }
-console.log(addArtist(artists, artist));
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
@@ -323,7 +322,7 @@ function lotsOfArt(array) {
   }
   return newArray;
 }
-console.log(lotsOfArt(artists)
+console.log(lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
