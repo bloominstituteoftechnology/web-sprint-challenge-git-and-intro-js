@@ -37,13 +37,15 @@ You are expected to be able to answer questions in these areas. Your responses c
 Follow these steps to set up your project:
 
 1. Fork the repo
-2. Clone your forked version of the repo
-3. cd into your repo and work on the main branch
-NOTE: Tests will run for the JavaScript portion of this challenge only
-4. connect to codegrade
-5. open the terminal in your vs code and type `npm install`
-6. next type `npm run test` in your terminal
-7. Complete your work making regular commits, once you have all your tests passing and you are ready to submit your work please see canvas for instructions on how to submit
+2. Go into canvas and connect your reop to codegrade
+3. Clone your forked version of the repo
+4. DO NOT CREATE A BRANCH. You will be pushing your changes to the main/master today
+NOTE: tests will run in the JavaScript portion of this challenge only.
+5. cd into your repo
+6. open the terminal in your vs code and type `npm install`
+7. next type `npm run test` in your terminal
+8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
+
 
 ### Testing & Debugging
 
