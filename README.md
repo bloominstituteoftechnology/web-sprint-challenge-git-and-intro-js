@@ -23,10 +23,24 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+A lot of people who use the internet have some form of disability. Just because someone needs to access information in a different way doesn't mean they don't deserve to have that information available to them. Acessibility on the web is something we can provide through our code to the consumer. We can use our programming skills to make the web more accessible to people who have visual or verbal impairment, cognitive issues, or physical restraints when it comes to using websites. It is important to know how to make your websites accessible so that no one gets left behind.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+There are many ways you can make your website accessible but I am going to give three examples. For someone who is visually impaired you can provid text descriptions of the images you add so when they are using the text to speech option they will know what imagry was used. You can also make sure your website gives users enough time to read and use the content on your website, not everyone can digest information at the same speed. It is also a good idea to make your website respond in predictable ways. Do not make your website so hard to navigate that it leaves some people feeling lost or unwelcome.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+The concept of a variable is not a simple one. Essentially, a variable holds reusable data in a program and associates it with a name. If you haven't coded before it seems like an amorphous concept but they are very useful and you will be using them a lot. 
+
 4. What is the purpose of using functions in code?
+
+When you are writing code you are working with a lot of data and a huge part of your job is to make that data usable and understandable. Functions are helpful in this goal because it is a 'piece' of code that you can use multiple times without having to rewrite it every time. Functions help us to break down a large problem into smaller, more managable pieces. 
+
 5. How do you access a key inside of an object inside of an array?
+
+There are two main ways to access data inside an object, dot notation and bracket notation. To access a key in an object inside an array you would need to use either dot notation or bracket notation in cojuction with referencing the index of your oject in the array and then the key. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
