@@ -78,7 +78,7 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 👀 [Styling with HTML and CSS](https://www.w3schools.com/html/html_css.asp)
 
-🦄 [Sprint Challenge Study Guide](https://www.notion.so/lambdaschool/Unit-1-Sprint-2-Study-Guide-16f656025c8744458addb068e6348101)
+🦄 [Sprint Challenge Study Guide](https://www.notion.so/bloomtech/Unit-1-Sprint-2-Study-Guide-16f656025c8744458addb068e6348101)
 
 
 
