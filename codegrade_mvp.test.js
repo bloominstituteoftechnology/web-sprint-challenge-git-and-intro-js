@@ -271,8 +271,7 @@ describe('artistByCountry', ()=>{
       expect(functions.artistByCountry(artists, 'Spanish')).toEqual([
         'Salvador Dali', 
         'Pablo Picasso', 
-        'Francisco Goya', 
-        'El Greco' 
+        'Francisco Goya'
         ]);
   })
 });
