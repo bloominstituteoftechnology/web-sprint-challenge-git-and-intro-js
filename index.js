@@ -318,7 +318,7 @@ Use artistByCountry to do the following:
 2. Receive a nationality
 3. returns a list of artists from that country
 
-For example artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya', 'El Greco' ]
+For example artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya']
 */
 
 function artistByCountry(/*Your Code Here*/){
