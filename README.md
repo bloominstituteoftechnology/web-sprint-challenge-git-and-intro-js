@@ -57,5 +57,4 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 
 
-
-
+End of Sprint 1 Challenge 
