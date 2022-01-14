@@ -245,7 +245,19 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
- 
+
+function get20s(array){
+  const newArray = [];
+  const newArray2 = [];
+  for(let i = 0; i<array.length; i++){
+    const yearsSplit = array[i].years.split(' - ');
+    newArray.push(yearsSplit);
+  }
+  return (newArray2);
+
+}
+ console.log('task 4', get20s(artists));
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -257,11 +269,9 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, i) {
-   if(array[i]= i){
-     array.splice(i,7);
-  }
-  return `${array.length}`;
-}
+  array.splice(i,1);
+  return array.length;
+} 
 
 console.log(removeArtist(artists, 0));
 
@@ -282,11 +292,12 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(array) {
-  array.push = (20, "Bennett", "1997 - 2022", "Web Design", "Mixed", "I like to play basketball and the drums."; /*Your Code Here*/
+  const Bennett = {id: 20, name: 'Bennett', years: '1997 - 2022', genre: 'Web Design', nationality: 'Hungarian', bio:'I like basketball and drums'};
+  array.push(Bennett);
+  return array;
 }
 
-
-
+console.log(addArtist(artists));
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
