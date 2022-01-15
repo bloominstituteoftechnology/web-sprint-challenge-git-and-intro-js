@@ -254,7 +254,6 @@ function get20s(array){
     newArray.push(yearsSplit);
   }
   return (newArray2);
-
 }
  console.log('task 4', get20s(artists));
 
