@@ -273,23 +273,6 @@ function removeArtist(artists, number){
 }
 
 console.log(removeArtist(artists, 0))
-// (artists, number) {
-//   for(let i = 0; i < artists.legnth; i++){
-//     artists.splice(i,1)
-//   }
-//   return artists;
-// }
-
-// console.log('task 5', removeArtist(artists, 0))
-// (artists, number) {
-//   for(let i = 0; i < artists.length; i++){
-//     if(artists[1].includes(artists[number])){
-//       artists.splice(i,1)
-//     }
-//   }
-//   return artists;
-// }
-// const artistRemoved = removeArtist(artists, 0);
 
 // console.log('task 5', artistRemoved);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -320,19 +303,6 @@ function addArtist(artists){
       return artists;
 }
 
-// (id, name, years, genre, nationality, bio) {
-//   artists.push({ 
-//     id: 20,
-//     name: 'Chrissna Chum', 
-//     years: '1998-2022',
-//     genre: 'Web design', 
-//     nationality: 'American',
-//     bio: 'eat, sleeps, plays valorant',
-//   })
-//   return artists;
-// }
-
-// console.log('task 5', addArtists(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
