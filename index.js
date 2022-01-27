@@ -417,5 +417,3 @@ module.exports = {
   artistByCountry
 }
 
-
-// putting this here for update? idk
