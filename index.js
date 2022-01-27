@@ -210,15 +210,21 @@ Practice accessing data above by console.log-ing following items:
 //(1) Name of the first artist (0th index) in the array
 
 
+console.log('Task 1a:', artists[0].name)
+
 //(2) Bio of the third artist (2nd index) in the array 
 
 
+console.log('Task 1b:', artists[2].bio)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
+//changing Vincent Van Dough to Vincent Van Gogh, array, index # and then .name to access names
+artists[9].name = 'Vincent Van Gogh'
 
+console.log('Task 2:', artists[9].name)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -228,10 +234,13 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+// Receive array, number
+// return using template literals
+function getArtistByIndex(array, number) {
+  return `the artist at index ${array[number].id} is ${array[number].name}`
 }
-
+// invoke function
+getArtistByIndex[artists[0]]
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -243,9 +252,27 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+
+// recieve array
+// create new array set to empty []
+function get20s(array) {
+  let array1 = []
+  // use for to run loop through array
+  for(let i = 0; i < array.length; i++){
+    // thanks google(took freakin hours)
+    if(parseInt(array[i].years.split(' - ')[0]) >= 1900 && parseInt(array[i].years.split(' - ')[1]) <= 2000){
+      array1.push(array[i].name)
+    }
+  }
+  return array1
 }
+console.log('Task 4:', get20s(artists))
+
+
+
+
+
+
 
 
 
@@ -258,9 +285,11 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array, number) {
+  array.pop(array[number])
+  return array.length
 }
+console.log("Task 5:", removeArtist(artists, 2))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -279,9 +308,20 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array) {
+  artists.push(
+    {
+    "id": 20,
+    "name": "Your Name Here", 
+    "years": 'Your Birth Year - current day',
+    "genre": 'Web Design', 
+    "nationality": 'Your Nationality Here',
+    "bio": 'Add 1-2 sentences (or use lorem ipsum)'
+  })
+  return array
+    
 }
+console.log("Task 6:", addArtist(artists))
 
 
 
@@ -292,9 +332,21 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+// recieve array
+// create new array
+// use for loop to iterate through array
+// dont forget [i]
+
+function lotsOfArt(array) {
+  const array1 = [];
+  for(let i = 0; i < array.length; i++){
+    if(array[i].paintings > 100)
+    array1.push(array[i].name)
+  }
+  return array1
 }
+
+console.log("Task 7:", lotsOfArt(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -306,9 +358,18 @@ Use artistInfo to do the following:
 For example artistInfo(artists, 'Frida Kahlo') will return: 
   ["Frida Kahlo de Rivera (Spanish pronunciation: [ˈfɾiða ˈkalo]; born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.Born to a German father and a mestiza mother, Kahlo spent most of her childhood and adult life at her family home in Coyoacán, La Casa Azul, now known and publicly accessible as the Frida Kahlo Museum. She was disabled by polio as a child. Until a traffic accident at age eighteen caused lifelong pain and medical problems, she had been a promising student headed for medical school. During her recovery, she returned to her childhood hobby of art with the idea of becoming an artist."]
 */
-function artistInfo(/*Your Code Here*/){
-  /*Your Code Here*/
+function artistInfo(array, name){
+  let bio = []
+  for (let i = 0; i < array.length; i++){
+    if(array[i].name === name)
+    bio.push(array[i].bio)
 }
+  return bio
+}
+console.log("Task 8:", artistInfo(artists, 'Frida Kahlo'))
+
+
+
 
 
 
@@ -321,12 +382,19 @@ Use artistByCountry to do the following:
 For example artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya', 'El Greco' ]
 */
 
-function artistByCountry(/*Your Code Here*/){
-  /*Your Code Here*/
+function artistByCountry(array, nationality){
+  let array1 = []
+  for (let i = 0; i < array.length; i++){
+    if(array[i].nationality === nationality)
+    array1.push(array[i].name)
+  }
+  return array1
 }
 
+console.log("Task 9:", artistByCountry(artists, 'Spanish'))
 
 
+// SHOULD NOT RETURN EL GRECO!!
 /* ***** END OF TASKS ***** */
 
 
