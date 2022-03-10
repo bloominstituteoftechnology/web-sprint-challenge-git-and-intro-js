@@ -249,11 +249,11 @@ function listOfNames(/*Your Code Here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
-1. Receive an array
-2. Receive a number which is the desired index in the array
-3. Create a copy of the array, then remove an artist from the copied array at the given index
+1. Receive the artist array as an argument passed from the FIRST parameter
+2. Receive a number which is the desired index in the array as an argument passed from the SECOND parameter
+3. Create a copy of the array, then remove an artist from the copied array at the desired index
 4. Return the copied array
-For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
+🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
 function removeArtist(/*Your Code Here*/) {
   /*Your Code Here*/
