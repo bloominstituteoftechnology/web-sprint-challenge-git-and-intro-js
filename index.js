@@ -236,10 +236,10 @@ function getArtistByIndex(/*Your Code Here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use copy to do the following: 
-1. Receive an array
+1. Receive the artist array as an argument from a parameter 
 2. Create a new array that is a copy of the parameter array
 3. Loop over the new array and update each index of the array to equal just the artist's name
-Example return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
+🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
 function listOfNames(/*Your Code Here*/) {
