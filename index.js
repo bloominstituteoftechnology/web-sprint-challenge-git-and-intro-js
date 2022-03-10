@@ -203,7 +203,7 @@ const artists = [
 
 // 🖌🖼 M V P 🖼🖌 //
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
@@ -214,7 +214,7 @@ Practice accessing data above by console.log-ing following items:
 
 
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
