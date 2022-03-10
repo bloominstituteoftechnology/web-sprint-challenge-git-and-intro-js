@@ -203,18 +203,19 @@ const artists = [
 
 // 🖌🖼 M V P 🖼🖌 //
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
 
 
+
 //(2) Bio of the third artist (2nd index) in the array 
 
 
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
@@ -222,23 +223,25 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
-1. Receive an array
-2. Receive a number, which is the desired index in the array.
+1. Receive the artist array as an argument from the FIRST parameter 
+2. Receive a number, which is the desired index in the array, as an argument from the SECOND parameter.
 3. Return a string in the format `the artist at index {id} is {name}`
+❗❗ NOTE: THE STRING YOU RETURN MUST MATCH THE FORMAT ABOVE OR IT WILL NOT PASS THE TEST! ❗❗
 
-Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
+🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(/*Your Code Here*/) {
   /*Your Code Here*/
 }
 
 
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use copy to do the following: 
-1. Receive an array
+1. Receive the artist array as an argument from a parameter 
 2. Create a new array that is a copy of the parameter array
 3. Loop over the new array and update each index of the array to equal just the artist's name
-Example return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
+🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
 function listOfNames(/*Your Code Here*/) {
@@ -246,23 +249,27 @@ function listOfNames(/*Your Code Here*/) {
 }
 
 
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
-1. Receive an array
-2. Receive a number which is the desired index in the array
-3. Create a copy of the array, then remove an artist from the copied array at the given index
-4. Return the copied array
-For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
+1. Receive the artist array as an argument passed from the FIRST parameter
+2. Receive a number, which is the desired index in the array, as an argument passed from the SECOND parameter
+3. Create a new array that is a copy of the parameter array 
+4. Remove an artist from the copied array at the desired index
+5. Return the resulting copied array
+🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
 function removeArtist(/*Your Code Here*/) {
   /*Your Code Here*/
 }
 
 
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
-1. Receive an array, a string (name), a string (years), a string (genre), a string (nationality), and a string (bio)
-2. Create an object with the following format:
+1. Receive the the artist array as an argument passed from the FIRST parameter 
+2. Recieve a string (name), a string (years), a string (genre), a string (nationality), and a string (bio) as arguments passed from the SECOND, THIRD, FOURTH, FIFTH, and SIXTH parameters, repsectively.
+3. Create an object with the following format:
   { 
     id: 20,
     name: Your Name Here, 
@@ -271,8 +278,8 @@ Use addArtist to do the following:
     nationality: Your Nationality Here
     bio: Add 1-2 sentences (or use lorem ipsum)
   }  
-3. Return the array
-Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
+4. Return the array
+🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
 function addArtist(/*Your Code Here*/) {
   /*Your Code Here*/
@@ -282,25 +289,28 @@ function addArtist(/*Your Code Here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
-1. Receive an array 
+1. Receive the artist array as an argument passed from a parameter  
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
-For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
+🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
+*/
 
 function lotsOfArt(/*Your Code Here*/) {
   /*Your Code Here*/
 }
 
 
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistInfo to do the following: 
-1. Receive an array 
-2. Receive an artist's name
-3. return the artists bio
+1. Receive the artist array as an argument passed from the FIRST parameter
+2. Receive a string (artist's name) as an argument passed from the SECOND parameter
+3. Return the artists bio
 
-For example artistInfo(artists, 'Frida Kahlo') will return: 
+🌟 EXAMPLE: Invoking artistInfo(artists, 'Frida Kahlo') will return: 
   "Frida Kahlo de Rivera (Spanish pronunciation: [ˈfɾiða ˈkalo]; born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.Born to a German father and a mestiza mother, Kahlo spent most of her childhood and adult life at her family home in Coyoacán, La Casa Azul, now known and publicly accessible as the Frida Kahlo Museum. She was disabled by polio as a child. Until a traffic accident at age eighteen caused lifelong pain and medical problems, she had been a promising student headed for medical school. During her recovery, she returned to her childhood hobby of art with the idea of becoming an artist."
 */
+
 function artistInfo(/*Your Code Here*/){
   /*Your Code Here*/
 }
@@ -309,11 +319,11 @@ function artistInfo(/*Your Code Here*/){
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistByCountry to do the following: 
-1. Receive an array 
-2. Receive a nationality
-3. returns a list of artists from that country
+1. Receive the artist array as an argument passed from the FIRST parameter
+2. Receive a string (nationality) as an argument passed from the SECOND parameter
+3. Return an array of artist names from that country
 
-For example artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya']
+🌟 EXAMPLE: Invoking artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya']
 */
 
 function artistByCountry(/*Your Code Here*/){
