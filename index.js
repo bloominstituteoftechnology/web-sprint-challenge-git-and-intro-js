@@ -233,29 +233,25 @@ function getArtistByIndex(/*Your Code Here*/) {
 }
 
 
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Use get20s to do the following: 
+Use copy to do the following: 
 1. Receive an array
-2. Return a new array with names of artists who were born in and died in 20th century (1900-2000) 
+2. Create a new array that is a copy of the parameter array
+3. Loop over the new array and update each index of the array to equal just the artist's name
+Example return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
+*/
 
-Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
-If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
-// Hint - Look up the .split() method
-
-function get20s(/*Your Code Here*/) {
+function listOfNames(/*Your Code Here*/) {
   /*Your Code Here*/
 }
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
 1. Receive an array
 2. Receive a number which is the desired index in the array
-3. The function should remove an artist from the array at the index
-4. Return the length of the remaining dataset.
-
+3. Create a copy of the array, then remove an artist from the copied array at the given index
+4. Return the copied array
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(/*Your Code Here*/) {
@@ -265,8 +261,8 @@ function removeArtist(/*Your Code Here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
-1. Receive an array
-2. Add this object of information to the end of the array
+1. Receive an array, a string (name), a string (years), a string (genre), a string (nationality), and a string (bio)
+2. Create an object with the following format:
   { 
     id: 20,
     name: Your Name Here, 
@@ -275,8 +271,7 @@ Use addArtist to do the following:
     nationality: Your Nationality Here
     bio: Add 1-2 sentences (or use lorem ipsum)
   }  
-3. Return the resulting array
-
+3. Return the array
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(/*Your Code Here*/) {
@@ -304,7 +299,7 @@ Use artistInfo to do the following:
 3. return the artists bio
 
 For example artistInfo(artists, 'Frida Kahlo') will return: 
-  ["Frida Kahlo de Rivera (Spanish pronunciation: [ˈfɾiða ˈkalo]; born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.Born to a German father and a mestiza mother, Kahlo spent most of her childhood and adult life at her family home in Coyoacán, La Casa Azul, now known and publicly accessible as the Frida Kahlo Museum. She was disabled by polio as a child. Until a traffic accident at age eighteen caused lifelong pain and medical problems, she had been a promising student headed for medical school. During her recovery, she returned to her childhood hobby of art with the idea of becoming an artist."]
+  "Frida Kahlo de Rivera (Spanish pronunciation: [ˈfɾiða ˈkalo]; born Magdalena Carmen Frida Kahlo y Calderón; 6 July 1907 – 13 July 1954) was a Mexican artist who painted many portraits, self-portraits and works inspired by the nature and artifacts of Mexico. Inspired by the country's popular culture, she employed a naïve folk art style to explore questions of identity, postcolonialism, gender, class and race in Mexican society. Her paintings often had strong autobiographical elements and mixed realism with fantasy. In addition to belonging to the post-revolutionary Mexicayotl movement, which sought to define a Mexican identity, Kahlo has been described as a surrealist or magical realist.Born to a German father and a mestiza mother, Kahlo spent most of her childhood and adult life at her family home in Coyoacán, La Casa Azul, now known and publicly accessible as the Frida Kahlo Museum. She was disabled by polio as a child. Until a traffic accident at age eighteen caused lifelong pain and medical problems, she had been a promising student headed for medical school. During her recovery, she returned to her childhood hobby of art with the idea of becoming an artist."
 */
 function artistInfo(/*Your Code Here*/){
   /*Your Code Here*/
@@ -341,7 +336,7 @@ foo();
 module.exports = {
   foo,
   getArtistByIndex,
-  get20s,
+  listOfNames,
   removeArtist,
   addArtist,
   lotsOfArt,
