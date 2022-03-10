@@ -284,10 +284,11 @@ function addArtist(/*Your Code Here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
-1. Receive an array 
+1. Receive the artist array as an argument passed from a parameter  
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
 
-For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
+🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
+*/
 
 function lotsOfArt(/*Your Code Here*/) {
   /*Your Code Here*/
