@@ -262,7 +262,8 @@ function removeArtist(/*Your Code Here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
-1. Receive an array, a string (name), a string (years), a string (genre), a string (nationality), and a string (bio)
+1. Receive the the artist array as an argument passed from the FIRST parameter 
+2. Recieve a string (name), a string (years), a string (genre), a string (nationality), and a string (bio) as arguments passed from the SECOND, THIRD, FOURTH, FIFTH, and SIXTH parameters, repsectively.
 2. Create an object with the following format:
   { 
     id: 20,
@@ -273,7 +274,7 @@ Use addArtist to do the following:
     bio: Add 1-2 sentences (or use lorem ipsum)
   }  
 3. Return the array
-Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
+🌟 EXAMPLE: Invoking addArtist with the required arguments should return the artists array with the above object added to the end of the array. */
 
 function addArtist(/*Your Code Here*/) {
   /*Your Code Here*/
