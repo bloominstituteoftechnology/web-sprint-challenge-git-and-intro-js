@@ -24,13 +24,13 @@ Commit your code regularly and meaningfully.
 Follow these steps to set up your project:
 
 1. Fork the repo
-2. Go into canvas and connect your reop to codegrade
+2. Go into canvas and connect your repo to codegrade
 3. Clone your forked version of the repo
 4. **DO NOT CREATE A BRANCH.** You will be pushing your changes to the main/master today
 5. cd into your repo
 6. open the terminal in your vs code and type `npm install`
 7. next type `npm run test` in your terminal
-8. Complete your work making regular commits to main/ master your codegrade score will update each time you make a push.
+8. Complete your work making regular commits to main/master your codegrade score will update each time you make a push.
 
 
 ### Testing & Debugging
@@ -53,5 +53,5 @@ Navigate to `index.js` and complete the MVP challenges. Note that you need to sc
 
 ## Resources
 
-🦄 [Sprint Challenge Study Guide](https://www.notion.so/bloomtech/Unit-1-Sprint-2-Study-Guide-16f656025c8744458addb068e6348101)
+🦄 [Sprint Challenge Study Guide](https://www.notion.so/bloomtech/Unit-1-Sprint-1-Study-Guide-16f656025c8744458addb068e6348101)
 
