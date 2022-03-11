@@ -264,7 +264,6 @@ Use addArtist to do the following:
 1. Receive an array, a string (name), a string (years), a string (genre), a string (nationality), and a string (bio)
 2. Create an object with the following format:
   { 
-    id: 20,
     name: Your Name Here, 
     years: Your Birth Year - current day,
     genre: Web Design, 
