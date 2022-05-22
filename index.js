@@ -234,11 +234,13 @@ Use getArtistByIndex to do the following:
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(artists, idx) {
+  if (!artists[idx]) {
+    return 'invalid index, name cannot be determined';
+  }
+  
   const { id, name } = artists[idx];
   return `the artist at index ${id} is ${name}`;
 }
-
-
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use copy to do the following: 
@@ -256,7 +258,7 @@ function listOfNames(artists) {
   return retList;
 }
 
-
+listOfNames(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -267,12 +269,15 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(artists, idx) {
-  if (!artists[idx]) {
-    throw new Error('invalid index');
-  }
+function listOfNames(artists) {
+  const retList = [];
+  artists.forEach(artist => {
+      retList[artist.id] = artist.name;
+  });
+  return retList;
+}
 
-
+listOfNames(artists);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -290,14 +295,19 @@ Use addArtist to do the following:
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
 function addArtist(artists, name, years, genre, nationality, bio) {
-  artists.push({
-      id: artists.length + 1,
-      name,
-      years,
-      genre,
-      nationality,
-      bio,
-  });
+	artists.push({
+		id: artists.length + 1,
+		name,
+		years,
+		genre,
+		nationality,
+		bio,
+	});
+	return artists;
+}
+addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development',
+'African American', 'I have a background in customer service at Big Retail Chain',
+'I am attending BloomTech to become a Frontend Developer.');
 
 
 
@@ -313,7 +323,7 @@ function lotsOfArt(artists) {
   return artists.filter(artist => artist.paintings && artist.paintings > 100);
 }
 
-
+lotsOfArt(artists)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistInfo to do the following: 
@@ -332,8 +342,7 @@ function artistInfo(artists, name) {
   } 
   return `artist info not found ${name}`;
 }
-
-
+artistInfo(artists, 'Frida Kahlo')
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use artistByCountry to do the following: 
@@ -352,7 +361,7 @@ function artistByCountry(artists, nationality){
   }
   return `No artists found for nationality: ${nationality}`;
 }
-
+artistByCountry(artists, 'Spanish');
 
 
 /* ***** END OF TASKS ***** */
