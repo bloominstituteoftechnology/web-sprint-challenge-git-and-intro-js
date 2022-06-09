@@ -320,7 +320,8 @@ function artistInfo(/*Your Code Here*/){
 Use artistByCountry to do the following: 
 1. Receive the artist array as an argument passed from the FIRST parameter
 2. Receive a string (nationality) as an argument passed from the SECOND parameter
-3. Return an array of artist names from that country
+3. Return an array of artist names who are ONLY of that nationality. 
+⚠ NOTE: Artists who have more than one nationality should not be included in this new array.  
 
 🌟 EXAMPLE: Invoking artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya']
 */
