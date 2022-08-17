@@ -237,7 +237,7 @@ function getArtistByIndex(/*Your Code Here*/) {
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Use copy to do the following: 
+Use listOfNames to do the following: 
 1. Receive the artist array as an argument from a parameter 
 2. Create a new array that is a copy of the parameter array
 3. Loop over the new array and update each index of the array to equal just the artist's name
@@ -267,17 +267,18 @@ function removeArtist(/*Your Code Here*/) {
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
-1. Receive the the artist array as an argument passed from the FIRST parameter 
-2. Recieve a string (name), a string (years), a string (genre), a string (nationality), and a string (bio) as arguments passed from the SECOND, THIRD, FOURTH, FIFTH, and SIXTH parameters, repsectively.
+1. Receive the artist array as an argument passed from the FIRST parameter 
+2. Receive a string (name), a string (years), a string (genre), a string (nationality), and a string (bio) as arguments passed from the SECOND, THIRD, FOURTH, FIFTH, and SIXTH parameters, repsectively.
+3. Create a copy of the array parameter.
 3. Create an object with the following format:
   { 
-    name: Your Name Here, 
-    years: Your Birth Year - current day,
-    genre: Web Design, 
-    nationality: Your Nationality Here
-    bio: Add 1-2 sentences (or use lorem ipsum)
+    name: "Your Name Here", 
+    years: "Your Birth Year - current day",
+    genre: "Web Design", 
+    nationality: "Your Nationality Here"
+    bio: "Add 1-2 sentences (or use lorem ipsum)"
   }  
-4. Return the array
+4. Add the newly created object to the copied array, then return the copied array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
 function addArtist(/*Your Code Here*/) {
