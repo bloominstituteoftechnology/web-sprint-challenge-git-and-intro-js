@@ -231,12 +231,13 @@ Use getArtistByIndex to do the following:
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(artists, artistIntro) {
-  for(var i = 0; i <= artists.length; i++){
-    artistIntro = console.log("The artist at index " + artists[i].id + "is " + artists[i].name );
+  for(let i = 0; i <= artists.length; i++){
+    if(i <= artistIntro){
+    console.log("The artist at index " + artists[i].id + " is " + artists[i].name );
+    }
   } 
-  return artistIntro;
 }
-getArtistByIndex();
+getArtistByIndex(artists, 6);
 
 
 
@@ -248,10 +249,10 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(artists) {
-  const nameList = [];
-  for(i = 0; i <= artists.length; i++){
-    nameList.push(artists[i].name);
+function listOfNames(nameList) {
+  nameList = [];
+  for(let i = 0; i <= artists.length; i++){
+    nameList.push(artists[i]);
   }
 }
 
